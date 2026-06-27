@@ -1,0 +1,640 @@
+##################################
+Clonning https://github.com/permutive-engineering/prometheus4cats.git into /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats using revision v6.0.0-M1
+##################################
+Note: switching to 'b8493e9437ac94d886699816b4c6136d6e0d8599'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+----
+Preparing build for 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Scala binary version found: 3.10
+Implicitly using source version 3.10
+Scala binary version found: 3.10
+Implicitly using source version 3.10
+Would try to apply common scalacOption (best-effort, sbt/mill only):
+Append: ,REQUIRE:-source:3.10
+Remove: ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+----
+Starting build for 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Execute tests: true
+sbt project found at /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats
+No prepare script found for project permutive-engineering/prometheus4cats
+##################################
+Scala version: 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Targets: com.permutive%prometheus4cats com.permutive%prometheus4cats-java com.permutive%prometheus4cats-testkit
+Project projectConfig: {"projects":{"exclude":[],"overrides":{}},"java":{"version":"17"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[]}
+##################################
+Using extra scalacOptions: ,REQUIRE:-source:3.10
+Filtering out scalacOptions: ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[sbt_options] declare -a sbt_options='()'
+[process_args] java_version = '25'
+[copyRt] java9_rt = '/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25/rt.jar'
+# Executing command line:
+java
+-Dfile.encoding=UTF-8
+-Dcommunitybuild.scala=3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+-Dcommunitybuild.project.dependencies.add=
+-Xmx7G
+-Xms4G
+-Xss8M
+-Dsbt.script=/Users/wmazur/.sdkman/candidates/sbt/current/bin/sbt
+--sun-misc-unsafe-memory-access=allow
+--enable-native-access=ALL-UNNAMED
+-Dscala.ext.dirs=/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25
+-jar
+/Users/wmazur/.sdkman/candidates/sbt/1.11.7/bin/sbt-launch.jar
+"setCrossScalaVersions 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY"
+"++3.10.0-RC1-bin-20260626-20f6657-NIGHTLY -v"
+"mapScalacOptions ",REQUIRE:-source:3.10,-Wconf:msg=can be rewritten automatically under:s" ",-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e""
+clearCredentials
+"excludeLibraryDependency com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}"
+"removeScalacOptionsStartingWith -P:wartremover"
+moduleMappings
+"runBuild 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY """{"projects":{"exclude":[],"overrides":{}},"java":{"version":"17"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[]}""" com.permutive%prometheus4cats com.permutive%prometheus4cats-java com.permutive%prometheus4cats-testkit"
+
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.11.7 (Eclipse Adoptium Java 25)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project prometheus4cats-build from akka.sbt, plugins.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/project[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/project/target/scala-2.12/sbt-1.0/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project default-c3c78f from build.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to default-c3c78f (in build file:/Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/)[0m
+Execute setCrossScalaVersions: 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+OpenCB::Changing crossVersion 3.3.7 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in documentation/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.7 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in prometheus4cats/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.7 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in website/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.7 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in default-c3c78f/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.7 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in prometheus4cats-java/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.7 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in sandbox/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.7 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in prometheus4cats-testkit/crossScalaVersions
+[0m[[0m[0minfo[0m] [0m[0mset current project to default-c3c78f (in build file:/Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/)[0m
+[0m[[0m[0minfo[0m] [0m[0mSetting Scala version to 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY on 7 projects.[0m
+[0m[[0m[0minfo[0m] [0m[0mSwitching Scala version on:[0m
+[0m[[0m[0minfo[0m] [0m[0m    website (2.13.18, 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    documentation (2.13.18, 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    prometheus4cats-testkit (2.13.18, 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    prometheus4cats (2.13.18, 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    sandbox (2.13.18, 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m  * default-c3c78f (2.13.18, 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    prometheus4cats-java (2.13.18, 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0mExcluding projects:[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to default-c3c78f (in build file:/Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/)[0m
+Execute mapScalacOptions: ,REQUIRE:-source:3.10,-Wconf:msg=can be rewritten automatically under:s ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to default-c3c78f (in build file:/Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/)[0m
+Execute clearCredentials: 
+[0m[[0m[0minfo[0m] [0m[0mset current project to default-c3c78f (in build file:/Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/)[0m
+Execute excludeLibraryDependency: com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+OpenCB::Failed to reapply settings in excludeLibraryDependency: Reference to undefined setting: 
+
+  Global / allExcludeDependencies from Global / allExcludeDependencies (CommunityBuildPluginShared.scala:286)
+     Did you mean sandbox / allExcludeDependencies ?
+ , retry without global scopes
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to default-c3c78f (in build file:/Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/)[0m
+Execute removeScalacOptionsStartingWith: -P:wartremover
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to default-c3c78f (in build file:/Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jun 27, 2026, 7:52:05 PM[0m
+Build config: {"projects":{"exclude":[],"overrides":{}},"java":{"version":"17"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[]}
+Parsed config: Success(ProjectBuildConfig(ProjectsConfig(List(),Map()),Full,List()))
+Starting build...
+Projects: Set(prometheus4cats, prometheus4cats-java, prometheus4cats-testkit)
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/,prometheus4cats) (prometheus4cats)... [0/3]
+OpenCB::Exclude Scala3 specific scalacOption `REQUIRE:-source:3.10` in Scala 2.12.20 module Global
+OpenCB::Filter out '-deprecation', matches setting pattern '^-?\Q-deprecation\E'
+OpenCB::Filter out '-feature', matches setting pattern '^-?\Q-feature\E'
+OpenCB::Filter out '-Xfatal-warnings', matches setting pattern '^-?\Q-Xfatal-warnings\E'
+Compile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:higherKinds, -language:implicitConversions, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10
+[0m[[0m[0minfo[0m] [0m[0mcompiling 43 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 14 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:52:67 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m    doubleGaugeBuilder.label[[32mString[0m]([32m"label1"[0m).label[[32mInt[0m]([32m"label2"[0m).label[[32mBigInteger[0m]([32m"label3"[0m, _.toString)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                   ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:69:98 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m69 |[0m    doubleGaugeBuilder.labels[[32mString[0m]([33mLabel[0m.[33mName[0m([32m"test"[0m) -> ([36ms[0m => s)).label[[32mString[0m]([32m"other_label"[0m).build[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                                                  ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, String, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:79:63 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m79 |[0m  longGaugeBuilder.label[[32mString[0m]([32m"label1"[0m).label[[32mInt[0m]([32m"label2"[0m).label[[32mBigInteger[0m]([32m"label3"[0m, _.toString).build[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                               ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:96:69 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m96 |[0m    doubleCounterBuilder.label[[32mString[0m]([32m"label1"[0m).label[[32mInt[0m]([32m"label2"[0m).label[[32mBigInteger[0m]([32m"label3"[0m, _.toString)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                     ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:108:27 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m108 |[0m      .label[[33mInt[0m]([32m"label2"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                           ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:139:28 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m139 |[0m    .label[[33mString[0m]([32m"label1"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                            ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[MetricsFactoryDslTest.this.LabelsClass,[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  String, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E081] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:140:42 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m140 |[0m    .labels[([33mInt[0m, [33mBigInteger[0m)](([32m"label2"[0m, _._1), ([32m"label3"[0m, _._2.toString()))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                          ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      Missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      I could not infer the type of the parameter _$16[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      in expanded function:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        _$16 => _$16._1[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      Expected type for the whole anonymous function:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        Any[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E081] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:140:60 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m140 |[0m    .labels[([33mInt[0m, [33mBigInteger[0m)](([32m"label2"[0m, _._1), ([32m"label3"[0m, _._2.toString()))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                            ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      Missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      I could not infer the type of the parameter _$17[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      in expanded function:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        _$17 => _$17._2.toString()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      Expected type for the whole anonymous function:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        Any[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:156:25 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m156 |[0m    .label[[33mInt[0m]([32m"label2"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                         ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:170:67 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m170 |[0m  longHistogramBuilder.label[[32mString[0m]([32m"label1"[0m).label[[32mInt[0m]([32m"label2"[0m).label[[32mBigInteger[0m]([32m"label3"[0m, _.toString).build[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                                   ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:183:25 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m183 |[0m    .label[[33mInt[0m]([32m"label2"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                         ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mLabelApply[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m11 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(prometheus4cats / Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 14 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:52:67 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m    doubleGaugeBuilder.label[[32mString[0m]([32m"label1"[0m).label[[32mInt[0m]([32m"label2"[0m).label[[32mBigInteger[0m]([32m"label3"[0m, _.toString)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                   ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:69:98 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m69 |[0m    doubleGaugeBuilder.labels[[32mString[0m]([33mLabel[0m.[33mName[0m([32m"test"[0m) -> ([36ms[0m => s)).label[[32mString[0m]([32m"other_label"[0m).build[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                                                  ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, String, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:79:63 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m79 |[0m  longGaugeBuilder.label[[32mString[0m]([32m"label1"[0m).label[[32mInt[0m]([32m"label2"[0m).label[[32mBigInteger[0m]([32m"label3"[0m, _.toString).build[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                               ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:96:69 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m96 |[0m    doubleCounterBuilder.label[[32mString[0m]([32m"label1"[0m).label[[32mInt[0m]([32m"label2"[0m).label[[32mBigInteger[0m]([32m"label3"[0m, _.toString)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                     ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:108:27 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m108 |[0m      .label[[33mInt[0m]([32m"label2"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                           ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:139:28 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m139 |[0m    .label[[33mString[0m]([32m"label1"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                            ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[MetricsFactoryDslTest.this.LabelsClass,[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  String, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E081] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:140:42 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m140 |[0m    .labels[([33mInt[0m, [33mBigInteger[0m)](([32m"label2"[0m, _._1), ([32m"label3"[0m, _._2.toString()))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                          ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      Missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      I could not infer the type of the parameter _$16[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      in expanded function:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        _$16 => _$16._1[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      Expected type for the whole anonymous function:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        Any[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E081] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:140:60 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m140 |[0m    .labels[([33mInt[0m, [33mBigInteger[0m)](([32m"label2"[0m, _._1), ([32m"label3"[0m, _._2.toString()))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                            ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      Missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      I could not infer the type of the parameter _$17[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      in expanded function:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        _$17 => _$17._2.toString()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      Expected type for the whole anonymous function:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        Any[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:156:25 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m156 |[0m    .label[[33mInt[0m]([32m"label2"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                         ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:170:67 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m170 |[0m  longHistogramBuilder.label[[32mString[0m]([32m"label1"[0m).label[[32mInt[0m]([32m"label2"[0m).label[[32mBigInteger[0m]([32m"label3"[0m, _.toString).build[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                                   ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:183:25 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m183 |[0m    .label[[33mInt[0m]([32m"label2"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                         ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mLabelApply[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m11 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(prometheus4cats / Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 14 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:52:67 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m    doubleGaugeBuilder.label[[32mString[0m]([32m"label1"[0m).label[[32mInt[0m]([32m"label2"[0m).label[[32mBigInteger[0m]([32m"label3"[0m, _.toString)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                   ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:69:98 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m69 |[0m    doubleGaugeBuilder.labels[[32mString[0m]([33mLabel[0m.[33mName[0m([32m"test"[0m) -> ([36ms[0m => s)).label[[32mString[0m]([32m"other_label"[0m).build[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                                                  ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, String, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:79:63 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m79 |[0m  longGaugeBuilder.label[[32mString[0m]([32m"label1"[0m).label[[32mInt[0m]([32m"label2"[0m).label[[32mBigInteger[0m]([32m"label3"[0m, _.toString).build[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                               ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:96:69 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m96 |[0m    doubleCounterBuilder.label[[32mString[0m]([32m"label1"[0m).label[[32mInt[0m]([32m"label2"[0m).label[[32mBigInteger[0m]([32m"label3"[0m, _.toString)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                     ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:108:27 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m108 |[0m      .label[[33mInt[0m]([32m"label2"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                           ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:139:28 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m139 |[0m    .label[[33mString[0m]([32m"label1"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                            ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[MetricsFactoryDslTest.this.LabelsClass,[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  String, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E081] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:140:42 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m140 |[0m    .labels[([33mInt[0m, [33mBigInteger[0m)](([32m"label2"[0m, _._1), ([32m"label3"[0m, _._2.toString()))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                          ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      Missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      I could not infer the type of the parameter _$16[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      in expanded function:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        _$16 => _$16._1[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      Expected type for the whole anonymous function:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        Any[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E081] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:140:60 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m140 |[0m    .labels[([33mInt[0m, [33mBigInteger[0m)](([32m"label2"[0m, _._1), ([32m"label3"[0m, _._2.toString()))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                            ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      Missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      I could not infer the type of the parameter _$17[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      in expanded function:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        _$17 => _$17._2.toString()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                      Expected type for the whole anonymous function:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        Any[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:156:25 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m156 |[0m    .label[[33mInt[0m]([32m"label2"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                         ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:170:67 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m170 |[0m  longHistogramBuilder.label[[32mString[0m]([32m"label1"[0m).label[[32mInt[0m]([32m"label2"[0m).label[[32mBigInteger[0m]([32m"label3"[0m, _.toString).build[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                                   ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mWithCallbacks[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats/src/test/scala/test/MetricsFactoryDslTest.scala:183:25 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m183 |[0m    .label[[33mInt[0m]([32m"label2"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                         ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type prometheus4cats.internal.InitLast.Aux[String, Int, C] was found for parameter initLast of [33mmethod[0m [32mapply[0m in [33mclass[0m [32mLabelApply[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mwhere:    C is a type variable[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import prometheus4cats.internal.InitLast.base[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m11 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(prometheus4cats / Test / [31mcompileIncremental[0m) Compilation failed[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/,prometheus4cats-testkit) (prometheus4cats-testkit)... [1/3]
+Compile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:higherKinds, -language:implicitConversions, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats-testkit/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats-testkit/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/,prometheus4cats-java) (prometheus4cats-java)... [2/3]
+Compile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:higherKinds, -language:implicitConversions, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats-java/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats-java/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/permutive-engineering/prometheus4cats/repo/permutive-engineering/prometheus4cats/modules/prometheus4cats-java/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+prometheus4cats.javaclient.JavaMetricRegistrySuite:
+  + counter — inc, scrape returns the incremented value 0.198s
+  + counter — incWithExemplar attaches the implicit Exemplar to the snapshot 0.024s
+  + counter — incProvidedExemplar attaches the explicitly-supplied Exemplar.Labels 0.006s
+  + counter — incWithSampledExemplar attaches the sampler's output to the snapshot 0.014s
+  + counter callback — scrape invokes the user callback and propagates the value to the snapshot 0.036s
+  + gauge — inc, dec, and set are each reflected in the scrape 0.021s
+  + gauge callback — every scrape re-invokes the callback and propagates the current value 0.007s
+  + classic histogram — scrape produces classic buckets, no native data 0.105s
+  + classic histogram — observeWithExemplar attaches the implicit Exemplar to the matching bucket 0.01s
+  + classic histogram — observeProvidedExemplar attaches the explicitly-supplied Exemplar.Labels 0.003s
+  + classic histogram — observeWithSampledExemplar attaches the sampler's output to the matching bucket 0.009s
+  + native histogram — scrape produces native bucket data, no classic buckets 0.009s
+  + dual-mode histogram (.withNative) — scrape produces BOTH classic and native data 0.005s
+  + native histogram — custom NativeHistogram config propagates initialSchema to the scraped snapshot 0.005s
+  + histogram callback — every scrape re-invokes the callback and propagates the current value 0.023s
+  + summary — quantiles propagate and observations are aggregated 0.038s
+  + summary callback — every scrape re-invokes the callback and propagates the current value 0.011s
+  + info — declared labels propagate to scrape output via setLabelValues 0.021s
+  + metric-collection callback — every scrape re-invokes the callback and propagates the current collection 0.031s
+  + histogram-backed Timer — recordTime observes the duration as seconds into the matching bucket 0.013s
+  + native histogram-backed Timer — recordTime observes the duration as seconds into native bucket data 0.01s
+  + histogram-backed Timer — recordTimeWithExemplar attaches the implicit Exemplar to the matching bucket 0.006s
+  + counter-backed OutcomeRecorder — surround increments the succeeded counter on F[_] success 0.016s
+  + counter-backed OutcomeRecorder — surroundWithExemplar attaches the implicit Exemplar to the succeeded counter 0.009s
+  + name-collision: returns an existing metric when labels and name are the same 0.005s
+  + name-collision: fails to build a metric when a callback of the same name exists 0.047s
+  + name-collision: fails to build a callback when a metric of the same name exists 0.003s
+  + name-collision: fails when a metric with the same name and different labels 0.014s
+  + name-collision: counter callback emitting duplicate label values within one NonEmptyList 0.005s
+  + name-collision: fails when a metric with the same name and different type 0.002s
+prometheus4cats.javaclient.JavaMetricRegistryTestkitSuite:
+  + create, increment and de-register a counter 0.56s
+  + create, increment and de-register an exemplar counter 0.401s
+  + create, increment and de-register a labelled counter 0.549s
+  + create, increment and de-register a labelled exemplar counter 0.214s
+  + create, update and de-register a gauge 0.379s
+  + create, update and de-register a labelled gauge 0.301s
+  + create, increment and de-register a histogram 0.155s
+  + create, increment and de-register an exemplar histogram 0.161s
+  + create, increment and de-register a labelled histogram 0.16s
+  + create, increment and de-register a labelled exemplar histogram 0.122s
+  + create, increment and de-register a summary 0.165s
+  + create, increment and de-register a labelled summary 0.164s
+  + create, set and de-register info 0.137s
+  + nested counter resource usage 0.113s
+  + nested gauge resource usage 0.107s
+  + nested histogram resource usage 0.11s
+  + nested summary resource usage 0.102s
+  + nested info resource usage 0.067s
+  + concurrent counter resource usage 0.12s
+  + concurrent gauge resource usage 0.088s
+  + concurrent histogram resource usage 0.102s
+  + concurrent summary resource usage 0.095s
+  + concurrent info resource usage 0.325s
+  + register, set and de-register a counter 0.081s
+  + register, set and de-register a labelled counter 0.104s
+  + register, set and de-register a gauge 0.147s
+  + register, set and de-register a labelled gauge 0.13s
+  + register, set and de-register a histogram 0.119s
+  + register, set and de-register a labelled histogram 0.118s
+  + register, set and de-register a summary 0.157s
+  + register, set and de-register a labelled summary 0.121s
+  + register and de-register metric collection 0.187s
+  + register and de-register metric collection with the same name and different labels 0.186s
+  + allows building a callback when a callback of the same name exists 0.049s
+  + allows building a callback with multiple label values 0.117s
+  + allows building a callback with different label values when a callback of the same name exists 0.111s
+  + allows building a callback with different labels names but the same name 0.235s
+  + allows building a callback with different number labels but the same name 0.274s
+
+************************
+Build summary:
+[{
+ "module": "prometheus4cats",
+ "compile": {"status": "ok", "tookMs": 18675, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 6247, "warnings": 0, "errors": 11, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "skipped", "tookMs": 0},
+ "metadata": {
+  "crossScalaVersions": ["2.13.18", "3.3.7"]
+}
+},{
+ "module": "prometheus4cats-testkit",
+ "compile": {"status": "ok", "tookMs": 11750, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 175, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "test": {"status": "ok", "tookMs": 131, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "skipped", "tookMs": 0},
+ "metadata": {
+  "crossScalaVersions": ["2.13.18", "3.3.7"]
+}
+},{
+ "module": "prometheus4cats-java",
+ "compile": {"status": "ok", "tookMs": 4121, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 3180, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "test": {"status": "ok", "tookMs": 7670, "passed": 68, "failed": 0, "ignored": 0, "skipped": 0, "total": 68, "byFramework": [{"framework": "munit", "stats": {"passed": 68, "failed": 0, "ignored": 0, "skipped": 0, "total": 68}}]},
+ "publish": {"status": "skipped", "tookMs": 0},
+ "metadata": {
+  "crossScalaVersions": ["2.13.18", "3.3.7"]
+}
+}]
+************************
+[0m[[0m[31merror[0m] [0m[0mScala3CommunityBuild$ProjectBuildFailureException: 1 module(s) finished with failures: prometheus4cats[0m
+[0m[[0m[31merror[0m] [0m[0m(Global / [31mrunBuild[0m) Scala3CommunityBuild$ProjectBuildFailureException: 1 module(s) finished with failures: prometheus4cats[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 68 s (0:01:08.0), completed Jun 27, 2026, 7:53:13 PM[0m
+[0JBuild failed, not retrying.

@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "Annotated",
+  "namespace": "com.sksamuel.avro4s.schema.AvroAliasSchemaTest",
+  "aliases": [
+    "ledzep",
+    "queen"
+  ],
+  "fields": [
+    {
+      "name": "str",
+      "type": "string"
+    }
+  ]
+}

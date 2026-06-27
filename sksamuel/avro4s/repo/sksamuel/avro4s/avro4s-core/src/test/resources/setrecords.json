@@ -1,0 +1,19 @@
+{
+  "type" : "record",
+  "name" : "NestedSet",
+  "namespace": "com.sksamuel.avro4s.schema.ArraySchemaTest",
+  "fields" : [ {
+    "name" : "set",
+    "type" : {
+      "type" : "array",
+      "items" : {
+        "type" : "record",
+        "name" : "Nested",
+        "fields" : [ {
+          "name" : "goo",
+          "type" : "string"
+        } ]
+      }
+    }
+  } ]
+}

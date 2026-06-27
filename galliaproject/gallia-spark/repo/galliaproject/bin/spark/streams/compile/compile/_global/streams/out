@@ -1,0 +1,72 @@
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E175] Potential Issue Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/aptus/spark/SparkDriver.scala:34:28 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m34 |[0m        sys.addShutdownHook {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m        ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mdiscarded non-Unit value of type scala.sys.ShutdownHookThread. Add `: Unit` to discard silently.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m35 |[0m          [34m// TODO: or as "whatever is in cache?"[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m36 |[0m          [34m//println("stopping spark-context")[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m37 |[0m          sc.stop() } }[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E100] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamer.scala:36:38 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m36 |[0m  [33moverride[0m [33mdef[0m isEmpty: [33mBoolean[0m = rdd.isEmpty[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                  ^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                          [33mmethod[0m [32misEmpty[0m must be called with () argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E100] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamer.scala:54:48 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m54 |[0m  [33moverride[0m [33mdef[0m distinct: [33mStreamer[0m[A] = _alter(_.distinct)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                              ^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                         [33mmethod[0m [32mdistinct[0m must be called with () argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E100] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamer.scala:66:54 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m66 |[0m    [33mthis[0m.asInstanceOf[[32mRddStreamer[0m[([32mK[0m, [32mV[0m)]]._alter { _.groupByKey.mapValues(_.toList) } }[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                                    ^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                       [33mmethod[0m [32mgroupByKey[0m must be called with () argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E229] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerUtils.scala:37:6 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m37 |[0m      [33mprivate[0m [33mdef[0m postCoGroup[K: [33mClassTag[0m, V: [33mClassTag[0m](joinType: [33mJoinType[0m)(coGrouped: RDD[(K, ([33mIterable[0m[V], [33mIterable[0m[V]))]): RDD[(K, ([33mIterable[0m[V], [33mIterable[0m[V]))] = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m      ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m      Line is indented too far to the right, or a '{' is missing before:[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m      left.cogroup(right).pype(postCoGroup(joinType))[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/spark/SparkRddIn.scala:9:12 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m9 |[0m  [33mdef[0m [36mrdd[0m  ([36msc[0m: [32mSparkContext[0m, [36mschema[0m: [32mCls[0m, [36mrdd[0m: [32mRDD[0m[[32mObj[0m]): [32mHeadS[0m = [33mRddInputObjs[0m (schema, rdd)             .pipe(heads.[33mHead[0m.inputZ)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m  |[0m            ^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m  |[0m            unused explicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala:11:43 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m11 |[0m  [33mdef[0m [36minnerHashJoinWithLeftBias[0m[[36mK[0m: [32mClassTag[0m, [36mV[0m: [32mClassTag[0m]([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                           ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                           unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala:11:56 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m11 |[0m  [33mdef[0m [36minnerHashJoinWithLeftBias[0m[[36mK[0m: [32mClassTag[0m, [36mV[0m: [32mClassTag[0m]([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                                        ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                               unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala:30:30 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m30 |[0m  [33mdef[0m [36mleftHashJoin[0m[[36mK[0m: [32mClassTag[0m, [36mV[0m: [32mClassTag[0m]([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                              ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                              unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala:30:43 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m30 |[0m  [33mdef[0m [36mleftHashJoin[0m[[36mK[0m: [32mClassTag[0m, [36mV[0m: [32mClassTag[0m]([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                           ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                           unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala:49:31 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m49 |[0m  [33mdef[0m [36mrightHashJoin[0m[[36mK[0m: [32mClassTag[0m, [36mV[0m: [32mClassTag[0m]([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                               ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                               unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala:49:44 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m49 |[0m  [33mdef[0m [36mrightHashJoin[0m[[36mK[0m: [32mClassTag[0m, [36mV[0m: [32mClassTag[0m]([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                            ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                            unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerUtils.scala:37:41 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m37 |[0m      [33mprivate[0m [33mdef[0m postCoGroup[K: [33mClassTag[0m, V: [33mClassTag[0m](joinType: [33mJoinType[0m)(coGrouped: RDD[(K, ([33mIterable[0m[V], [33mIterable[0m[V]))]): RDD[(K, ([33mIterable[0m[V], [33mIterable[0m[V]))] = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                         ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                         unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerUtils.scala:37:54 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m37 |[0m      [33mprivate[0m [33mdef[0m postCoGroup[K: [33mClassTag[0m, V: [33mClassTag[0m](joinType: [33mJoinType[0m)(coGrouped: RDD[(K, ([33mIterable[0m[V], [33mIterable[0m[V]))]): RDD[(K, ([33mIterable[0m[V], [33mIterable[0m[V]))] = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                                      ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                               unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere was 1 deprecation warning; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0m15 warnings found[0m

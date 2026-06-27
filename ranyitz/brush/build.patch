@@ -1,0 +1,30 @@
+diff --git a/build.sbt b/build.sbt
+index 562cdf3..c763614 100644
+--- a/build.sbt
++++ b/build.sbt
+@@ -1,6 +1,6 @@
+ val Scala212: String = "2.12.18"
+ val Scala213: String = "2.13.11"
+-val Scala3: String = "3.3.0"
++val Scala3: String = "3.10.0-RC1-bin-20260626-20f6657-NIGHTLY"
+ 
+ ThisBuild / scalaVersion := Scala213
+ ThisBuild / version := "0.3.0"
+@@ -11,3 +11,9 @@ lazy val root = (project in file("."))
+     libraryDependencies += "io.monix" %% "minitest" % "2.9.6" % "test",
+     testFrameworks += new TestFramework("minitest.runner.Framework")
+   )
++
++commands ++= CommunityBuildPlugin.commands
++
++Global / resolvers += "The Scala Nightly Repository".at("https://repo.scala-lang.org/artifactory/maven-nightlies/")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn
+diff --git a/project/build.properties b/project/build.properties
+index 83be3cf..e480c67 100644
+--- a/project/build.properties
++++ b/project/build.properties
+@@ -1 +1 @@
+-sbt.version = 1.5.2
+\ No newline at end of file
++sbt.version=1.11.5

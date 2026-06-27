@@ -1,0 +1,12 @@
+com.github.lichess-org.lila-search%elastic elastic
+com.github.lichess-org.lila-search%lila-game-export lilaGameExport
+com.github.lichess-org.lila-search%lila-mongo lilaMongo
+com.github.lichess-org.lila-search%client client
+com.github.lichess-org.lila-search%lila-search-app app
+com.github.lichess-org.lila-search%lila-search-root lila-search-root
+com.github.lichess-org.lila-search%core core
+com.github.lichess-org.lila-search%e2e e2e
+com.github.lichess-org.lila-search%lila-search-ingestor ingestorApp
+com.github.lichess-org.lila-search%lila-search-cli ingestorCli
+com.github.lichess-org.lila-search%ingestor-core ingestorCore
+com.github.lichess-org.lila-search%api api

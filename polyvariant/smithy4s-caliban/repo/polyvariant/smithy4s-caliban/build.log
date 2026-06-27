@@ -1,0 +1,210 @@
+[sbt_options] declare -a sbt_options='()'
+[process_args] java_version = '25'
+[copyRt] java9_rt = '/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25/rt.jar'
+# Executing command line:
+java
+-Dfile.encoding=UTF-8
+-Xmx6G
+-Dcommunitybuild.scala=3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+-Dcommunitybuild.project.dependencies.add=
+-Xmx7G
+-Xms4G
+-Xss8M
+-Dsbt.script=/Users/wmazur/.sdkman/candidates/sbt/current/bin/sbt
+--sun-misc-unsafe-memory-access=allow
+--enable-native-access=ALL-UNNAMED
+-Dscala.ext.dirs=/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25
+-jar
+/Users/wmazur/.sdkman/candidates/sbt/1.11.7/bin/sbt-launch.jar
+"setCrossScalaVersions 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY"
+"++3.10.0-RC1-bin-20260626-20f6657-NIGHTLY -v"
+"mapScalacOptions ",REQUIRE:-source:3.10,-Wconf:msg=can be rewritten automatically under:s" ",-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e""
+clearCredentials
+"excludeLibraryDependency com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}"
+"removeScalacOptionsStartingWith -P:wartremover"
+moduleMappings
+"runBuild 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY """{"projects":{"exclude":[],"overrides":{}},"java":{"version":"17"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":["3.4"],"sourcePatches":[{"path":"build.sbt","pattern":"val Scala3 = \"3.3.0\"","replaceWith":"val Scala3 = \"<SCALA_VERSION>\""}]}""" org.polyvariant%smithy4s-caliban"
+
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.11.5 (Eclipse Adoptium Java 25)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project smithy4s-caliban-build from akka.sbt, plugins.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/project[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 6 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/project/target/scala-2.12/sbt-1.0/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mset scmInfo to https://github.com/polyvariant/smithy4s-caliban[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to root (in build file:/Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/)[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere's a key that's not used by any other settings/tasks:[0m
+[0m[[0m[33mwarn[0m] [0m[0m [0m
+[0m[[0m[33mwarn[0m] [0m[0m* ThisBuild / tlFatalWarningsInCi[0m
+[0m[[0m[33mwarn[0m] [0m[0m  +- /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/build.sbt:21[0m
+[0m[[0m[33mwarn[0m] [0m[0m [0m
+[0m[[0m[33mwarn[0m] [0m[0mnote: a setting might still be used by a command; to exclude a key from this `lintUnused` check[0m
+[0m[[0m[33mwarn[0m] [0m[0meither append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key[0m
+Execute setCrossScalaVersions: 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+OpenCB::Changing crossVersion 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in core3/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.13.10) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in core3/crossScalaVersions
+[0m[[0m[0minfo[0m] [0m[0mset scmInfo to https://github.com/polyvariant/smithy4s-caliban[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to root (in build file:/Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/)[0m
+[0m[[0m[0minfo[0m] [0m[0mSetting Scala version to 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY on 1 projects.[0m
+[0m[[0m[0minfo[0m] [0m[0mSwitching Scala version on:[0m
+[0m[[0m[0minfo[0m] [0m[0m    core3 (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0mExcluding projects:[0m
+[0m[[0m[0minfo[0m] [0m[0m  * root (2.13.10)[0m
+[0m[[0m[0minfo[0m] [0m[0m    core (2.13.10)[0m
+[0m[[0m[0minfo[0m] [0m[0m    docs (2.13.10)[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset scmInfo to https://github.com/polyvariant/smithy4s-caliban[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to root (in build file:/Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/)[0m
+Execute mapScalacOptions: ,REQUIRE:-source:3.10,-Wconf:msg=can be rewritten automatically under:s ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset scmInfo to https://github.com/polyvariant/smithy4s-caliban[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to root (in build file:/Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/)[0m
+Execute clearCredentials: 
+[0m[[0m[0minfo[0m] [0m[0mset scmInfo to https://github.com/polyvariant/smithy4s-caliban[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to root (in build file:/Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/)[0m
+Execute excludeLibraryDependency: com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+OpenCB::Failed to reapply settings in excludeLibraryDependency: Reference to undefined setting: 
+
+  Global / allExcludeDependencies from Global / allExcludeDependencies (CommunityBuildPluginShared.scala:286)
+     Did you mean core3 / allExcludeDependencies ?
+ , retry without global scopes
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset scmInfo to https://github.com/polyvariant/smithy4s-caliban[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to root (in build file:/Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/)[0m
+Execute removeScalacOptionsStartingWith: -P:wartremover
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset scmInfo to https://github.com/polyvariant/smithy4s-caliban[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to root (in build file:/Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jun 27, 2026, 8:01:27 PM[0m
+Build config: {"projects":{"exclude":[],"overrides":{}},"java":{"version":"17"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":["3.4"],"sourcePatches":[{"path":"build.sbt","pattern":"val Scala3 = \"3.3.0\"","replaceWith":"val Scala3 = \"<SCALA_VERSION>\""}]}
+Parsed config: Success(ProjectBuildConfig(ProjectsConfig(List(),Map()),Full,List()))
+Starting build...
+Projects: Set(core3)
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/,core3) (smithy4s-caliban)... [0/1]
+OpenCB::Exclude Scala3 specific scalacOption `REQUIRE:-source:3.10` in Scala 2.12.20 module Global
+OpenCB::Filter out '-deprecation', matches setting pattern '^-?\Q-deprecation\E'
+OpenCB::Filter out '-feature', matches setting pattern '^-?\Q-feature\E'
+Compile scalacOptions: -encoding, UTF-8, -unchecked, -Ykind-projector, -Wconf:msg=can be rewritten automatically under:s, -source:3.10
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/modules/core/target/jvm-3/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mOption -Ykind-projector is deprecated: Use -Xkind-projector instead.[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 17 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/modules/core/target/jvm-3/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mOption -Ykind-projector is deprecated: Use -Xkind-projector instead.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/modules/core/src/test/scala/org/polyvariant/smithy4scaliban/CalibanTestUtils.scala:39:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m    .map(_.data.asJson)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                      ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type io.circe.Encoder[caliban.ResponseValue] was found for parameter encoder of [33mmethod[0m [32masJson[0m in [33mclass[0m [32mEncoderOps[0m.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    caliban.ResponseValue.circeDecoder[[32mF[0m]([0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      /* missing */summon[caliban.interop.circe².IsCirceDecoder[F]])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mBut no implicit values were found that match type caliban.interop.circe².IsCirceDecoder[F][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    circe  is a package in [33mpackage[0m [32mio[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m          circe² is a package in [33mpackage[0m [32mcaliban.interop[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/modules/core/src/test/scala/org/polyvariant/smithy4scaliban/CalibanTestUtils.scala:51:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m51 |[0m    .map(_.data.asJson)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                      ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type io.circe.Encoder[caliban.ResponseValue] was found for parameter encoder of [33mmethod[0m [32masJson[0m in [33mclass[0m [32mEncoderOps[0m.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    caliban.ResponseValue.circeDecoder[[32mF[0m]([0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      /* missing */summon[caliban.interop.circe².IsCirceDecoder[F]])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mBut no implicit values were found that match type caliban.interop.circe².IsCirceDecoder[F][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    circe  is a package in [33mpackage[0m [32mio[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m          circe² is a package in [33mpackage[0m [32mcaliban.interop[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m.[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(core3 / Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 17 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/modules/core/target/jvm-3/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mOption -Ykind-projector is deprecated: Use -Xkind-projector instead.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/modules/core/src/test/scala/org/polyvariant/smithy4scaliban/CalibanTestUtils.scala:39:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m    .map(_.data.asJson)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                      ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type io.circe.Encoder[caliban.ResponseValue] was found for parameter encoder of [33mmethod[0m [32masJson[0m in [33mclass[0m [32mEncoderOps[0m.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    caliban.ResponseValue.circeDecoder[[32mF[0m]([0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      /* missing */summon[caliban.interop.circe².IsCirceDecoder[F]])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mBut no implicit values were found that match type caliban.interop.circe².IsCirceDecoder[F][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    circe  is a package in [33mpackage[0m [32mio[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m          circe² is a package in [33mpackage[0m [32mcaliban.interop[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/modules/core/src/test/scala/org/polyvariant/smithy4scaliban/CalibanTestUtils.scala:51:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m51 |[0m    .map(_.data.asJson)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                      ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type io.circe.Encoder[caliban.ResponseValue] was found for parameter encoder of [33mmethod[0m [32masJson[0m in [33mclass[0m [32mEncoderOps[0m.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    caliban.ResponseValue.circeDecoder[[32mF[0m]([0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      /* missing */summon[caliban.interop.circe².IsCirceDecoder[F]])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mBut no implicit values were found that match type caliban.interop.circe².IsCirceDecoder[F][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    circe  is a package in [33mpackage[0m [32mio[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m          circe² is a package in [33mpackage[0m [32mcaliban.interop[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m.[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(core3 / Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 17 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/modules/core/target/jvm-3/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mOption -Ykind-projector is deprecated: Use -Xkind-projector instead.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/modules/core/src/test/scala/org/polyvariant/smithy4scaliban/CalibanTestUtils.scala:39:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m    .map(_.data.asJson)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                      ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type io.circe.Encoder[caliban.ResponseValue] was found for parameter encoder of [33mmethod[0m [32masJson[0m in [33mclass[0m [32mEncoderOps[0m.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    caliban.ResponseValue.circeDecoder[[32mF[0m]([0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      /* missing */summon[caliban.interop.circe².IsCirceDecoder[F]])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mBut no implicit values were found that match type caliban.interop.circe².IsCirceDecoder[F][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    circe  is a package in [33mpackage[0m [32mio[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m          circe² is a package in [33mpackage[0m [32mcaliban.interop[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/polyvariant/smithy4s-caliban/repo/polyvariant/smithy4s-caliban/modules/core/src/test/scala/org/polyvariant/smithy4scaliban/CalibanTestUtils.scala:51:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m51 |[0m    .map(_.data.asJson)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                      ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type io.circe.Encoder[caliban.ResponseValue] was found for parameter encoder of [33mmethod[0m [32masJson[0m in [33mclass[0m [32mEncoderOps[0m.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    caliban.ResponseValue.circeDecoder[[32mF[0m]([0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      /* missing */summon[caliban.interop.circe².IsCirceDecoder[F]])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mBut no implicit values were found that match type caliban.interop.circe².IsCirceDecoder[F][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    circe  is a package in [33mpackage[0m [32mio[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m          circe² is a package in [33mpackage[0m [32mcaliban.interop[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m.[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(core3 / Test / [31mcompileIncremental[0m) Compilation failed[0m
+
+************************
+Build summary:
+[{
+ "module": "smithy4s-caliban",
+ "compile": {"status": "ok", "tookMs": 4564, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 5798, "warnings": 1, "errors": 2, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 3},
+ "metadata": {
+  "crossScalaVersions": ["2.13.10", "3.3.0"]
+}
+}]
+************************
+[0m[[0m[31merror[0m] [0m[0mScala3CommunityBuild$ProjectBuildFailureException: 1 module(s) finished with failures: smithy4s-caliban[0m
+[0m[[0m[31merror[0m] [0m[0m(Global / [31mrunBuild[0m) Scala3CommunityBuild$ProjectBuildFailureException: 1 module(s) finished with failures: smithy4s-caliban[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 17 s, completed Jun 27, 2026, 8:01:45 PM[0m
+[0J

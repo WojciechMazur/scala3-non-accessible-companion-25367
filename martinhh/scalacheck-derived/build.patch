@@ -1,0 +1,24 @@
+diff --git a/build.sbt b/build.sbt
+index 09e96a5..09d1484 100644
+--- a/build.sbt
++++ b/build.sbt
+@@ -67,3 +67,9 @@ lazy val test34 =
+ 
+ // do not publish root project
+ publish / skip := true
++
++commands ++= CommunityBuildPlugin.commands
++
++Global / resolvers += "The Scala Nightly Repository".at("https://repo.scala-lang.org/artifactory/maven-nightlies/")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn
+diff --git a/project/plugins.sbt b/project/plugins.sbt
+index 516ef77..f6fcefc 100644
+--- a/project/plugins.sbt
++++ b/project/plugins.sbt
+@@ -9,3 +9,5 @@ addSbtPlugin("org.scala-native" % "sbt-scala-native" % "0.5.12")
+ addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.6.1")
+ 
+ addSbtPlugin("com.github.sbt" % "sbt-ci-release" % "1.11.2")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn

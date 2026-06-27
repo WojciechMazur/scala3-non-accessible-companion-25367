@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "Location",
+  "namespace": "wibble",
+  "fields": [
+    {
+      "name": "city",
+      "type": {
+        "type": "record",
+        "name": "City",
+        "namespace": "wobble",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}

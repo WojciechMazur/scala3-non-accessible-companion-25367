@@ -1,0 +1,58 @@
+-- [E172] Type Error: .../ArbitraryDerivingSuite.scala:18:63
+ 18 |    equalArbitraryValues(RecursiveList.expectedGen[Int])(using derived.arbitrary.deriveArbitrary)
+    |                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |Derivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Arbitrary[io.github.martinhh.RecursiveList.Cns[Int]] being available
+    |
+    |The following import might fix the problem:
+    |
+    |  import io.github.martinhh.derived.DefaultGensSummoner.sumInstanceSummoner
+    |
+    |---------------------------------------------------------------------------|
+    |Inline stack trace
+    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|
+    |This location contains code that was inlined from ArbitraryDeriving.scala:106
+106 |    val elems = summonAll[Tuple.Map[s.MirroredElemTypes, Summoner]].toList
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|
+    |This location contains code that was inlined from ArbitraryDeriving.scala:106
+248 |        given a: Arbitrary[T] = Arbitrary(sumGen(Gens.sumInstance[T, DefaultGensSummoner](s).gens))
+    |                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     ---------------------------------------------------------------------------
+
+-- [E172] Type Error: .../ArbitraryDerivingSuite.scala:22:64
+ 22 |    equalArbitraryValues(MaybeMaybeList.expectedGen[Int])(using derived.arbitrary.deriveArbitrary)
+    |                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |No given instance of type org.scalacheck.Arbitrary[
+    |  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.
+    |I found:
+    |
+    |    ArbitraryDeriving_this.anyGivenArbitrary[
+    |      io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]]
+    |
+    |But given instance anyGivenArbitrary in trait ArbitraryDeriving does not match type org.scalacheck.Arbitrary[
+    |  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].
+    |---------------------------------------------------------------------------|
+    |Inline stack trace
+    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|
+    |This location contains code that was inlined from ArbitraryDeriving.scala:94
+ 94 |    val arbs = summonAll[Tuple.Map[p.MirroredElemTypes, Arbitrary]]
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+-- Error: .../CogenDerivingSuite.scala:279:12
+279 |      summon
+    |            ^
+    |cannot reduce summonFrom with
+    | patterns :  case given a @
+    |  _:
+    |    org.scalacheck.Arbitrary[
+    |      io.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC]
+    |Inline stack trace from ArbitraryDeriving.scala:268 summonFrom {
+
+-- [E172] Type Error: .../ShrinkDerivingSuite.scala:19:6
+ 19 |      deriveShrink[RecursiveList[Int]]
+    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |Derivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found.
+    |Inline stack trace from ShrinkDeriving.scala:39
+ 39 |    def elems = summonAll[Tuple.Map[s.MirroredElemTypes, Summoner]].toList
+
+6 errors found (test-compile, modules scalacheck-derived + scalacheck-derived-extras)

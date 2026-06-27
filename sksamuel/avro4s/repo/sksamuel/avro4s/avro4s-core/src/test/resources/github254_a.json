@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "A",
+  "namespace": "com.sksamuel.avro4s.github.Github254",
+  "fields": [
+    {
+      "name": "c",
+      "type": {
+        "type": "enum",
+        "name": "C",
+        "symbols": [
+          "c1",
+          "c2"
+        ]
+      }
+    }
+  ]
+}

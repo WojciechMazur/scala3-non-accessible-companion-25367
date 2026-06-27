@@ -1,0 +1,26 @@
+diff --git a/build.sbt b/build.sbt
+index f4f845a..b80728a 100644
+--- a/build.sbt
++++ b/build.sbt
+@@ -42,3 +42,9 @@ lazy val enumeratum = project
+ lazy val refined = project
+   .in(file("modules/refined/"))
+   .dependsOn(core)
++
++commands ++= CommunityBuildPlugin.commands
++
++Global / resolvers += "The Scala Nightly Repository".at("https://repo.scala-lang.org/artifactory/maven-nightlies/")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn
+diff --git a/project/plugins.sbt b/project/plugins.sbt
+index 1c3de9d..7e331a3 100644
+--- a/project/plugins.sbt
++++ b/project/plugins.sbt
+@@ -2,3 +2,7 @@ addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.6.0")
+ addSbtPlugin("org.typelevel" % "sbt-typelevel" % "0.8.5")
+ addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.14.6")
+ addSbtPlugin("org.wartremover" % "sbt-wartremover" % "3.5.6")
++
++addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.14.2")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn

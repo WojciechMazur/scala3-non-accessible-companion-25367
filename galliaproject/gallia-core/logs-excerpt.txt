@@ -1,0 +1,8 @@
+[E007] Type Mismatch Error: TestDataO.scala:11:24
+Found:    (String, Int)
+Required: gallia.domain.KVE
+
+[E172] Type Error: JsonTest1.scala:37:40
+No given instance of type gallia.WTT[BigInt] was found for a context parameter of method transform in trait HeadCommonTransforms
+
+Trigger: bobj(g -> 1) in galliatesting tests; WTT givens from gallia-core no longer resolve on nightly.

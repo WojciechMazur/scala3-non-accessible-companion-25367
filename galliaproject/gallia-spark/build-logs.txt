@@ -1,0 +1,564 @@
+##################################
+Clonning https://github.com/galliaproject/gallia-spark.git into /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark using revision v0.6.1
+##################################
+warning: refs/tags/v0.6.1 cf962e7da87b06e6fcfc179823890c1d7f08ad61 is not a commit!
+Note: switching to '593174c0c54fc356dbe6c05994a6aa493eaee7b7'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Would override fixed Scala version: 3.3.1
+----
+Preparing build for 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Scala binary version found: 3.10
+Implicitly using source version 3.10
+Scala binary version found: 3.10
+Implicitly using source version 3.10
+Would try to apply common scalacOption (best-effort, sbt/mill only):
+Append: ,REQUIRE:-source:3.10
+Remove: ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+
+Try apply source patch:
+Path:        project/GalliaCommonSettings.scala
+Pattern:     val scala3   = "3.3.1"
+Replacement: val scala3 = "3.10.0-RC1-bin-20260626-20f6657-NIGHTLY"
+Successfully applied pattern 'val scala3   = "3.3.1"' in project/GalliaCommonSettings.scala
+----
+Starting build for 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Execute tests: true
+sbt project found at /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark
+Sbt version 1.9.0 is not supported, minimal supported version is 1.11.5
+Enforcing usage of sbt in version 1.11.5
+No prepare script found for project galliaproject/gallia-spark
+##################################
+Scala version: 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Targets: io.github.galliaproject%gallia-spark
+Project projectConfig: {"projects":{"exclude":[],"overrides":{}},"java":{},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[{"path":"project/GalliaCommonSettings.scala","pattern":"val scala3 = \"3.3.1\"","replaceWith":"val scala3 = \"<SCALA_VERSION>\""}]}
+##################################
+Using extra scalacOptions: ,REQUIRE:-source:3.10
+Filtering out scalacOptions: ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[sbt_options] declare -a sbt_options='()'
+[process_args] java_version = '25'
+[copyRt] java9_rt = '/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25/rt.jar'
+# Executing command line:
+java
+-Dfile.encoding=UTF-8
+-Dcommunitybuild.scala=3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+-Dcommunitybuild.project.dependencies.add=
+-Xmx7G
+-Xms4G
+-Xss8M
+-Dsbt.script=/Users/wmazur/.sdkman/candidates/sbt/current/bin/sbt
+--sun-misc-unsafe-memory-access=allow
+--enable-native-access=ALL-UNNAMED
+-Dscala.ext.dirs=/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25
+-jar
+/Users/wmazur/.sdkman/candidates/sbt/1.11.7/bin/sbt-launch.jar
+"setCrossScalaVersions 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY"
+"++3.10.0-RC1-bin-20260626-20f6657-NIGHTLY -v"
+"mapScalacOptions ",REQUIRE:-source:3.10,-Wconf:msg=can be rewritten automatically under:s" ",-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e""
+clearCredentials
+"excludeLibraryDependency com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}"
+"removeScalacOptionsStartingWith -P:wartremover"
+moduleMappings
+"runBuild 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY """{"projects":{"exclude":[],"overrides":{}},"java":{},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[{"path":"project/GalliaCommonSettings.scala","pattern":"val scala3   = \"3.3.1\"","replaceWith":"val scala3 = \"<SCALA_VERSION>\""}]}""" io.github.galliaproject%gallia-spark"
+
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.11.5 (Eclipse Adoptium Java 25)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project gallia-spark-build from akka.sbt, plugins.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/project[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 8 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/project/target/scala-2.12/sbt-1.0/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to gallia-spark (in build file:/Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/)[0m
+Execute setCrossScalaVersions: 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+OpenCB::Changing crossVersion 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in root/crossScalaVersions
+[0m[[0m[0minfo[0m] [0m[0mset current project to gallia-spark (in build file:/Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/)[0m
+[0m[[0m[0minfo[0m] [0m[0mSetting Scala version to 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY on 1 projects.[0m
+[0m[[0m[0minfo[0m] [0m[0mSwitching Scala version on:[0m
+[0m[[0m[0minfo[0m] [0m[0m  * root (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY, 2.13.12, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0mExcluding projects:[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to gallia-spark (in build file:/Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/)[0m
+Execute mapScalacOptions: ,REQUIRE:-source:3.10,-Wconf:msg=can be rewritten automatically under:s ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to gallia-spark (in build file:/Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/)[0m
+Execute clearCredentials: 
+[0m[[0m[0minfo[0m] [0m[0mset current project to gallia-spark (in build file:/Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/)[0m
+Execute excludeLibraryDependency: com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+OpenCB::Failed to reapply settings in excludeLibraryDependency: Reference to undefined setting: 
+
+  Global / allExcludeDependencies from Global / allExcludeDependencies (CommunityBuildPluginShared.scala:286)
+     Did you mean allExcludeDependencies ?
+ , retry without global scopes
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to gallia-spark (in build file:/Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/)[0m
+Execute removeScalacOptionsStartingWith: -P:wartremover
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to gallia-spark (in build file:/Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jun 27, 2026, 7:43:07 PM[0m
+Build config: {"projects":{"exclude":[],"overrides":{}},"java":{},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[{"path":"project/GalliaCommonSettings.scala","pattern":"val scala3   = \"3.3.1\"","replaceWith":"val scala3 = \"<SCALA_VERSION>\""}]}
+Parsed config: Success(ProjectBuildConfig(ProjectsConfig(List(),Map()),Full,List()))
+Starting build...
+Projects: Set(root)
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/,root) (gallia-spark)... [0/1]
+OpenCB::Exclude Scala3 specific scalacOption `REQUIRE:-source:3.10` in Scala 2.12.20 module Global
+OpenCB::Filter out '-feature', matches setting pattern '^-?\Q-feature\E'
+OpenCB::Filter out '-deprecation', matches setting pattern '^-?\Q-deprecation\E'
+Compile scalacOptions: -encoding, UTF-8, -unchecked, -language:implicitConversions, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -no-indent, -Wvalue-discard, -Wconf:msg=can be rewritten automatically under:s, -source:3.10
+[0m[[0m[0minfo[0m] [0m[0mcompiling 14 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/../bin/spark/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E175] Potential Issue Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/aptus/spark/SparkDriver.scala:34:28 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m34 |[0m        sys.addShutdownHook {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m        ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mdiscarded non-Unit value of type scala.sys.ShutdownHookThread. Add `: Unit` to discard silently.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m35 |[0m          [34m// TODO: or as "whatever is in cache?"[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m36 |[0m          [34m//println("stopping spark-context")[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m37 |[0m          sc.stop() } }[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E100] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamer.scala:36:38 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m36 |[0m  [33moverride[0m [33mdef[0m isEmpty: [33mBoolean[0m = rdd.isEmpty[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                  ^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                          [33mmethod[0m [32misEmpty[0m must be called with () argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E100] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamer.scala:54:48 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m54 |[0m  [33moverride[0m [33mdef[0m distinct: [33mStreamer[0m[A] = _alter(_.distinct)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                              ^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                         [33mmethod[0m [32mdistinct[0m must be called with () argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E100] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamer.scala:66:54 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m66 |[0m    [33mthis[0m.asInstanceOf[[32mRddStreamer[0m[([32mK[0m, [32mV[0m)]]._alter { _.groupByKey.mapValues(_.toList) } }[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                                    ^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                       [33mmethod[0m [32mgroupByKey[0m must be called with () argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E229] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerUtils.scala:37:6 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m37 |[0m      [33mprivate[0m [33mdef[0m postCoGroup[K: [33mClassTag[0m, V: [33mClassTag[0m](joinType: [33mJoinType[0m)(coGrouped: RDD[(K, ([33mIterable[0m[V], [33mIterable[0m[V]))]): RDD[(K, ([33mIterable[0m[V], [33mIterable[0m[V]))] = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m      ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m      Line is indented too far to the right, or a '{' is missing before:[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m      left.cogroup(right).pype(postCoGroup(joinType))[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/spark/SparkRddIn.scala:9:12 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m9 |[0m  [33mdef[0m [36mrdd[0m  ([36msc[0m: [32mSparkContext[0m, [36mschema[0m: [32mCls[0m, [36mrdd[0m: [32mRDD[0m[[32mObj[0m]): [32mHeadS[0m = [33mRddInputObjs[0m (schema, rdd)             .pipe(heads.[33mHead[0m.inputZ)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m  |[0m            ^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m  |[0m            unused explicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala:11:43 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m11 |[0m  [33mdef[0m [36minnerHashJoinWithLeftBias[0m[[36mK[0m: [32mClassTag[0m, [36mV[0m: [32mClassTag[0m]([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                           ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                           unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala:11:56 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m11 |[0m  [33mdef[0m [36minnerHashJoinWithLeftBias[0m[[36mK[0m: [32mClassTag[0m, [36mV[0m: [32mClassTag[0m]([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                                        ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                               unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala:30:30 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m30 |[0m  [33mdef[0m [36mleftHashJoin[0m[[36mK[0m: [32mClassTag[0m, [36mV[0m: [32mClassTag[0m]([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                              ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                              unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala:30:43 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m30 |[0m  [33mdef[0m [36mleftHashJoin[0m[[36mK[0m: [32mClassTag[0m, [36mV[0m: [32mClassTag[0m]([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                           ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                           unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala:49:31 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m49 |[0m  [33mdef[0m [36mrightHashJoin[0m[[36mK[0m: [32mClassTag[0m, [36mV[0m: [32mClassTag[0m]([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                               ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                               unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala:49:44 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m49 |[0m  [33mdef[0m [36mrightHashJoin[0m[[36mK[0m: [32mClassTag[0m, [36mV[0m: [32mClassTag[0m]([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                            ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                            unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerUtils.scala:37:41 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m37 |[0m      [33mprivate[0m [33mdef[0m postCoGroup[K: [33mClassTag[0m, V: [33mClassTag[0m](joinType: [33mJoinType[0m)(coGrouped: RDD[(K, ([33mIterable[0m[V], [33mIterable[0m[V]))]): RDD[(K, ([33mIterable[0m[V], [33mIterable[0m[V]))] = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                         ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                         unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/main/scala/gallia/streamer/RddStreamerUtils.scala:37:54 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m37 |[0m      [33mprivate[0m [33mdef[0m postCoGroup[K: [33mClassTag[0m, V: [33mClassTag[0m](joinType: [33mJoinType[0m)(coGrouped: RDD[(K, ([33mIterable[0m[V], [33mIterable[0m[V]))]): RDD[(K, ([33mIterable[0m[V], [33mIterable[0m[V]))] = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                                      ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                               unused implicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere was 1 deprecation warning; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0m15 warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/../bin/spark/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E175] Potential Issue Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/NonGalliaSparkTest.scala:36:61 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m36 |[0m    [32m"/tmp/spark_test.csv/part-00000"[0m.readFileLines().ensuring(_ == [33mList[0m([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m    ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mdiscarded non-Unit value of type List[aptus.Line]. Add `: Unit` to discard silently.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m37 |[0m      [32m"FOO,BAZ"[0m,[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m38 |[0m...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m40 |[0m      [32m""[0m)) }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkCsvTest.scala:24:15 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m24 |[0m          bobj([32m"foo"[0m -> [32m"BAR1"[0m, [32m"baz"[0m -> [32m"1"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m               ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkCsvTest.scala:24:32 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m24 |[0m          bobj([32m"foo"[0m -> [32m"BAR1"[0m, [32m"baz"[0m -> [32m"1"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkCsvTest.scala:25:15 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m          bobj([32m"foo"[0m -> [32m"BAR2"[0m, [32m"baz"[0m -> [32m"2"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m               ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkCsvTest.scala:25:32 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m          bobj([32m"foo"[0m -> [32m"BAR2"[0m, [32m"baz"[0m -> [32m"2"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkJsonLinesTest.scala:25:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m            bobj([32m"foo"[0m -> [32m"BAR1"[0m, [32m"baz"[0m -> [32m1[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkJsonLinesTest.scala:25:34 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m            bobj([32m"foo"[0m -> [32m"BAR1"[0m, [32m"baz"[0m -> [32m1[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                  ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Found:    (String, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkJsonLinesTest.scala:26:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m            bobj([32m"foo"[0m -> [32m"BAR2"[0m, [32m"baz"[0m -> [32m2[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkJsonLinesTest.scala:26:34 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m            bobj([32m"foo"[0m -> [32m"BAR2"[0m, [32m"baz"[0m -> [32m2[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                  ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Found:    (String, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkLinesTest.scala:25:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m            bobj(_line -> [32m"FOO,BAZ"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkLinesTest.scala:26:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m            bobj(_line -> [32m"BAR1,1"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkLinesTest.scala:27:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m            bobj(_line -> [32m"BAR2,2"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkRddDirectlyTest.scala:27:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m            bobj(_line -> [32m"FOO,BAZ"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkRddDirectlyTest.scala:28:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m            bobj(_line -> [32m"BAR1,1"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkRddDirectlyTest.scala:29:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m29 |[0m            bobj(_line -> [32m"BAR2,2"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkRddDirectlyTest.scala:30:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m            bobj(_line -> [32m""[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m15 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/../bin/spark/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E175] Potential Issue Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/NonGalliaSparkTest.scala:36:61 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m36 |[0m    [32m"/tmp/spark_test.csv/part-00000"[0m.readFileLines().ensuring(_ == [33mList[0m([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m    ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mdiscarded non-Unit value of type List[aptus.Line]. Add `: Unit` to discard silently.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m37 |[0m      [32m"FOO,BAZ"[0m,[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m38 |[0m...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m40 |[0m      [32m""[0m)) }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkCsvTest.scala:24:15 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m24 |[0m          bobj([32m"foo"[0m -> [32m"BAR1"[0m, [32m"baz"[0m -> [32m"1"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m               ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkCsvTest.scala:24:32 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m24 |[0m          bobj([32m"foo"[0m -> [32m"BAR1"[0m, [32m"baz"[0m -> [32m"1"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkCsvTest.scala:25:15 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m          bobj([32m"foo"[0m -> [32m"BAR2"[0m, [32m"baz"[0m -> [32m"2"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m               ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkCsvTest.scala:25:32 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m          bobj([32m"foo"[0m -> [32m"BAR2"[0m, [32m"baz"[0m -> [32m"2"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkJsonLinesTest.scala:25:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m            bobj([32m"foo"[0m -> [32m"BAR1"[0m, [32m"baz"[0m -> [32m1[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkJsonLinesTest.scala:25:34 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m            bobj([32m"foo"[0m -> [32m"BAR1"[0m, [32m"baz"[0m -> [32m1[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                  ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Found:    (String, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkJsonLinesTest.scala:26:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m            bobj([32m"foo"[0m -> [32m"BAR2"[0m, [32m"baz"[0m -> [32m2[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkJsonLinesTest.scala:26:34 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m            bobj([32m"foo"[0m -> [32m"BAR2"[0m, [32m"baz"[0m -> [32m2[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                  ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Found:    (String, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkLinesTest.scala:25:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m            bobj(_line -> [32m"FOO,BAZ"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkLinesTest.scala:26:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m            bobj(_line -> [32m"BAR1,1"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkLinesTest.scala:27:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m            bobj(_line -> [32m"BAR2,2"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkRddDirectlyTest.scala:27:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m            bobj(_line -> [32m"FOO,BAZ"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkRddDirectlyTest.scala:28:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m            bobj(_line -> [32m"BAR1,1"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkRddDirectlyTest.scala:29:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m29 |[0m            bobj(_line -> [32m"BAR2,2"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkRddDirectlyTest.scala:30:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m            bobj(_line -> [32m""[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m15 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/../bin/spark/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E175] Potential Issue Warning: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/NonGalliaSparkTest.scala:36:61 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m36 |[0m    [32m"/tmp/spark_test.csv/part-00000"[0m.readFileLines().ensuring(_ == [33mList[0m([0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m    ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mdiscarded non-Unit value of type List[aptus.Line]. Add `: Unit` to discard silently.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m37 |[0m      [32m"FOO,BAZ"[0m,[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m38 |[0m...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m40 |[0m      [32m""[0m)) }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkCsvTest.scala:24:15 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m24 |[0m          bobj([32m"foo"[0m -> [32m"BAR1"[0m, [32m"baz"[0m -> [32m"1"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m               ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkCsvTest.scala:24:32 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m24 |[0m          bobj([32m"foo"[0m -> [32m"BAR1"[0m, [32m"baz"[0m -> [32m"1"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkCsvTest.scala:25:15 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m          bobj([32m"foo"[0m -> [32m"BAR2"[0m, [32m"baz"[0m -> [32m"2"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m               ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkCsvTest.scala:25:32 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m          bobj([32m"foo"[0m -> [32m"BAR2"[0m, [32m"baz"[0m -> [32m"2"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkJsonLinesTest.scala:25:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m            bobj([32m"foo"[0m -> [32m"BAR1"[0m, [32m"baz"[0m -> [32m1[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkJsonLinesTest.scala:25:34 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m            bobj([32m"foo"[0m -> [32m"BAR1"[0m, [32m"baz"[0m -> [32m1[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                  ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Found:    (String, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkJsonLinesTest.scala:26:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m            bobj([32m"foo"[0m -> [32m"BAR2"[0m, [32m"baz"[0m -> [32m2[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (String, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkJsonLinesTest.scala:26:34 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m            bobj([32m"foo"[0m -> [32m"BAR2"[0m, [32m"baz"[0m -> [32m2[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                  ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Found:    (String, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkLinesTest.scala:25:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m            bobj(_line -> [32m"FOO,BAZ"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkLinesTest.scala:26:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m            bobj(_line -> [32m"BAR1,1"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkLinesTest.scala:27:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m            bobj(_line -> [32m"BAR2,2"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkRddDirectlyTest.scala:27:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m            bobj(_line -> [32m"FOO,BAZ"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkRddDirectlyTest.scala:28:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m            bobj(_line -> [32m"BAR1,1"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkRddDirectlyTest.scala:29:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m29 |[0m            bobj(_line -> [32m"BAR2,2"[0m),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/gallia-spark/src/test/scala/galliatesting/spark/SparkRddDirectlyTest.scala:30:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m            bobj(_line -> [32m""[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Found:    (Symbol, String)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 Required: gallia.domain.KVE[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m15 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mcompileIncremental[0m) Compilation failed[0m
+
+************************
+Build summary:
+[{
+ "module": "gallia-spark",
+ "compile": {"status": "ok", "tookMs": 6906, "warnings": 14, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 3949, "warnings": 1, "errors": 15, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 52},
+ "metadata": {
+  "crossScalaVersions": ["2.13.12", "2.12.18", "3.3.1"]
+}
+}]
+************************
+[0m[[0m[31merror[0m] [0m[0mScala3CommunityBuild$ProjectBuildFailureException: 1 module(s) finished with failures: gallia-spark[0m
+[0m[[0m[31merror[0m] [0m[0m(Global / [31mrunBuild[0m) Scala3CommunityBuild$ProjectBuildFailureException: 1 module(s) finished with failures: gallia-spark[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 19 s, completed Jun 27, 2026, 7:43:25 PM[0m
+[0JBuild failed, not retrying.

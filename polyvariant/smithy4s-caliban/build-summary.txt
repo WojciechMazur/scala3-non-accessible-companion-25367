@@ -1,0 +1,11 @@
+[{
+ "module": "smithy4s-caliban",
+ "compile": {"status": "ok", "tookMs": 4564, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 5798, "warnings": 1, "errors": 2, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 3},
+ "metadata": {
+  "crossScalaVersions": ["2.13.10", "3.3.0"]
+}
+}]

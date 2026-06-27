@@ -1,0 +1,191 @@
+[{
+ "module": "extras-circe",
+ "compile": {"status": "ok", "tookMs": 2274, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 2281, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-concurrent",
+ "compile": {"status": "ok", "tookMs": 158, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 52, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-core",
+ "compile": {"status": "ok", "tookMs": 232, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 291, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-fs2-v2-text",
+ "compile": {"status": "ok", "tookMs": 143, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 438, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-render",
+ "compile": {"status": "ok", "tookMs": 261, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 731, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-string",
+ "compile": {"status": "ok", "tookMs": 329, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 1983, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-concurrent-testing",
+ "compile": {"status": "ok", "tookMs": 277, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 228, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-doobie-tools-ce2",
+ "compile": {"status": "ok", "tookMs": 280, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 610, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-reflects",
+ "compile": {"status": "ok", "tookMs": 38, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 65, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-scala-io",
+ "compile": {"status": "ok", "tookMs": 437, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 695, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-testing-tools",
+ "compile": {"status": "ok", "tookMs": 174, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 213, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-type-info",
+ "compile": {"status": "ok", "tookMs": 265, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 382, "warnings": 1, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-cats",
+ "compile": {"status": "ok", "tookMs": 247, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 1013, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-testing-tools-cats",
+ "compile": {"status": "ok", "tookMs": 280, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 389, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-testing-tools-effectie",
+ "compile": {"status": "ok", "tookMs": 277, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 401, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-hedgehog-circe",
+ "compile": {"status": "ok", "tookMs": 276, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 422, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-hedgehog-ce3",
+ "compile": {"status": "ok", "tookMs": 363, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 695, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-doobie-tools-ce3",
+ "compile": {"status": "ok", "tookMs": 296, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 481, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-fs2-v3-text",
+ "compile": {"status": "ok", "tookMs": 126, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 396, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+}]

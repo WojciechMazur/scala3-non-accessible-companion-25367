@@ -1,0 +1,31 @@
+[{
+ "module": "avro4s-core",
+ "compile": {"status": "ok", "tookMs": 13445, "warnings": 1, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 60235, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "test": {"status": "ok", "tookMs": 2817, "passed": 414, "failed": 0, "ignored": 0, "skipped": 0, "total": 414, "byFramework": [{"framework": "unknown", "stats": {"passed": 414, "failed": 0, "ignored": 0, "skipped": 0, "total": 414}}]},
+ "publish": {"status": "ok", "tookMs": 10},
+ "metadata": {
+  "crossScalaVersions": ["2.12.21"]
+}
+},{
+ "module": "avro4s-cats",
+ "compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 1558, "warnings": 0, "errors": 1, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "skipped", "tookMs": 0, "warnings": 0, "errors": 0},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "skipped", "tookMs": 0},
+ "metadata": {
+  "crossScalaVersions": ["2.12.21"]
+}
+},{
+ "module": "avro4s-kafka",
+ "compile": {"status": "ok", "tookMs": 289, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 831, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "test": {"status": "ok", "tookMs": 348, "passed": 6, "failed": 0, "ignored": 0, "skipped": 0, "total": 6, "byFramework": [{"framework": "unknown", "stats": {"passed": 6, "failed": 0, "ignored": 0, "skipped": 0, "total": 6}}]},
+ "publish": {"status": "ok", "tookMs": 19},
+ "metadata": {
+  "crossScalaVersions": ["2.12.21"]
+}
+}]

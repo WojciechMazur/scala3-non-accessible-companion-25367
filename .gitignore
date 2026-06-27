@@ -1,0 +1,7 @@
+.nodep-out/
+.nodep-out-*/
+.nodep-lib.jar
+.nodep-lib-*.jar
+initlast-lib.jar
+.scala-build/
+.bsp/

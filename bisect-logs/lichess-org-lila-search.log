@@ -1,0 +1,739 @@
+Bisecting with validation script: /var/folders/w5/241yy4nj4t19s0t4vnz7bshm0000gq/T/scala-bisect-validator12618654222905667018
+#####################################
+#!/usr/bin/env bash
+set -euo pipefail
+source "/Users/wmazur/projects/scala/community-build3/repro/bisect-scripts/_common.sh"
+compile_jar_workflow "/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search" "$1"
+
+
+#####################################
+
+Verifying the first release: 3.8.3-RC1-bin-20260121-bc94528-NIGHTLY
+Testing 3.8.3-RC1-bin-20260121-bc94528-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/wmazur/Library/Caches/Coursier/v1/https/repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala-library/3.8.3-RC1-bin-20260121-bc94528-NIGHTLY/scala-library-3.8.3-RC1-bin-20260121-bc94528-NIGHTLY.jar)
+WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Test result: 3.8.3-RC1-bin-20260121-bc94528-NIGHTLY is a good release
+
+Verifying the last release: 3.10.0-RC1-bin-20260627-e449094-NIGHTLY
+Testing 3.10.0-RC1-bin-20260627-e449094-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/wmazur/Library/Caches/Coursier/v1/https/repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala-library/3.10.0-RC1-bin-20260627-e449094-NIGHTLY/scala-library-3.10.0-RC1-bin-20260627-e449094-NIGHTLY.jar)
+WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/test-nodep.scala:13:62 [0m[0m
+[31m13 |[0m        [33mgiven[0m [32mCsvRowEncoder[0m[[32mRow[0m, [32mString[0m] = deriveCsvRowEncoder
+[31m[31m   |[0m                                                              ^[0m
+[31m   |[0mNo given instance of type fs2.data.csv.generic.internal.Names[example.game.csv².Row] was found for parameter naming of [33mmethod[0m [32mderiveCsvRowEncoder[0m in [33mobject[0m [32msemiauto[0m
+[31m   |[0m
+[31m   |[0mwhere:    csv  is a package in [33mpackage[0m [32mfs2.data[0m
+[31m   |[0m          csv² is a package in [33mpackage[0m [32mexample.game[0m
+[31m   |[0m
+[31m   |[0m
+[31m   |[0mThe following import might fix the problem:
+[31m   |[0m
+[31m   |[0m  import fs2.data.csv.generic.internal.Names.given_Names_T
+[31m   |[0m
+1 error found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Compilation failed
+Test result: 3.10.0-RC1-bin-20260627-e449094-NIGHTLY is a bad release
+
+Testing 3.8.5-RC1-bin-20260403-ecf8e5c-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/wmazur/Library/Caches/Coursier/v1/https/repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala-library/3.8.5-RC1-bin-20260403-ecf8e5c-NIGHTLY/scala-library-3.8.5-RC1-bin-20260403-ecf8e5c-NIGHTLY.jar)
+WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Test result: 3.8.5-RC1-bin-20260403-ecf8e5c-NIGHTLY is a good release
+
+Testing 3.9.0-RC1-bin-20260511-c3e3e42-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/wmazur/Library/Caches/Coursier/v1/https/repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala-library/3.9.0-RC1-bin-20260511-c3e3e42-NIGHTLY/scala-library-3.9.0-RC1-bin-20260511-c3e3e42-NIGHTLY.jar)
+WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Test result: 3.9.0-RC1-bin-20260511-c3e3e42-NIGHTLY is a good release
+
+Testing 3.10.0-RC1-bin-20260531-c26a453-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/wmazur/Library/Caches/Coursier/v1/https/repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala-library/3.10.0-RC1-bin-20260531-c26a453-NIGHTLY/scala-library-3.10.0-RC1-bin-20260531-c26a453-NIGHTLY.jar)
+WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Test result: 3.10.0-RC1-bin-20260531-c26a453-NIGHTLY is a good release
+
+Testing 3.10.0-RC1-bin-20260617-6ad8738-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/wmazur/Library/Caches/Coursier/v1/https/repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala-library/3.10.0-RC1-bin-20260617-6ad8738-NIGHTLY/scala-library-3.10.0-RC1-bin-20260617-6ad8738-NIGHTLY.jar)
+WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/test-nodep.scala:13:62 [0m[0m
+[31m13 |[0m        [33mgiven[0m [32mCsvRowEncoder[0m[[32mRow[0m, [32mString[0m] = deriveCsvRowEncoder
+[31m[31m   |[0m                                                              ^[0m
+[31m   |[0mNo given instance of type fs2.data.csv.generic.internal.Names[example.game.csv².Row] was found for parameter naming of [33mmethod[0m [32mderiveCsvRowEncoder[0m in [33mobject[0m [32msemiauto[0m
+[31m   |[0m
+[31m   |[0mwhere:    csv  is a package in [33mpackage[0m [32mfs2.data[0m
+[31m   |[0m          csv² is a package in [33mpackage[0m [32mexample.game[0m
+[31m   |[0m
+[31m   |[0m
+[31m   |[0mThe following import might fix the problem:
+[31m   |[0m
+[31m   |[0m  import fs2.data.csv.generic.internal.Names.given_Names_T
+[31m   |[0m
+1 error found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Compilation failed
+Test result: 3.10.0-RC1-bin-20260617-6ad8738-NIGHTLY is a bad release
+
+Testing 3.10.0-RC1-bin-20260607-dec42ae-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/wmazur/Library/Caches/Coursier/v1/https/repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala-library/3.10.0-RC1-bin-20260607-dec42ae-NIGHTLY/scala-library-3.10.0-RC1-bin-20260607-dec42ae-NIGHTLY.jar)
+WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Test result: 3.10.0-RC1-bin-20260607-dec42ae-NIGHTLY is a good release
+
+Testing 3.10.0-RC1-bin-20260609-b34a019-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/wmazur/Library/Caches/Coursier/v1/https/repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala-library/3.10.0-RC1-bin-20260609-b34a019-NIGHTLY/scala-library-3.10.0-RC1-bin-20260609-b34a019-NIGHTLY.jar)
+WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Test result: 3.10.0-RC1-bin-20260609-b34a019-NIGHTLY is a good release
+
+Testing 3.10.0-RC1-bin-20260616-4733954-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/wmazur/Library/Caches/Coursier/v1/https/repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala-library/3.10.0-RC1-bin-20260616-4733954-NIGHTLY/scala-library-3.10.0-RC1-bin-20260616-4733954-NIGHTLY.jar)
+WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/test-nodep.scala:13:62 [0m[0m
+[31m13 |[0m        [33mgiven[0m [32mCsvRowEncoder[0m[[32mRow[0m, [32mString[0m] = deriveCsvRowEncoder
+[31m[31m   |[0m                                                              ^[0m
+[31m   |[0mNo given instance of type fs2.data.csv.generic.internal.Names[example.game.csv².Row] was found for parameter naming of [33mmethod[0m [32mderiveCsvRowEncoder[0m in [33mobject[0m [32msemiauto[0m
+[31m   |[0m
+[31m   |[0mwhere:    csv  is a package in [33mpackage[0m [32mfs2.data[0m
+[31m   |[0m          csv² is a package in [33mpackage[0m [32mexample.game[0m
+[31m   |[0m
+[31m   |[0m
+[31m   |[0mThe following import might fix the problem:
+[31m   |[0m
+[31m   |[0m  import fs2.data.csv.generic.internal.Names.given_Names_T
+[31m   |[0m
+1 error found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Compilation failed
+Test result: 3.10.0-RC1-bin-20260616-4733954-NIGHTLY is a bad release
+
+Last good release: 3.10.0-RC1-bin-20260609-b34a019-NIGHTLY
+First bad release: 3.10.0-RC1-bin-20260616-4733954-NIGHTLY
+
+Finished bisecting releases
+
+Starting bisecting commits b34a019..4733954
+
+status: waiting for both good and bad commits
+status: waiting for good commit(s), bad commit known
+Bisecting: 21 revisions left to test after this (roughly 5 steps)
+[0c4b5709a47cd42cbff318d1eac6d09a945360bb] Math (5): filled in @param, @tparam, and @return tags that were missed last time (#26123)
+running 'sh' '-c' '
+scalaVersion=$(sbt "print scala3-compiler/version" | tail -n1)
+rm -rf out
+export JAVA_HOME=/Users/wmazur/Library/Caches/Coursier/arc/https/cdn.azul.com/zulu/bin/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64.tar.gz/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64/zulu-17.jdk/Contents/Home
+sbt_build_log=$(mktemp)
+echo '\''Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3`/Compile/resourceGenerators).value; scala3/publishLocal"'\''
+if sbt '\''clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3`/Compile/resourceGenerators).value; scala3/publishLocal'\'' >"$sbt_build_log" 2>&1; then
+  rm -f "$sbt_build_log"
+  /var/folders/w5/241yy4nj4t19s0t4vnz7bshm0000gq/T/scala-bisect-validator12618654222905667018 "$scalaVersion"
+else
+  echo "Failed to build compiler, skip $scalaVersion"
+  cat "$sbt_build_log"
+  rm -f "$sbt_build_log"
+  git bisect skip
+fi
+    '
+
+Starting bisecting commits between releases
+Bisecting with validation script: /var/folders/w5/241yy4nj4t19s0t4vnz7bshm0000gq/T/scala-bisect-validator5836080703821776422
+#####################################
+#!/usr/bin/env bash
+set -euo pipefail
+source "/Users/wmazur/projects/scala/community-build3/repro/bisect-scripts/_common.sh"
+compile_jar_workflow "/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search" "$1"
+
+
+#####################################
+
+Verifying the first release: 3.10.0-RC1-bin-20260609-b34a019-NIGHTLY
+Testing 3.10.0-RC1-bin-20260609-b34a019-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/wmazur/Library/Caches/Coursier/v1/https/repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala-library/3.10.0-RC1-bin-20260609-b34a019-NIGHTLY/scala-library-3.10.0-RC1-bin-20260609-b34a019-NIGHTLY.jar)
+WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Test result: 3.10.0-RC1-bin-20260609-b34a019-NIGHTLY is a good release
+
+Verifying the last release: 3.10.0-RC1-bin-20260616-4733954-NIGHTLY
+Testing 3.10.0-RC1-bin-20260616-4733954-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/wmazur/Library/Caches/Coursier/v1/https/repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala-library/3.10.0-RC1-bin-20260616-4733954-NIGHTLY/scala-library-3.10.0-RC1-bin-20260616-4733954-NIGHTLY.jar)
+WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/test-nodep.scala:13:62 [0m[0m
+[31m13 |[0m        [33mgiven[0m [32mCsvRowEncoder[0m[[32mRow[0m, [32mString[0m] = deriveCsvRowEncoder
+[31m[31m   |[0m                                                              ^[0m
+[31m   |[0mNo given instance of type fs2.data.csv.generic.internal.Names[example.game.csv².Row] was found for parameter naming of [33mmethod[0m [32mderiveCsvRowEncoder[0m in [33mobject[0m [32msemiauto[0m
+[31m   |[0m
+[31m   |[0mwhere:    csv  is a package in [33mpackage[0m [32mfs2.data[0m
+[31m   |[0m          csv² is a package in [33mpackage[0m [32mexample.game[0m
+[31m   |[0m
+[31m   |[0m
+[31m   |[0mThe following import might fix the problem:
+[31m   |[0m
+[31m   |[0m  import fs2.data.csv.generic.internal.Names.given_Names_T
+[31m   |[0m
+1 error found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/org/typelevel/shapeless3-deriving_3/
+Compilation failed
+Test result: 3.10.0-RC1-bin-20260616-4733954-NIGHTLY is a bad release
+
+Last good release: 3.10.0-RC1-bin-20260609-b34a019-NIGHTLY
+First bad release: 3.10.0-RC1-bin-20260616-4733954-NIGHTLY
+
+Finished bisecting releases
+
+Starting bisecting commits b34a019..4733954
+
+status: waiting for both good and bad commits
+status: waiting for good commit(s), bad commit known
+Bisecting: 21 revisions left to test after this (roughly 5 steps)
+[0c4b5709a47cd42cbff318d1eac6d09a945360bb] Math (5): filled in @param, @tparam, and @return tags that were missed last time (#26123)
+running 'sh' '-c' '
+scalaVersion=$(sbt "print scala3-compiler-bootstrapped/version" | tail -n1)
+rm -rf out
+export JAVA_HOME=/Users/wmazur/Library/Caches/Coursier/arc/https/cdn.azul.com/zulu/bin/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64.tar.gz/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64/zulu-17.jdk/Contents/Home
+sbt_build_log=$(mktemp)
+echo '\''Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal"'\''
+if sbt '\''clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal'\'' >"$sbt_build_log" 2>&1; then
+  rm -f "$sbt_build_log"
+  /var/folders/w5/241yy4nj4t19s0t4vnz7bshm0000gq/T/scala-bisect-validator5836080703821776422 "$scalaVersion"
+else
+  echo "Failed to build compiler, skip $scalaVersion"
+  cat "$sbt_build_log"
+  rm -f "$sbt_build_log"
+  git bisect skip
+fi
+    '
+Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal"
+there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+Bisecting: 11 revisions left to test after this (roughly 4 steps)
+[6b74aabc6a85bcb42d8d2c9d4bdb6134f6a47813] Fix NamedTuple scaladoc (#26319)
+running 'sh' '-c' '
+scalaVersion=$(sbt "print scala3-compiler-bootstrapped/version" | tail -n1)
+rm -rf out
+export JAVA_HOME=/Users/wmazur/Library/Caches/Coursier/arc/https/cdn.azul.com/zulu/bin/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64.tar.gz/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64/zulu-17.jdk/Contents/Home
+sbt_build_log=$(mktemp)
+echo '\''Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal"'\''
+if sbt '\''clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal'\'' >"$sbt_build_log" 2>&1; then
+  rm -f "$sbt_build_log"
+  /var/folders/w5/241yy4nj4t19s0t4vnz7bshm0000gq/T/scala-bisect-validator5836080703821776422 "$scalaVersion"
+else
+  echo "Failed to build compiler, skip $scalaVersion"
+  cat "$sbt_build_log"
+  rm -f "$sbt_build_log"
+  git bisect skip
+fi
+    '
+Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal"
+there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+Bisecting: 5 revisions left to test after this (roughly 3 steps)
+[3718b0cf7e4df79b340d7403c1d3127bbbe71279] Simplify classpath handling (#26313)
+running 'sh' '-c' '
+scalaVersion=$(sbt "print scala3-compiler-bootstrapped/version" | tail -n1)
+rm -rf out
+export JAVA_HOME=/Users/wmazur/Library/Caches/Coursier/arc/https/cdn.azul.com/zulu/bin/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64.tar.gz/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64/zulu-17.jdk/Contents/Home
+sbt_build_log=$(mktemp)
+echo '\''Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal"'\''
+if sbt '\''clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal'\'' >"$sbt_build_log" 2>&1; then
+  rm -f "$sbt_build_log"
+  /var/folders/w5/241yy4nj4t19s0t4vnz7bshm0000gq/T/scala-bisect-validator5836080703821776422 "$scalaVersion"
+else
+  echo "Failed to build compiler, skip $scalaVersion"
+  cat "$sbt_build_log"
+  rm -f "$sbt_build_log"
+  git bisect skip
+fi
+    '
+Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal"
+[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/test-nodep.scala:13:62 [0m[0m
+[31m13 |[0m        [33mgiven[0m [32mCsvRowEncoder[0m[[32mRow[0m, [32mString[0m] = deriveCsvRowEncoder
+[31m[31m   |[0m                                                              ^[0m
+[31m   |[0mNo given instance of type fs2.data.csv.generic.internal.Names[example.game.csv².Row] was found for parameter naming of [33mmethod[0m [32mderiveCsvRowEncoder[0m in [33mobject[0m [32msemiauto[0m
+[31m   |[0m
+[31m   |[0mwhere:    csv  is a package in [33mpackage[0m [32mfs2.data[0m
+[31m   |[0m          csv² is a package in [33mpackage[0m [32mexample.game[0m
+[31m   |[0m
+[31m   |[0m
+[31m   |[0mThe following import might fix the problem:
+[31m   |[0m
+[31m   |[0m  import fs2.data.csv.generic.internal.Names.given_Names_T
+[31m   |[0m
+1 error found
+Compilation failed
+Bisecting: 2 revisions left to test after this (roughly 2 steps)
+[135b0c855d0994efd86e077a5aacfd40fe8784ba]  Sys, concurrent, runtime (1): filled in @param, @tparam, and @return tags that were missed last time (#26119)
+running 'sh' '-c' '
+scalaVersion=$(sbt "print scala3-compiler-bootstrapped/version" | tail -n1)
+rm -rf out
+export JAVA_HOME=/Users/wmazur/Library/Caches/Coursier/arc/https/cdn.azul.com/zulu/bin/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64.tar.gz/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64/zulu-17.jdk/Contents/Home
+sbt_build_log=$(mktemp)
+echo '\''Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal"'\''
+if sbt '\''clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal'\'' >"$sbt_build_log" 2>&1; then
+  rm -f "$sbt_build_log"
+  /var/folders/w5/241yy4nj4t19s0t4vnz7bshm0000gq/T/scala-bisect-validator5836080703821776422 "$scalaVersion"
+else
+  echo "Failed to build compiler, skip $scalaVersion"
+  cat "$sbt_build_log"
+  rm -f "$sbt_build_log"
+  git bisect skip
+fi
+    '
+Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal"
+there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+Bisecting: 0 revisions left to test after this (roughly 1 step)
+[5321891783b8d432f0a25d9cdf0be01ed444194d] Don't infer implicits from non-accessible companion (#25367)
+running 'sh' '-c' '
+scalaVersion=$(sbt "print scala3-compiler-bootstrapped/version" | tail -n1)
+rm -rf out
+export JAVA_HOME=/Users/wmazur/Library/Caches/Coursier/arc/https/cdn.azul.com/zulu/bin/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64.tar.gz/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64/zulu-17.jdk/Contents/Home
+sbt_build_log=$(mktemp)
+echo '\''Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal"'\''
+if sbt '\''clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal'\'' >"$sbt_build_log" 2>&1; then
+  rm -f "$sbt_build_log"
+  /var/folders/w5/241yy4nj4t19s0t4vnz7bshm0000gq/T/scala-bisect-validator5836080703821776422 "$scalaVersion"
+else
+  echo "Failed to build compiler, skip $scalaVersion"
+  cat "$sbt_build_log"
+  rm -f "$sbt_build_log"
+  git bisect skip
+fi
+    '
+Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal"
+[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/test-nodep.scala:13:62 [0m[0m
+[31m13 |[0m        [33mgiven[0m [32mCsvRowEncoder[0m[[32mRow[0m, [32mString[0m] = deriveCsvRowEncoder
+[31m[31m   |[0m                                                              ^[0m
+[31m   |[0mNo given instance of type fs2.data.csv.generic.internal.Names[example.game.csv².Row] was found for parameter naming of [33mmethod[0m [32mderiveCsvRowEncoder[0m in [33mobject[0m [32msemiauto[0m
+[31m   |[0m
+[31m   |[0mwhere:    csv  is a package in [33mpackage[0m [32mfs2.data[0m
+[31m   |[0m          csv² is a package in [33mpackage[0m [32mexample.game[0m
+[31m   |[0m
+[31m   |[0m
+[31m   |[0mThe following import might fix the problem:
+[31m   |[0m
+[31m   |[0m  import fs2.data.csv.generic.internal.Names.given_Names_T
+[31m   |[0m
+1 error found
+Compilation failed
+Bisecting: 0 revisions left to test after this (roughly 0 steps)
+[1479fc468c7aebdc23956354c5c80e7a40a5d4cf] Annotation, reflect, misc (11): fill in missing @param, @tparam, and @return tags in Scaladoc comments (#25381)
+running 'sh' '-c' '
+scalaVersion=$(sbt "print scala3-compiler-bootstrapped/version" | tail -n1)
+rm -rf out
+export JAVA_HOME=/Users/wmazur/Library/Caches/Coursier/arc/https/cdn.azul.com/zulu/bin/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64.tar.gz/zulu17.64.15-ca-jdk17.0.18-macosx_aarch64/zulu-17.jdk/Contents/Home
+sbt_build_log=$(mktemp)
+echo '\''Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal"'\''
+if sbt '\''clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal'\'' >"$sbt_build_log" 2>&1; then
+  rm -f "$sbt_build_log"
+  /var/folders/w5/241yy4nj4t19s0t4vnz7bshm0000gq/T/scala-bisect-validator5836080703821776422 "$scalaVersion"
+else
+  echo "Failed to build compiler, skip $scalaVersion"
+  cat "$sbt_build_log"
+  rm -f "$sbt_build_log"
+  git bisect skip
+fi
+    '
+Running sbt publish recipe: sbt "clean; set every doc := new File("unused"); set scaladoc/Compile/resourceGenerators := (`scala3-bootstrapped`/Compile/resourceGenerators).value; scala3-bootstrapped/publishLocal"
+there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+5321891783b8d432f0a25d9cdf0be01ed444194d is the first bad commit
+commit 5321891783b8d432f0a25d9cdf0be01ed444194d
+Author: Lukas Rytz <lukas.rytz@gmail.com>
+Date:   Fri Jun 12 13:20:35 2026 +0200
+
+    Don't infer implicits from non-accessible companion (#25367)
+    
+    Implicits found in the companion object of a type should not be inferred
+    if the companion object is not accessible.
+    
+    Fixes https://github.com/scala/scala3/issues/25347
+    
+    ## How much have your relied on LLM-based tools in this contribution?
+    
+    Asked it to forward-port https://github.com/scala/scala/pull/11215, but
+    its attempt to fix it was in the wrong spot. So the fix is manual, I
+    used the unit test file it created.
+    
+    ## How was the solution tested?
+    
+    The test passes, we now get a type mismatch error instead of the
+    non-accessible implicit being inferred.
+    
+    I tried separate compilation with two `scalac` calls in sbt, but that
+    did something strange, I ran into a different problem.
+    
+    I tried `scala3-bootstrapped/publishLocal` to test it but that failed
+    too with
+    
+    ```
+    [error] -- [E038] Declaration Error: /Users/luc/code/scala/scala3/library/src/scala/collection/mutable/AnyRefMap.scala:406:15
+    [error] 406 |  override def + [V1 >: V](elem1: (K, V1), elem2: (K, V1), elems: (K, V1)*): AnyRefMap[K, V1]^{} = {
+    [error]     |               ^
+    [error]     |    method + has a different signature than the overridden declaration
+    [error]     |
+    [error]     | longer explanation available when compiling with `-explain`
+    ```
+    
+    I feel a bit out of time to look further into this right now.
+
+ .../dotty/tools/dotc/transform/AccessProxies.scala |  7 +-----
+ .../src/dotty/tools/dotc/typer/Implicits.scala     | 20 ++--------------
+ tests/neg/i22593a.scala                            | 17 ++++++++++++++
+ tests/neg/i22593b/Main.scala                       | 27 ++++++++++++++++++++++
+ tests/neg/i22593b/Test.scala                       |  4 ++++
+ tests/{warn => neg}/i25347.scala                   |  6 ++---
+ tests/neg/i25347b/_1.scala                         | 13 +++++++++++
+ tests/neg/i25347b/_2.scala                         |  3 +++
+ tests/pos/i22593a.scala                            |  2 +-
+ tests/pos/i22593b/Main.scala                       |  2 +-
+ tests/pos/i25347.scala                             |  9 ++++++++
+ tests/warn/i25347.check                            |  8 -------
+ 12 files changed, 80 insertions(+), 38 deletions(-)
+ create mode 100644 tests/neg/i22593a.scala
+ create mode 100644 tests/neg/i22593b/Main.scala
+ create mode 100644 tests/neg/i22593b/Test.scala
+ rename tests/{warn => neg}/i25347.scala (89%)
+ create mode 100644 tests/neg/i25347b/_1.scala
+ create mode 100644 tests/neg/i25347b/_2.scala
+ create mode 100644 tests/pos/i25347.scala
+ delete mode 100644 tests/warn/i25347.check
+bisect found first bad commit
+Previous HEAD position was 1479fc468c Annotation, reflect, misc (11): fill in missing @param, @tparam, and @return tags in Scaladoc comments (#25381)
+Switched to branch 'main'
+M	community-build/community-projects/cats-effect-3
+D	out/.keep
+M	project/scripts/bisect.scala
+Your branch is up to date with 'origin/main'.

@@ -1,0 +1,3 @@
+package cats
+
+object implicits

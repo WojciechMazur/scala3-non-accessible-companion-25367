@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "ClassWithDefaultDouble",
+  "namespace": "com.sksamuel.avro4s.schema",
+  "fields": [
+    {
+      "name": "d",
+      "type": "double",
+      "default" : 123.456
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+[E007] Type Mismatch Error: SparkCsvTest.scala:24:15
+Found:    (String, String)
+Required: gallia.domain.KVE
+
+[E007] Type Mismatch Error: SparkLinesTest.scala:25:17
+Found:    (Symbol, String)
+Required: gallia.domain.KVE
+
+Trigger: bobj("foo" -> "BAR1", "baz" -> "1") / bobj(_line -> "FOO,BAZ") in galliatesting.spark tests.

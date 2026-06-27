@@ -1,0 +1,41 @@
+[{
+ "module": "morphling",
+ "compile": {"status": "ok", "tookMs": 5467, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 1290, "warnings": 1, "errors": 26, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["2.13.14"]
+}
+},{
+ "module": "morphling-scalacheck",
+ "compile": {"status": "ok", "tookMs": 998, "warnings": 2, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 580, "warnings": 1, "errors": 26, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["2.13.14"]
+}
+},{
+ "module": "morphling-tapir",
+ "compile": {"status": "ok", "tookMs": 905, "warnings": 2, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 524, "warnings": 1, "errors": 26, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["2.13.14"]
+}
+},{
+ "module": "morphling-reactivemongo",
+ "compile": {"status": "ok", "tookMs": 948, "warnings": 4, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 653, "warnings": 1, "errors": 26, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 4},
+ "metadata": {
+  "crossScalaVersions": ["2.13.14"]
+}
+}]

@@ -1,0 +1,21 @@
+[{
+ "module": "scalacheck-derived",
+ "compile": {"status": "ok", "tookMs": 10506, "warnings": 1, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 8750, "warnings": 0, "errors": 6, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 7},
+ "metadata": {
+  "crossScalaVersions": ["2.12.21"]
+}
+},{
+ "module": "scalacheck-derived-extras",
+ "compile": {"status": "ok", "tookMs": 1857, "warnings": 1, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 4343, "warnings": 0, "errors": 6, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 13},
+ "metadata": {
+  "crossScalaVersions": ["2.12.21"]
+}
+}]

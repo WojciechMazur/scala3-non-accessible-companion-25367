@@ -1,0 +1,1451 @@
+##################################
+Clonning https://github.com/kevin-lee/extras.git into /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras using revision v0.51.0
+##################################
+Note: switching to '5413445785f79f288890f03fd76540caafd6492b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Using target Scala version for migration: 3.7.4
+Migrating project for -source:3.7 using Scala 3.7.4
+----
+Preparing build for 3.7.4
+Would try to apply common scalacOption (best-effort, sbt/mill only):
+Append: -rewrite,REQUIRE:-source:3.7-migration
+Remove: -indent,-no-indent,-new-syntax,,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+
+Try apply source patch:
+Path:        build.sbt
+Pattern:     ThisBuild \/ scalafixScalaBinaryVersion := \{(\n.*)+newVersion\n\}
+Replacement: 
+Failed to apply pattern 'ThisBuild \/ scalafixScalaBinaryVersion := \{(\n.*)+newVersion\n\}' in build.sbt
+----
+Starting build for 3.7.4
+Execute tests: false
+sbt project found at /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras
+No prepare script found for project kevin-lee/extras
+##################################
+Scala version: 3.7.4
+Targets: io.kevinlee%extras-cats io.kevinlee%extras-circe io.kevinlee%extras-concurrent io.kevinlee%extras-concurrent-testing io.kevinlee%extras-core io.kevinlee%extras-doobie-tools-ce2 io.kevinlee%extras-doobie-tools-ce3 io.kevinlee%extras-fs2-v2-text io.kevinlee%extras-fs2-v3-text io.kevinlee%extras-hedgehog-ce3 io.kevinlee%extras-hedgehog-circe io.kevinlee%extras-reflects io.kevinlee%extras-render io.kevinlee%extras-scala-io io.kevinlee%extras-string io.kevinlee%extras-testing-tools io.kevinlee%extras-testing-tools-cats io.kevinlee%extras-testing-tools-effectie io.kevinlee%extras-type-info
+Project projectConfig: {"projects":{"exclude":[],"overrides":{}},"java":{},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"compile-only","migrationVersions":["3.7"],"sourcePatches":[{"path":"build.sbt","pattern":"ThisBuild \\/ scalafixScalaBinaryVersion := \\{(\\n.*)+newVersion\\n\\}","replaceWith":""}]}
+##################################
+Using extra scalacOptions: -rewrite,REQUIRE:-source:3.7-migration
+Filtering out scalacOptions: -indent,-no-indent,-new-syntax,,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[sbt_options] declare -a sbt_options='()'
+[process_args] java_version = '25'
+[copyRt] java9_rt = '/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25/rt.jar'
+# Executing command line:
+java
+-Dfile.encoding=UTF-8
+-Dcommunitybuild.scala=3.7.4
+-Dcommunitybuild.project.dependencies.add=
+-Xmx7G
+-Xms4G
+-Xss8M
+-Dsbt.script=/Users/wmazur/.sdkman/candidates/sbt/current/bin/sbt
+--sun-misc-unsafe-memory-access=allow
+--enable-native-access=ALL-UNNAMED
+-Dscala.ext.dirs=/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25
+-jar
+/Users/wmazur/.sdkman/candidates/sbt/1.11.7/bin/sbt-launch.jar
+"setCrossScalaVersions 3.7.4"
+"++3.7.4 -v"
+"mapScalacOptions "-rewrite,REQUIRE:-source:3.7-migration,-Wconf:msg=can be rewritten automatically under:s" "-indent,-no-indent,-new-syntax,,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e""
+clearCredentials
+"excludeLibraryDependency com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}"
+"removeScalacOptionsStartingWith -P:wartremover"
+moduleMappings
+"runBuild 3.7.4 """{"projects":{"exclude":[],"overrides":{}},"java":{},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"compile-only","migrationVersions":["3.7"],"sourcePatches":[{"path":"build.sbt","pattern":"ThisBuild \\/ scalafixScalaBinaryVersion := \\{(\\n.*)+newVersion\\n\\}","replaceWith":""}]}""" io.kevinlee%extras-cats io.kevinlee%extras-circe io.kevinlee%extras-concurrent io.kevinlee%extras-concurrent-testing io.kevinlee%extras-core io.kevinlee%extras-doobie-tools-ce2 io.kevinlee%extras-doobie-tools-ce3 io.kevinlee%extras-fs2-v2-text io.kevinlee%extras-fs2-v3-text io.kevinlee%extras-hedgehog-ce3 io.kevinlee%extras-hedgehog-circe io.kevinlee%extras-reflects io.kevinlee%extras-render io.kevinlee%extras-scala-io io.kevinlee%extras-string io.kevinlee%extras-testing-tools io.kevinlee%extras-testing-tools-cats io.kevinlee%extras-testing-tools-effectie io.kevinlee%extras-type-info"
+
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.12.5 (Eclipse Adoptium Java 25)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project extras-build from akka.sbt, plugins.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/project[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project extras from build.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mresolving key references (57959 settings) ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+0-54134457+20260627-1946-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+Execute setCrossScalaVersions: 3.7.4
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasFs2V3TextJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasFs2V2TextJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasHedgehogCirceJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasStringJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasCatsJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasCirceJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasCirceNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasCoreJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasRenderNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasStringJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasCoreNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasConcurrentNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasTestingToolsJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasCatsJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasDoobieToolsCe2JVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasTestingToolsCatsJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasStringNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasRenderJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasScalaIoNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasRenderJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasConcurrentTestingNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasCoreJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasCirceJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasTestingToolsNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasHedgehogCe3Native/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasHedgehogCe3JVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasHedgehogCirceNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasHedgehogCirceJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasHedgehogCe3JS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasConcurrentTestingJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasCatsNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasConcurrentJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasScalaIoJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasScalaIoJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasDoobieToolsCe3JVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasConcurrentJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasTestingToolsJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasTestingToolsEffectieJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasFs2V3TextJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasFs2V2TextJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasReflectsJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.7.4 in extrasTypeInfoJVM/crossScalaVersions
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+0-54134457+20260627-1946-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mSetting Scala version to 3.7.4 on 42 projects.[0m
+[0m[[0m[0minfo[0m] [0m[0mSwitching Scala version on:[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasTypeInfoJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCatsJS (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCatsNative (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasScalaIoJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCirceJS (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasConcurrentJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasDoobieToolsCe2JVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasHedgehogCirceJS (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasStringNative (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasHedgehogCirceJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasScalaIoNative (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasFs2V2TextJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasFs2V3TextJS (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasRenderNative (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCoreNative (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasTestingToolsJS (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasFs2V3TextJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasConcurrentNative (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasConcurrentTestingJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasRenderJS (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasStringJS (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasReflectsJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCirceJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasTestingToolsEffectieJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasConcurrentJS (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCatsJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasHedgehogCe3JVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasFs2V2TextJS (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasHedgehogCe3Native (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasStringJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCoreJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasTestingToolsCatsJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasDoobieToolsCe3JVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasRenderJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasScalaIoJS (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCoreJS (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCirceNative (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasConcurrentTestingNative (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasHedgehogCirceNative (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasHedgehogCe3JS (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasTestingToolsJVM (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasTestingToolsNative (3.7.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0mExcluding projects:[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasRefinementJVM (2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasDoobieNewtypeCe3JVM (2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasRenderRefinedJVM (2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasDoobieNewtypeCe2JVM (2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m  * extras (2.13.16)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasRenderRefinedJS (2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+0-54134457+20260627-1946-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+Execute mapScalacOptions: -rewrite,REQUIRE:-source:3.7-migration,-Wconf:msg=can be rewritten automatically under:s -indent,-no-indent,-new-syntax,,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+0-54134457+20260627-1946-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+Execute clearCredentials: 
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+0-54134457+20260627-1946-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+Execute excludeLibraryDependency: com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+OpenCB::Failed to reapply settings in excludeLibraryDependency: Reference to undefined setting: 
+
+  Global / allExcludeDependencies from Global / allExcludeDependencies (CommunityBuildPluginShared.scala:286)
+     Did you mean extrasRenderJS / allExcludeDependencies ?
+ , retry without global scopes
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+0-54134457+20260627-1946-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+Execute removeScalacOptionsStartingWith: -P:wartremover
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+0-54134457+20260627-1946-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jun 27, 2026, 7:46:27 PM[0m
+Build config: {"projects":{"exclude":[],"overrides":{}},"java":{},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"compile-only","migrationVersions":["3.7"],"sourcePatches":[{"path":"build.sbt","pattern":"ThisBuild \\/ scalafixScalaBinaryVersion := \\{(\\n.*)+newVersion\\n\\}","replaceWith":""}]}
+Parsed config: Success(ProjectBuildConfig(ProjectsConfig(List(),Map()),CompileOnly,List()))
+Starting build...
+Projects: Set(extrasTypeInfoJVM, extrasScalaIoJVM, extrasConcurrentJVM, extrasDoobieToolsCe2JVM, extrasHedgehogCirceJVM, extrasFs2V2TextJVM, extrasFs2V3TextJVM, extrasConcurrentTestingJVM, extrasReflectsJVM, extrasCirceJVM, extrasTestingToolsEffectieJVM, extrasCatsJVM, extrasHedgehogCe3JVM, extrasStringJVM, extrasCoreJVM, extrasTestingToolsCatsJVM, extrasDoobieToolsCe3JVM, extrasRenderJVM, extrasTestingToolsJVM)
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasCirceJVM) (extras-circe)... [0/19]
+OpenCB::Exclude Scala3 specific scalacOption `-rewrite` in Scala 2.12.21 module Global
+OpenCB::Exclude Scala3 specific scalacOption `REQUIRE:-source:3.7-migration` in Scala 2.12.21 module Global
+OpenCB::Filter out '-deprecation', matches setting pattern '^-?\Q-deprecation\E'
+OpenCB::Filter out '-feature', matches setting pattern '^-?\Q-feature\E'
+OpenCB::Filter out '-Xfatal-warnings', matches setting pattern '^-?\Q-Xfatal-warnings\E'
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-circe/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-circe/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-circe/shared/src/main/scala/extras/circe/codecs/codec.scala][0m
+[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-circe/shared/src/main/scala/extras/circe/codecs/decoder.scala][0m
+[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-circe/shared/src/main/scala/extras/circe/codecs/encoder.scala][0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-circe/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-circe/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasConcurrentJVM) (extras-concurrent)... [1/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-concurrent/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-concurrent/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasCoreJVM) (extras-core)... [2/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-core/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-core/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-core/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasFs2V2TextJVM) (extras-fs2-v2-text)... [3/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v2-text/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v2-text/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v2-text/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v2-text/jvm/src/test/scala/extras/fs2/text/syntaxSpec.scala][0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v2-text/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasRenderJVM) (extras-render)... [4/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-render/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-render/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-render/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasStringJVM) (extras-string)... [5/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-string/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-string/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 22 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-string/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasConcurrentTestingJVM) (extras-concurrent-testing)... [6/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-concurrent-testing/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-concurrent-testing/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-concurrent-testing/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasDoobieToolsCe2JVM) (extras-doobie-tools-ce2)... [7/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce2/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce2/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce2/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce2/shared/src/test/scala-3/extras/doobie/ce2/data.scala:3:15 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m3 |[0m[33mimport[0m doobie.{Get, Put}[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m  |[0m               ^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m  |[0m               unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce2/shared/src/test/scala-3/extras/doobie/ce2/data.scala:3:20 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m3 |[0m[33mimport[0m doobie.{Get, Put}[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m  |[0m                    ^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m  |[0m                    unused import[0m
+[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce2/shared/src/test/scala-3/extras/doobie/ce2/data.scala][0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce2/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasReflectsJVM) (extras-reflects)... [8/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-reflects/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasScalaIoJVM) (extras-scala-io)... [9/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-scala-io/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 11 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-scala-io/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 16 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-scala-io/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-scala-io/shared/src/test/scala/extras/scala/io/syntax/truecolor/RainbowSyntaxSpec.scala][0m
+[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-scala-io/shared/src/test/scala-3/extras/scala/io/CanCloseSpec.scala][0m
+[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-scala-io/shared/src/test/scala/extras/scala/io/truecolor/RainbowSpec.scala][0m
+[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-scala-io/shared/src/test/scala/extras/scala/io/ColorSpec.scala][0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-scala-io/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasTestingToolsJVM) (extras-testing-tools)... [10/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasTypeInfoJVM) (extras-type-info)... [11/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-type-info/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-type-info/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-type-info/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-type-info/shared/src/test/scala-3/extras/typeinfo/syntax/typesSpec.scala:125:15 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m125 |[0m    [33mdef[0m [36mfoo[0m[[35mA[0m]([36ma[0m: [35mA[0m)(using [36mct[0m: [35mClassTag[0m[[35mA[0m]): [35mString[0m = ct.nestedRuntimeClassName[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m               ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m               unused explicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasCatsJVM) (extras-cats)... [12/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-cats/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-cats/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-cats/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasTestingToolsCatsJVM) (extras-testing-tools-cats)... [13/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools-cats/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools-cats/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools-cats/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasTestingToolsEffectieJVM) (extras-testing-tools-effectie)... [14/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools-effectie/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools-effectie/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools-effectie/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasHedgehogCirceJVM) (extras-hedgehog-circe)... [15/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-circe/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-circe/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-circe/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasHedgehogCe3JVM) (extras-hedgehog-ce3)... [16/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-ce3/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-ce3/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-ce3/shared/src/main/scala/extras/hedgehog/ce3/CatsEffectRunner.scala][0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-ce3/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 6 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-ce3/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasDoobieToolsCe3JVM) (extras-doobie-tools-ce3)... [17/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce3/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce3/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce3/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce3/shared/src/test/scala-3/extras/doobie/ce3/data.scala:3:15 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m3 |[0m[33mimport[0m doobie.{Get, Put}[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m  |[0m               ^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m  |[0m               unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce3/shared/src/test/scala-3/extras/doobie/ce3/data.scala:3:20 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m3 |[0m[33mimport[0m doobie.{Get, Put}[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m  |[0m                    ^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m  |[0m                    unused import[0m
+[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce3/shared/src/test/scala-3/extras/doobie/ce3/data.scala][0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce3/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasFs2V3TextJVM) (extras-fs2-v3-text)... [18/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v3-text/jvm/target/scala-3.7.4/meta, -rewrite, -Wconf:msg=can be rewritten automatically under:s, -source:3.7-migration
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v3-text/jvm/target/scala-3.7.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v3-text/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v3-text/shared/src/test/scala/extras/fs2/text/syntaxSpec.scala][0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v3-text/jvm/target/scala-3.7.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+
+************************
+Build summary:
+[{
+ "module": "extras-circe",
+ "compile": {"status": "ok", "tookMs": 2348, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 3130, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 4},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-concurrent",
+ "compile": {"status": "ok", "tookMs": 154, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 81, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 4},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-core",
+ "compile": {"status": "ok", "tookMs": 228, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 302, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-fs2-v2-text",
+ "compile": {"status": "ok", "tookMs": 175, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 492, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 5},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-render",
+ "compile": {"status": "ok", "tookMs": 287, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 684, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 3},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-string",
+ "compile": {"status": "ok", "tookMs": 255, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 2045, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 3},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-concurrent-testing",
+ "compile": {"status": "ok", "tookMs": 226, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 216, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 4},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-doobie-tools-ce2",
+ "compile": {"status": "ok", "tookMs": 290, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 677, "warnings": 2, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 4},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-reflects",
+ "compile": {"status": "ok", "tookMs": 46, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 73, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 3},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-scala-io",
+ "compile": {"status": "ok", "tookMs": 366, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 762, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 5},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-testing-tools",
+ "compile": {"status": "ok", "tookMs": 159, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 229, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 4},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-type-info",
+ "compile": {"status": "ok", "tookMs": 250, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 359, "warnings": 1, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 4},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-cats",
+ "compile": {"status": "ok", "tookMs": 274, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 1045, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 3},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-testing-tools-cats",
+ "compile": {"status": "ok", "tookMs": 301, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 455, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 5},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-testing-tools-effectie",
+ "compile": {"status": "ok", "tookMs": 293, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 421, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 3},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-hedgehog-circe",
+ "compile": {"status": "ok", "tookMs": 283, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 438, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 3},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-hedgehog-ce3",
+ "compile": {"status": "ok", "tookMs": 380, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 955, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 5},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-doobie-tools-ce3",
+ "compile": {"status": "ok", "tookMs": 332, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 522, "warnings": 2, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 3},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-fs2-v3-text",
+ "compile": {"status": "ok", "tookMs": 161, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 440, "warnings": 0, "errors": 0, "sourceVersion": "3.7-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 3},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+}]
+************************
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 27 s, completed Jun 27, 2026, 7:46:53 PM[0m
+[0JChecking patch project/plugins.sbt...
+Checking patch build.sbt...
+Applied patch project/plugins.sbt cleanly.
+Applied patch build.sbt cleanly.
+Commit migration rewrites
+Switched to a new branch 'opencb/migrate-source-3.7'
+[opencb/migrate-source-3.7 f516ecc] Apply Scala compiler rewrites using -source:3.7-migration using Scala 3.7.4
+ 12 files changed, 14 insertions(+), 16 deletions(-)
+----
+Preparing build for 3.8.4
+Scala binary version found: 3.8
+Implicitly using source version 3.8
+Scala binary version found: 3.8
+Implicitly using source version 3.8
+Would try to apply common scalacOption (best-effort, sbt/mill only):
+Append: ,REQUIRE:-source:3.8
+Remove: ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+
+Try apply source patch:
+Path:        build.sbt
+Pattern:     ThisBuild \/ scalafixScalaBinaryVersion := \{(\n.*)+newVersion\n\}
+Replacement: 
+Failed to apply pattern 'ThisBuild \/ scalafixScalaBinaryVersion := \{(\n.*)+newVersion\n\}' in build.sbt
+----
+Starting build for 3.8.4
+Execute tests: true
+sbt project found at /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras
+No prepare script found for project kevin-lee/extras
+##################################
+Scala version: 3.8.4
+Targets: io.kevinlee%extras-cats io.kevinlee%extras-circe io.kevinlee%extras-concurrent io.kevinlee%extras-concurrent-testing io.kevinlee%extras-core io.kevinlee%extras-doobie-tools-ce2 io.kevinlee%extras-doobie-tools-ce3 io.kevinlee%extras-fs2-v2-text io.kevinlee%extras-fs2-v3-text io.kevinlee%extras-hedgehog-ce3 io.kevinlee%extras-hedgehog-circe io.kevinlee%extras-reflects io.kevinlee%extras-render io.kevinlee%extras-scala-io io.kevinlee%extras-string io.kevinlee%extras-testing-tools io.kevinlee%extras-testing-tools-cats io.kevinlee%extras-testing-tools-effectie io.kevinlee%extras-type-info
+Project projectConfig: {"projects":{"exclude":[],"overrides":{}},"java":{},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"compile-only","migrationVersions":["3.7"],"sourcePatches":[{"path":"build.sbt","pattern":"ThisBuild \\/ scalafixScalaBinaryVersion := \\{(\\n.*)+newVersion\\n\\}","replaceWith":""}]}
+##################################
+Using extra scalacOptions: ,REQUIRE:-source:3.8
+Filtering out scalacOptions: ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[sbt_options] declare -a sbt_options='()'
+[process_args] java_version = '25'
+[copyRt] java9_rt = '/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25/rt.jar'
+# Executing command line:
+java
+-Dfile.encoding=UTF-8
+-Dcommunitybuild.scala=3.8.4
+-Dcommunitybuild.project.dependencies.add=
+-Xmx7G
+-Xms4G
+-Xss8M
+-Dsbt.script=/Users/wmazur/.sdkman/candidates/sbt/current/bin/sbt
+--sun-misc-unsafe-memory-access=allow
+--enable-native-access=ALL-UNNAMED
+-Dscala.ext.dirs=/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25
+-jar
+/Users/wmazur/.sdkman/candidates/sbt/1.11.7/bin/sbt-launch.jar
+"setCrossScalaVersions 3.8.4"
+"++3.8.4 -v"
+"mapScalacOptions ",REQUIRE:-source:3.8,-Wconf:msg=can be rewritten automatically under:s" ",-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e""
+clearCredentials
+"excludeLibraryDependency com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}"
+"removeScalacOptionsStartingWith -P:wartremover"
+moduleMappings
+"runBuild 3.8.4 """{"projects":{"exclude":[],"overrides":{}},"java":{},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"compile-only","migrationVersions":["3.7"],"sourcePatches":[{"path":"build.sbt","pattern":"ThisBuild \\/ scalafixScalaBinaryVersion := \\{(\\n.*)+newVersion\\n\\}","replaceWith":""}]}""" io.kevinlee%extras-cats io.kevinlee%extras-circe io.kevinlee%extras-concurrent io.kevinlee%extras-concurrent-testing io.kevinlee%extras-core io.kevinlee%extras-doobie-tools-ce2 io.kevinlee%extras-doobie-tools-ce3 io.kevinlee%extras-fs2-v2-text io.kevinlee%extras-fs2-v3-text io.kevinlee%extras-hedgehog-ce3 io.kevinlee%extras-hedgehog-circe io.kevinlee%extras-reflects io.kevinlee%extras-render io.kevinlee%extras-scala-io io.kevinlee%extras-string io.kevinlee%extras-testing-tools io.kevinlee%extras-testing-tools-cats io.kevinlee%extras-testing-tools-effectie io.kevinlee%extras-type-info"
+
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.12.5 (Eclipse Adoptium Java 25)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project extras-build from akka.sbt, plugins.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/project[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project extras from build.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mresolving key references (57959 settings) ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+1-f516ecc0+20260627-1947-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+Execute setCrossScalaVersions: 3.8.4
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasFs2V3TextJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasFs2V2TextJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasHedgehogCirceJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasStringJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasCatsJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasCirceJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasCirceNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasCoreJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasRenderNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasStringJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasCoreNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasConcurrentNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasTestingToolsJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasCatsJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasDoobieToolsCe2JVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasTestingToolsCatsJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasStringNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasRenderJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasScalaIoNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasRenderJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasConcurrentTestingNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasCoreJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasCirceJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasTestingToolsNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasHedgehogCe3Native/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasHedgehogCe3JVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasHedgehogCirceJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasHedgehogCirceNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasHedgehogCe3JS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasConcurrentTestingJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasCatsNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasConcurrentJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasScalaIoJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasScalaIoJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasDoobieToolsCe3JVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasConcurrentJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasTestingToolsJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasTestingToolsEffectieJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasFs2V3TextJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasFs2V2TextJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasReflectsJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.3 -> 3.8.4 in extrasTypeInfoJVM/crossScalaVersions
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+1-f516ecc0+20260627-1947-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mSetting Scala version to 3.8.4 on 42 projects.[0m
+[0m[[0m[0minfo[0m] [0m[0mSwitching Scala version on:[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasTypeInfoJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCatsJS (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCatsNative (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasScalaIoJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCirceJS (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasConcurrentJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasDoobieToolsCe2JVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasHedgehogCirceJS (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasStringNative (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasHedgehogCirceJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasScalaIoNative (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasFs2V2TextJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasFs2V3TextJS (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasRenderNative (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCoreNative (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasTestingToolsJS (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasFs2V3TextJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasConcurrentNative (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasConcurrentTestingJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasRenderJS (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasStringJS (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasReflectsJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCirceJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasTestingToolsEffectieJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasConcurrentJS (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCatsJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasHedgehogCe3JVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasFs2V2TextJS (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasHedgehogCe3Native (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasStringJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCoreJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasTestingToolsCatsJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasDoobieToolsCe3JVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasRenderJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasScalaIoJS (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCoreJS (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasCirceNative (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasConcurrentTestingNative (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasHedgehogCirceNative (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasHedgehogCe3JS (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasTestingToolsJVM (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasTestingToolsNative (3.8.4, 2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0mExcluding projects:[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasRefinementJVM (2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasDoobieNewtypeCe3JVM (2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasRenderRefinedJVM (2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasDoobieNewtypeCe2JVM (2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0m  * extras (2.13.16)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasRenderRefinedJS (2.13.16, 2.12.18)[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+1-f516ecc0+20260627-1947-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+Execute mapScalacOptions: ,REQUIRE:-source:3.8,-Wconf:msg=can be rewritten automatically under:s ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+1-f516ecc0+20260627-1947-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+Execute clearCredentials: 
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+1-f516ecc0+20260627-1947-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+Execute excludeLibraryDependency: com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+OpenCB::Failed to reapply settings in excludeLibraryDependency: Reference to undefined setting: 
+
+  Global / allExcludeDependencies from Global / allExcludeDependencies (CommunityBuildPluginShared.scala:286)
+     Did you mean extrasRenderJS / allExcludeDependencies ?
+ , retry without global scopes
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+1-f516ecc0+20260627-1947-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+Execute removeScalacOptionsStartingWith: -P:wartremover
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m       _[38;2;255;97;0m_   __  [38;2;247;255;0m    ___[38;2;0;255;0m       [38;2;100;149;255m    ___[38;2;143;0;200m_      [38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m  ___ / [38;2;255;97;0m/  / /__[38;2;247;255;0m___/ _ [38;2;0;255;0m\___ _ [38;2;100;149;255m __/ __[38;2;143;0;200m \___  [38;2;200;0;255m___  ___[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m (_-</ _[38;2;255;97;0m \/ __/_[38;2;247;255;0m__/ // [38;2;0;255;0m/ -_) |[38;2;100;149;255m/ / /_/[38;2;143;0;200m / _ \/[38;2;200;0;255m _ \(_-<[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m/___/_._[38;2;255;97;0m_/\__/  [38;2;247;255;0m /____/[38;2;0;255;0m\__/|__[38;2;100;149;255m_/\____[38;2;143;0;200m/\___/ [38;2;200;0;255m.__/___/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[38;2;255;0;0m        [38;2;255;97;0m        [38;2;247;255;0m       [38;2;0;255;0m       [38;2;100;149;255m       [38;2;143;0;200m    /_/[38;2;200;0;255m        [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[34mextras[0m [32m0.51.0+1-f516ecc0+20260627-1947-SNAPSHOT[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m[33mScala 2.13.16[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[35m-----------------------------------------------------[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mUseful sbt tasks:[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mr[0m: [0m[36mreload[0m - Run reload[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcln[0m: [0m[36mclean[0m - Run clean[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mc[0m: [0m[36mcompile[0m - Run compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcc[0m: [0m[36m+compile[0m - Run cross-scalaVersion compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mtc[0m: [0m[36mTest/compile[0m - Run Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mctc[0m: [0m[36m+Test/compile[0m - Run cross-scalaVersion Test/compile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mt[0m: [0m[36mtest[0m - Run test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mct[0m: [0m[36m+test[0m - Run cross-scalaVersion test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmtchk[0m: [0m[36mscalafmtCheckAll[0m - Run scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfmt[0m: [0m[36mscalafmtAll[0m - Run scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmtchk[0m: [0m[36m+scalafmtCheckAll[0m - Run +scalafmtCheckAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfmt[0m: [0m[36m+scalafmtAll[0m - Run +scalafmtAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfixchk[0m: [0m[36mscalafixAll --check[0m - Run scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mfix[0m: [0m[36mscalafixAll[0m - Run scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfixchk[0m: [0m[36m+scalafixAll --check[0m - Run +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcfix[0m: [0m[36m+scalafixAll[0m - Run +scalafixAll[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mchk[0m: [0m[36mfmtchk; fixchk[0m - Run scalafmtCheckAll; scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mcchk[0m: [0m[36mcfmtchk; cfixchk[0m - Run +scalafmtCheckAll; +scalafixAll --check[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mpl[0m: [0m[36mpublishLocal[0m - Run publishLocal[0m[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jun 27, 2026, 7:47:17 PM[0m
+Build config: {"projects":{"exclude":[],"overrides":{}},"java":{},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"compile-only","migrationVersions":["3.7"],"sourcePatches":[{"path":"build.sbt","pattern":"ThisBuild \\/ scalafixScalaBinaryVersion := \\{(\\n.*)+newVersion\\n\\}","replaceWith":""}]}
+Parsed config: Success(ProjectBuildConfig(ProjectsConfig(List(),Map()),CompileOnly,List()))
+Starting build...
+Projects: Set(extrasTypeInfoJVM, extrasScalaIoJVM, extrasConcurrentJVM, extrasDoobieToolsCe2JVM, extrasHedgehogCirceJVM, extrasFs2V2TextJVM, extrasFs2V3TextJVM, extrasConcurrentTestingJVM, extrasReflectsJVM, extrasCirceJVM, extrasTestingToolsEffectieJVM, extrasCatsJVM, extrasHedgehogCe3JVM, extrasStringJVM, extrasCoreJVM, extrasTestingToolsCatsJVM, extrasDoobieToolsCe3JVM, extrasRenderJVM, extrasTestingToolsJVM)
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasCirceJVM) (extras-circe)... [0/19]
+OpenCB::Exclude Scala3 specific scalacOption `REQUIRE:-source:3.8` in Scala 2.12.21 module Global
+OpenCB::Filter out '-deprecation', matches setting pattern '^-?\Q-deprecation\E'
+OpenCB::Filter out '-feature', matches setting pattern '^-?\Q-feature\E'
+OpenCB::Filter out '-Xfatal-warnings', matches setting pattern '^-?\Q-Xfatal-warnings\E'
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-circe/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-circe/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-circe/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasConcurrentJVM) (extras-concurrent)... [1/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-concurrent/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-concurrent/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasCoreJVM) (extras-core)... [2/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-core/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-core/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-core/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasFs2V2TextJVM) (extras-fs2-v2-text)... [3/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v2-text/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v2-text/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v2-text/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasRenderJVM) (extras-render)... [4/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-render/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-render/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-render/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 6 deprecation warnings; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasStringJVM) (extras-string)... [5/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-string/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-string/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 22 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-string/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasConcurrentTestingJVM) (extras-concurrent-testing)... [6/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-concurrent-testing/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-concurrent-testing/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-concurrent-testing/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasDoobieToolsCe2JVM) (extras-doobie-tools-ce2)... [7/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce2/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce2/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce2/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasReflectsJVM) (extras-reflects)... [8/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-reflects/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasScalaIoJVM) (extras-scala-io)... [9/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-scala-io/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 11 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-scala-io/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 16 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-scala-io/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasTestingToolsJVM) (extras-testing-tools)... [10/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasTypeInfoJVM) (extras-type-info)... [11/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-type-info/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-type-info/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-type-info/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-type-info/shared/src/test/scala-3/extras/typeinfo/syntax/typesSpec.scala:125:15 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m125 |[0m    [33mdef[0m [36mfoo[0m[[36mA[0m]([36ma[0m: [32mA[0m)(using [36mct[0m: [32mClassTag[0m[[32mA[0m]): [32mString[0m = ct.nestedRuntimeClassName[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m               ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m               unused explicit parameter[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasCatsJVM) (extras-cats)... [12/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-cats/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-cats/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-cats/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasTestingToolsCatsJVM) (extras-testing-tools-cats)... [13/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools-cats/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools-cats/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools-cats/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasTestingToolsEffectieJVM) (extras-testing-tools-effectie)... [14/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools-effectie/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools-effectie/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-testing-tools-effectie/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasHedgehogCirceJVM) (extras-hedgehog-circe)... [15/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-circe/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-circe/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-circe/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasHedgehogCe3JVM) (extras-hedgehog-ce3)... [16/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-ce3/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-ce3/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 6 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-hedgehog-ce3/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasDoobieToolsCe3JVM) (extras-doobie-tools-ce3)... [17/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce3/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce3/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-doobie-tools-ce3/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/,extrasFs2V3TextJVM) (extras-fs2-v3-text)... [18/19]
+Compile scalacOptions: -language:dynamics, -language:existentials, -language:higherKinds, -language:reflectiveCalls, -language:experimental.macros, -language:implicitConversions, -encoding, utf8, -unchecked, -Xkind-projector, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:privates, -explain, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v3-text/jvm/target/scala-3.8.4/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.8
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v3-text/jvm/target/scala-3.8.4/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/kevin-lee/extras/repo/kevin-lee/extras/modules/extras-fs2-v3-text/jvm/target/scala-3.8.4/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+
+************************
+Build summary:
+[{
+ "module": "extras-circe",
+ "compile": {"status": "ok", "tookMs": 2274, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 2281, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-concurrent",
+ "compile": {"status": "ok", "tookMs": 158, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 52, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-core",
+ "compile": {"status": "ok", "tookMs": 232, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 291, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-fs2-v2-text",
+ "compile": {"status": "ok", "tookMs": 143, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 438, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-render",
+ "compile": {"status": "ok", "tookMs": 261, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 731, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-string",
+ "compile": {"status": "ok", "tookMs": 329, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 1983, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-concurrent-testing",
+ "compile": {"status": "ok", "tookMs": 277, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 228, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-doobie-tools-ce2",
+ "compile": {"status": "ok", "tookMs": 280, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 610, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-reflects",
+ "compile": {"status": "ok", "tookMs": 38, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 65, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-scala-io",
+ "compile": {"status": "ok", "tookMs": 437, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 695, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-testing-tools",
+ "compile": {"status": "ok", "tookMs": 174, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 213, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-type-info",
+ "compile": {"status": "ok", "tookMs": 265, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 382, "warnings": 1, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-cats",
+ "compile": {"status": "ok", "tookMs": 247, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 1013, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-testing-tools-cats",
+ "compile": {"status": "ok", "tookMs": 280, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 389, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-testing-tools-effectie",
+ "compile": {"status": "ok", "tookMs": 277, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 401, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-hedgehog-circe",
+ "compile": {"status": "ok", "tookMs": 276, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 422, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-hedgehog-ce3",
+ "compile": {"status": "ok", "tookMs": 363, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 695, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-doobie-tools-ce3",
+ "compile": {"status": "ok", "tookMs": 296, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 481, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 2},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+},{
+ "module": "extras-fs2-v3-text",
+ "compile": {"status": "ok", "tookMs": 126, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 396, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 1},
+ "metadata": {
+  "crossScalaVersions": ["3.3.3", "2.13.16", "2.12.18"]
+}
+}]
+************************
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 24 s, completed Jun 27, 2026, 7:47:40 PM[0m
+[0JChecking patch project/plugins.sbt...
+Checking patch build.sbt...
+Applied patch project/plugins.sbt cleanly.
+Applied patch build.sbt cleanly.

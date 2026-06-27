@@ -1,0 +1,17 @@
+Module: lila-game-export
+File: modules/lila-game-export/src/main/scala/GameCsv.scala:34
+
+-- [E172] Type Error: GameCsv.scala:34:60
+34 |  given CsvRowEncoder[GameCsv, String] = deriveCsvRowEncoder
+   |                                                            ^
+   |No given instance of type fs2.data.csv.generic.internal.Names[lila.search.game.csv².GameCsv] was found for parameter naming of method deriveCsvRowEncoder in object semiauto
+   |
+   |where:    csv  is a package in package fs2.data
+   |          csv² is a package in package lila.search.game
+   |
+   |The following import might fix the problem:
+   |
+   |  import fs2.data.csv.generic.internal.Names.given_Names_T
+
+one error found
+(lilaGameExport / Compile / compileIncremental) Compilation failed

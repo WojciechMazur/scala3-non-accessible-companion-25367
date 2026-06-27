@@ -1,0 +1,2 @@
+org.scala-sbt%io-root ioRoot
+org.scala-sbt%io io

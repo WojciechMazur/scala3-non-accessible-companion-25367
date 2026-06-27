@@ -1,0 +1,21 @@
+-- [E008] Not Found Error: .../avro4s-cats/src/main/scala/com/sksamuel/avro4s/cats/package.scala:36:23
+36 |      { value => value.map(encode).toNonEmptyList.toList.asJava }
+   |                 ^^^^^^^^^
+   |value map is not a member of cats.data.NonEmptyChainImpl.Type[T], but could be made available as an extension method.
+   |
+   |The following import might fix the problem:
+   |
+   |  import cats.data.NonEmptyChainImpl.catsNonEmptyChainOps
+   |
+one error found
+
+-- [E008] Not Found Error: .../test.scala:7:19
+7 |  { value => value.map(encode).toNonEmptyList.toList }
+  |             ^^^^^^^^^
+  |value map is not a member of cats.data.NonEmptyChainImpl.Type[T], but could be made available as an extension method.
+  |
+  |The following import might fix the problem:
+  |
+  |  import cats.data.NonEmptyChainImpl.catsNonEmptyChainOps
+  |
+1 error found

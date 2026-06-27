@@ -1,0 +1,4 @@
+org.polyvariant%root_2.13 root
+org.polyvariant%smithy4s-caliban_2.13 core
+org.polyvariant%smithy4s-caliban core3
+org.polyvariant%docs_2.13 docs

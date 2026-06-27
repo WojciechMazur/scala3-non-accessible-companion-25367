@@ -1,0 +1,31 @@
+[{
+ "module": "gallia-reflect",
+ "compile": {"status": "ok", "tookMs": 5312, "warnings": 13, "errors": 0, "sourceVersion": "3.4-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 150, "warnings": 0, "errors": 0, "sourceVersion": "3.4-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 28},
+ "metadata": {
+  "crossScalaVersions": ["2.13.12", "2.12.18", "3.3.1"]
+}
+},{
+ "module": "gallia-core-root",
+ "compile": {"status": "ok", "tookMs": 75, "warnings": 0, "errors": 0, "sourceVersion": "3.4-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 106, "warnings": 0, "errors": 0, "sourceVersion": "3.4-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 7},
+ "metadata": {
+  "crossScalaVersions": ["2.13.12", "2.12.18", "3.3.1"]
+}
+},{
+ "module": "gallia-core",
+ "compile": {"status": "ok", "tookMs": 28294, "warnings": 261, "errors": 0, "sourceVersion": "3.4-migration"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 6457, "warnings": 25, "errors": 0, "sourceVersion": "3.4-migration"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 4},
+ "metadata": {
+  "crossScalaVersions": ["2.13.12", "2.12.18", "3.3.1"]
+}
+}]

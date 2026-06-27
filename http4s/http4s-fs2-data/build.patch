@@ -1,0 +1,33 @@
+diff --git a/build.sbt b/build.sbt
+index afa5dc0..814383e 100644
+--- a/build.sbt
++++ b/build.sbt
+@@ -130,3 +130,9 @@ lazy val docs = project
+     )
+   )
+   .enablePlugins(Http4sOrgSitePlugin)
++
++commands ++= CommunityBuildPlugin.commands
++
++Global / resolvers += "The Scala Nightly Repository".at("https://repo.scala-lang.org/artifactory/maven-nightlies/")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn
+diff --git a/project/build.properties b/project/build.properties
+index 04267b1..e480c67 100644
+--- a/project/build.properties
++++ b/project/build.properties
+@@ -1 +1 @@
+-sbt.version=1.9.9
++sbt.version=1.11.5
+diff --git a/project/plugins.sbt b/project/plugins.sbt
+index ce8c4a5..9ad9266 100644
+--- a/project/plugins.sbt
++++ b/project/plugins.sbt
+@@ -8,3 +8,7 @@ addSbtPlugin("org.portable-scala" % "sbt-scala-native-crossproject" % "1.3.2")
+ 
+ // Fix links to API docs of scala-xml
+ addSbtPlugin("com.thoughtworks.sbt-api-mappings" % "sbt-api-mappings" % "3.0.2")
++
++addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.14.2")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn

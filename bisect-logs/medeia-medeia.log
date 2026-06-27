@@ -1,0 +1,601 @@
+Bisecting with validation script: /var/folders/w5/241yy4nj4t19s0t4vnz7bshm0000gq/T/scala-bisect-validator9393771010028683384
+#####################################
+#!/usr/bin/env bash
+set -euo pipefail
+source "/Users/wmazur/projects/scala/community-build3/repro/bisect-scripts/_common.sh"
+compile_in_dir "/Users/wmazur/projects/scala/community-build3/repro/medeia/medeia" "$1" "test.scala"
+
+
+#####################################
+
+Verifying the first release: 3.8.3-RC1-bin-20260121-bc94528-NIGHTLY
+Testing 3.8.3-RC1-bin-20260121-bc94528-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Test result: 3.8.3-RC1-bin-20260121-bc94528-NIGHTLY is a good release
+
+Verifying the last release: 3.10.0-RC1-bin-20260627-e449094-NIGHTLY
+Testing 3.10.0-RC1-bin-20260627-e449094-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/medeia/medeia/test.scala:6:29 [0m[0m
+[31m 6 |[0m  [33msealed[0m [33mtrait[0m [36mTrait[0m derives [32mBsonDocumentCodec[0m
+[31m[31m   |[0m                             ^[0m
+[31m   |[0mCould not derive BsonDocumentEncoder for Spec.this.Trait.
+[31m   |[0mMake sure that BsonEncoder instances exist for all fields..
+[31m   |[0mI found:
+[31m   |[0m
+[31m   |[0m    medeia.generic.GenericEncoder.product[[32mSpec.this.Trait[0m](
+[31m   |[0m      shapeless3.deriving.Labelling.apply[[32mSpec.this.Trait[0m]([32m"Trait"[0m,
+[31m   |[0m        scala.collection.immutable.ArraySeq.unsafeWrapArray[[32mString[0m](
+[31m   |[0m          {
+[31m   |[0m            [33mval[0m [36mevidence$1$proxy1[0m: [32mscala.reflect.ClassTag[String][0m =
+[31m   |[0m              scala.reflect.ClassTag.apply²[[32mString[0m](classOf[String])
+[31m   |[0m            {
+[31m   |[0m              [33mval[0m [36marr$proxy1[0m: [32mArray[String][0m =
+[31m   |[0m                scala.runtime.Arrays.newGenericArray[[32mString[0m]([32m2[0m)(evidence$1$proxy1)
+[31m   |[0m              {
+[31m   |[0m                arr$proxy1.update([32m0[0m, [32m"A"[0m)
+[31m   |[0m                {
+[31m   |[0m                  arr$proxy1.update([32m1[0m, [32m"B"[0m)
+[31m   |[0m                  arr$proxy1:[32mArray[0m[[32mString[0m]
+[31m   |[0m                }:[32mArray[0m[[32mString[0m]
+[31m   |[0m              }:[32mArray[0m[[32mString[0m]
+[31m   |[0m            }:[32mArray[0m[[32mString[0m]
+[31m   |[0m          }
+[31m   |[0m        )
+[31m   |[0m      ):[32mshapeless3.deriving.Labelling[0m[[32mSpec.this.Trait[0m],
+[31m   |[0m      shapeless3.deriving.K0.mkProductInstances[[32mmedeia.encoder.BsonEncoder[0m,
+[31m   |[0m        [32mSpec.this.Trait[0m](
+[31m   |[0m        /* missing */summon[scala.deriving².Mirror.Product of Spec.this.Trait]),
+[31m   |[0m    ???)
+[31m   |[0m
+[31m   |[0mBut Failed to synthesize an instance of type scala.deriving².Mirror.Product of Spec.this.Trait: [33mtrait[0m [32mTrait[0m is not a generic product because it is not a case class
+[31m   |[0m
+[31m   |[0mwhere:    apply     is a method in [33mobject[0m [32mLabelling[0m
+[31m   |[0m          apply²    is a method in [33mobject[0m [32mClassTag[0m
+[31m   |[0m          deriving  is a package in [33mpackage[0m [32mshapeless3[0m
+[31m   |[0m          deriving² is a package in [33mpackage[0m [32mscala[0m
+[31m   |[0m.
+[31m   |[0m
+[31m   |[0mOne of the following imports might make progress towards fixing the problem:
+[31m   |[0m
+[31m   |[0m  import medeia.generic.ProductEncoder.product
+[31m   |[0m  import shapeless3.deriving.K0.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K1.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K11.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K2.Generic.fromMirror
+[31m   |[0m
+[31m   |----------------------------------------------------------------------------[0m
+[31m   |[0mInline stack trace
+[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m
+[31m   |[0mThis location contains code that was inlined from GenericEncoderInstances.scala:12
+[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m
+[31m   |[0mThis location contains code that was inlined from GenericEncoderInstances.scala:12
+[31m    ----------------------------------------------------------------------------[0m
+[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/medeia/medeia/test.scala:10:24 [0m[0m
+[31m10 |[0m  [33menum[0m [36mTestEnum[0m derives [32mBsonDocumentCodec[0m:
+[31m[31m   |[0m                        ^[0m
+[31m   |[0mCould not derive BsonDecoder for Spec.this.TestEnum.
+[31m   |[0mMake sure that BsonDecoder instances exist for all fields..
+[31m   |[0mI found:
+[31m   |[0m
+[31m   |[0m    medeia.generic.GenericDecoder.product[[32mSpec.this.TestEnum[0m](
+[31m   |[0m      shapeless3.deriving.Labelling.apply[[32mSpec.this.TestEnum[0m]([32m"TestEnum"[0m,
+[31m   |[0m        scala.collection.immutable.ArraySeq.unsafeWrapArray[[32mString[0m](
+[31m   |[0m          {
+[31m   |[0m            [33mval[0m [36mevidence$1$proxy3[0m: [32mscala.reflect.ClassTag[String][0m =
+[31m   |[0m              scala.reflect.ClassTag.apply²[[32mString[0m](classOf[String])
+[31m   |[0m            {
+[31m   |[0m              [33mval[0m [36marr$proxy6[0m: [32mArray[String][0m =
+[31m   |[0m                scala.runtime.Arrays.newGenericArray[[32mString[0m]([32m2[0m)(evidence$1$proxy3)
+[31m   |[0m              {
+[31m   |[0m                arr$proxy6.update([32m0[0m, [32m"A1"[0m)
+[31m   |[0m                {
+[31m   |[0m                  arr$proxy6.update([32m1[0m, [32m"B2"[0m)
+[31m   |[0m                  arr$proxy6:[32mArray[0m[[32mString[0m]
+[31m   |[0m                }:[32mArray[0m[[32mString[0m]
+[31m   |[0m              }:[32mArray[0m[[32mString[0m]
+[31m   |[0m            }:[32mArray[0m[[32mString[0m]
+[31m   |[0m          }
+[31m   |[0m        )
+[31m   |[0m      ):[32mshapeless3.deriving.Labelling[0m[[32mSpec.this.TestEnum[0m],
+[31m   |[0m      shapeless3.deriving.K0.mkProductInstances[[32mmedeia.decoder.BsonDecoder[0m,
+[31m   |[0m        [32mSpec.this.TestEnum[0m](
+[31m   |[0m        /* missing */summon[scala.deriving².Mirror.Product of Spec.this.TestEnum]),
+[31m   |[0m      ???)
+[31m   |[0m
+[31m   |[0mBut Failed to synthesize an instance of type scala.deriving².Mirror.Product of Spec.this.TestEnum: [33mclass[0m [32mTestEnum[0m is not a generic product because it is not a case class
+[31m   |[0m
+[31m   |[0mwhere:    apply     is a method in [33mobject[0m [32mLabelling[0m
+[31m   |[0m          apply²    is a method in [33mobject[0m [32mClassTag[0m
+[31m   |[0m          deriving  is a package in [33mpackage[0m [32mshapeless3[0m
+[31m   |[0m          deriving² is a package in [33mpackage[0m [32mscala[0m
+[31m   |[0m.
+[31m   |[0m
+[31m   |[0mOne of the following imports might make progress towards fixing the problem:
+[31m   |[0m
+[31m   |[0m  import medeia.generic.ProductDecoder.product
+[31m   |[0m  import shapeless3.deriving.K0.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K1.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K11.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K2.Generic.fromMirror
+[31m   |[0m
+[31m   |----------------------------------------------------------------------------[0m
+[31m   |[0mInline stack trace
+[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m
+[31m   |[0mThis location contains code that was inlined from GenericDecoderInstances.scala:16
+[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m
+[31m   |[0mThis location contains code that was inlined from GenericDecoderInstances.scala:16
+[31m    ----------------------------------------------------------------------------[0m
+2 errors found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Compilation failed
+Test result: 3.10.0-RC1-bin-20260627-e449094-NIGHTLY is a bad release
+
+Testing 3.8.5-RC1-bin-20260403-ecf8e5c-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+there were 8 deprecation warnings; re-run with -deprecation for details
+1 warning found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Test result: 3.8.5-RC1-bin-20260403-ecf8e5c-NIGHTLY is a good release
+
+Testing 3.9.0-RC1-bin-20260511-c3e3e42-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+there were 8 deprecation warnings; re-run with -deprecation for details
+1 warning found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Test result: 3.9.0-RC1-bin-20260511-c3e3e42-NIGHTLY is a good release
+
+Testing 3.10.0-RC1-bin-20260531-c26a453-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+there were 8 deprecation warnings; re-run with -deprecation for details
+1 warning found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Test result: 3.10.0-RC1-bin-20260531-c26a453-NIGHTLY is a good release
+
+Testing 3.10.0-RC1-bin-20260617-6ad8738-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/medeia/medeia/test.scala:6:29 [0m[0m
+[31m 6 |[0m  [33msealed[0m [33mtrait[0m [36mTrait[0m derives [32mBsonDocumentCodec[0m
+[31m[31m   |[0m                             ^[0m
+[31m   |[0mCould not derive BsonDocumentEncoder for Spec.this.Trait.
+[31m   |[0mMake sure that BsonEncoder instances exist for all fields..
+[31m   |[0mI found:
+[31m   |[0m
+[31m   |[0m    medeia.generic.GenericEncoder.product[[32mSpec.this.Trait[0m](
+[31m   |[0m      shapeless3.deriving.Labelling.apply[[32mSpec.this.Trait[0m]([32m"Trait"[0m,
+[31m   |[0m        scala.collection.immutable.ArraySeq.unsafeWrapArray[[32mString[0m](
+[31m   |[0m          {
+[31m   |[0m            [33mval[0m [36mevidence$1$proxy1[0m: [32mscala.reflect.ClassTag[String][0m =
+[31m   |[0m              scala.reflect.ClassTag.apply²[[32mString[0m](classOf[String])
+[31m   |[0m            {
+[31m   |[0m              [33mval[0m [36marr$proxy1[0m: [32mArray[String][0m =
+[31m   |[0m                scala.runtime.Arrays.newGenericArray[[32mString[0m]([32m2[0m)(evidence$1$proxy1)
+[31m   |[0m              {
+[31m   |[0m                arr$proxy1.update([32m0[0m, [32m"A"[0m)
+[31m   |[0m                {
+[31m   |[0m                  arr$proxy1.update([32m1[0m, [32m"B"[0m)
+[31m   |[0m                  arr$proxy1:[32mArray[0m[[32mString[0m]
+[31m   |[0m                }:[32mArray[0m[[32mString[0m]
+[31m   |[0m              }:[32mArray[0m[[32mString[0m]
+[31m   |[0m            }:[32mArray[0m[[32mString[0m]
+[31m   |[0m          }
+[31m   |[0m        )
+[31m   |[0m      ):[32mshapeless3.deriving.Labelling[0m[[32mSpec.this.Trait[0m],
+[31m   |[0m      shapeless3.deriving.K0.mkProductInstances[[32mmedeia.encoder.BsonEncoder[0m,
+[31m   |[0m        [32mSpec.this.Trait[0m](
+[31m   |[0m        /* missing */summon[scala.deriving².Mirror.Product of Spec.this.Trait]),
+[31m   |[0m    ???)
+[31m   |[0m
+[31m   |[0mBut Failed to synthesize an instance of type scala.deriving².Mirror.Product of Spec.this.Trait: [33mtrait[0m [32mTrait[0m is not a generic product because it is not a case class
+[31m   |[0m
+[31m   |[0mwhere:    apply     is a method in [33mobject[0m [32mLabelling[0m
+[31m   |[0m          apply²    is a method in [33mobject[0m [32mClassTag[0m
+[31m   |[0m          deriving  is a package in [33mpackage[0m [32mshapeless3[0m
+[31m   |[0m          deriving² is a package in [33mpackage[0m [32mscala[0m
+[31m   |[0m.
+[31m   |[0m
+[31m   |[0mOne of the following imports might make progress towards fixing the problem:
+[31m   |[0m
+[31m   |[0m  import medeia.generic.ProductEncoder.product
+[31m   |[0m  import shapeless3.deriving.K0.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K1.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K11.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K2.Generic.fromMirror
+[31m   |[0m
+[31m   |----------------------------------------------------------------------------[0m
+[31m   |[0mInline stack trace
+[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m
+[31m   |[0mThis location contains code that was inlined from GenericEncoderInstances.scala:12
+[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m
+[31m   |[0mThis location contains code that was inlined from GenericEncoderInstances.scala:12
+[31m    ----------------------------------------------------------------------------[0m
+[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/medeia/medeia/test.scala:10:24 [0m[0m
+[31m10 |[0m  [33menum[0m [36mTestEnum[0m derives [32mBsonDocumentCodec[0m:
+[31m[31m   |[0m                        ^[0m
+[31m   |[0mCould not derive BsonDecoder for Spec.this.TestEnum.
+[31m   |[0mMake sure that BsonDecoder instances exist for all fields..
+[31m   |[0mI found:
+[31m   |[0m
+[31m   |[0m    medeia.generic.GenericDecoder.product[[32mSpec.this.TestEnum[0m](
+[31m   |[0m      shapeless3.deriving.Labelling.apply[[32mSpec.this.TestEnum[0m]([32m"TestEnum"[0m,
+[31m   |[0m        scala.collection.immutable.ArraySeq.unsafeWrapArray[[32mString[0m](
+[31m   |[0m          {
+[31m   |[0m            [33mval[0m [36mevidence$1$proxy3[0m: [32mscala.reflect.ClassTag[String][0m =
+[31m   |[0m              scala.reflect.ClassTag.apply²[[32mString[0m](classOf[String])
+[31m   |[0m            {
+[31m   |[0m              [33mval[0m [36marr$proxy6[0m: [32mArray[String][0m =
+[31m   |[0m                scala.runtime.Arrays.newGenericArray[[32mString[0m]([32m2[0m)(evidence$1$proxy3)
+[31m   |[0m              {
+[31m   |[0m                arr$proxy6.update([32m0[0m, [32m"A1"[0m)
+[31m   |[0m                {
+[31m   |[0m                  arr$proxy6.update([32m1[0m, [32m"B2"[0m)
+[31m   |[0m                  arr$proxy6:[32mArray[0m[[32mString[0m]
+[31m   |[0m                }:[32mArray[0m[[32mString[0m]
+[31m   |[0m              }:[32mArray[0m[[32mString[0m]
+[31m   |[0m            }:[32mArray[0m[[32mString[0m]
+[31m   |[0m          }
+[31m   |[0m        )
+[31m   |[0m      ):[32mshapeless3.deriving.Labelling[0m[[32mSpec.this.TestEnum[0m],
+[31m   |[0m      shapeless3.deriving.K0.mkProductInstances[[32mmedeia.decoder.BsonDecoder[0m,
+[31m   |[0m        [32mSpec.this.TestEnum[0m](
+[31m   |[0m        /* missing */summon[scala.deriving².Mirror.Product of Spec.this.TestEnum]),
+[31m   |[0m      ???)
+[31m   |[0m
+[31m   |[0mBut Failed to synthesize an instance of type scala.deriving².Mirror.Product of Spec.this.TestEnum: [33mclass[0m [32mTestEnum[0m is not a generic product because it is not a case class
+[31m   |[0m
+[31m   |[0mwhere:    apply     is a method in [33mobject[0m [32mLabelling[0m
+[31m   |[0m          apply²    is a method in [33mobject[0m [32mClassTag[0m
+[31m   |[0m          deriving  is a package in [33mpackage[0m [32mshapeless3[0m
+[31m   |[0m          deriving² is a package in [33mpackage[0m [32mscala[0m
+[31m   |[0m.
+[31m   |[0m
+[31m   |[0mOne of the following imports might make progress towards fixing the problem:
+[31m   |[0m
+[31m   |[0m  import medeia.generic.ProductDecoder.product
+[31m   |[0m  import shapeless3.deriving.K0.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K1.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K11.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K2.Generic.fromMirror
+[31m   |[0m
+[31m   |----------------------------------------------------------------------------[0m
+[31m   |[0mInline stack trace
+[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m
+[31m   |[0mThis location contains code that was inlined from GenericDecoderInstances.scala:16
+[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m
+[31m   |[0mThis location contains code that was inlined from GenericDecoderInstances.scala:16
+[31m    ----------------------------------------------------------------------------[0m
+2 errors found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Compilation failed
+Test result: 3.10.0-RC1-bin-20260617-6ad8738-NIGHTLY is a bad release
+
+Testing 3.10.0-RC1-bin-20260607-dec42ae-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+there were 8 deprecation warnings; re-run with -deprecation for details
+1 warning found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Test result: 3.10.0-RC1-bin-20260607-dec42ae-NIGHTLY is a good release
+
+Testing 3.10.0-RC1-bin-20260609-b34a019-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+there were 8 deprecation warnings; re-run with -deprecation for details
+1 warning found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Test result: 3.10.0-RC1-bin-20260609-b34a019-NIGHTLY is a good release
+
+Testing 3.10.0-RC1-bin-20260616-4733954-NIGHTLY
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo.scala-lang.org/artifactory/maven-nightlies/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/medeia/medeia/test.scala:6:29 [0m[0m
+[31m 6 |[0m  [33msealed[0m [33mtrait[0m [36mTrait[0m derives [32mBsonDocumentCodec[0m
+[31m[31m   |[0m                             ^[0m
+[31m   |[0mCould not derive BsonDocumentEncoder for Spec.this.Trait.
+[31m   |[0mMake sure that BsonEncoder instances exist for all fields..
+[31m   |[0mI found:
+[31m   |[0m
+[31m   |[0m    medeia.generic.GenericEncoder.product[[32mSpec.this.Trait[0m](
+[31m   |[0m      shapeless3.deriving.Labelling.apply[[32mSpec.this.Trait[0m]([32m"Trait"[0m,
+[31m   |[0m        scala.collection.immutable.ArraySeq.unsafeWrapArray[[32mString[0m](
+[31m   |[0m          {
+[31m   |[0m            [33mval[0m [36mevidence$1$proxy1[0m: [32mscala.reflect.ClassTag[String][0m =
+[31m   |[0m              scala.reflect.ClassTag.apply²[[32mString[0m](classOf[String])
+[31m   |[0m            {
+[31m   |[0m              [33mval[0m [36marr$proxy1[0m: [32mArray[String][0m =
+[31m   |[0m                scala.runtime.Arrays.newGenericArray[[32mString[0m]([32m2[0m)(evidence$1$proxy1)
+[31m   |[0m              {
+[31m   |[0m                arr$proxy1.update([32m0[0m, [32m"A"[0m)
+[31m   |[0m                {
+[31m   |[0m                  arr$proxy1.update([32m1[0m, [32m"B"[0m)
+[31m   |[0m                  arr$proxy1:[32mArray[0m[[32mString[0m]
+[31m   |[0m                }:[32mArray[0m[[32mString[0m]
+[31m   |[0m              }:[32mArray[0m[[32mString[0m]
+[31m   |[0m            }:[32mArray[0m[[32mString[0m]
+[31m   |[0m          }
+[31m   |[0m        )
+[31m   |[0m      ):[32mshapeless3.deriving.Labelling[0m[[32mSpec.this.Trait[0m],
+[31m   |[0m      shapeless3.deriving.K0.mkProductInstances[[32mmedeia.encoder.BsonEncoder[0m,
+[31m   |[0m        [32mSpec.this.Trait[0m](
+[31m   |[0m        /* missing */summon[scala.deriving².Mirror.Product of Spec.this.Trait]),
+[31m   |[0m    ???)
+[31m   |[0m
+[31m   |[0mBut Failed to synthesize an instance of type scala.deriving².Mirror.Product of Spec.this.Trait: [33mtrait[0m [32mTrait[0m is not a generic product because it is not a case class
+[31m   |[0m
+[31m   |[0mwhere:    apply     is a method in [33mobject[0m [32mLabelling[0m
+[31m   |[0m          apply²    is a method in [33mobject[0m [32mClassTag[0m
+[31m   |[0m          deriving  is a package in [33mpackage[0m [32mshapeless3[0m
+[31m   |[0m          deriving² is a package in [33mpackage[0m [32mscala[0m
+[31m   |[0m.
+[31m   |[0m
+[31m   |[0mOne of the following imports might make progress towards fixing the problem:
+[31m   |[0m
+[31m   |[0m  import medeia.generic.ProductEncoder.product
+[31m   |[0m  import shapeless3.deriving.K0.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K1.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K11.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K2.Generic.fromMirror
+[31m   |[0m
+[31m   |----------------------------------------------------------------------------[0m
+[31m   |[0mInline stack trace
+[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m
+[31m   |[0mThis location contains code that was inlined from GenericEncoderInstances.scala:12
+[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m
+[31m   |[0mThis location contains code that was inlined from GenericEncoderInstances.scala:12
+[31m    ----------------------------------------------------------------------------[0m
+[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/medeia/medeia/test.scala:10:24 [0m[0m
+[31m10 |[0m  [33menum[0m [36mTestEnum[0m derives [32mBsonDocumentCodec[0m:
+[31m[31m   |[0m                        ^[0m
+[31m   |[0mCould not derive BsonDecoder for Spec.this.TestEnum.
+[31m   |[0mMake sure that BsonDecoder instances exist for all fields..
+[31m   |[0mI found:
+[31m   |[0m
+[31m   |[0m    medeia.generic.GenericDecoder.product[[32mSpec.this.TestEnum[0m](
+[31m   |[0m      shapeless3.deriving.Labelling.apply[[32mSpec.this.TestEnum[0m]([32m"TestEnum"[0m,
+[31m   |[0m        scala.collection.immutable.ArraySeq.unsafeWrapArray[[32mString[0m](
+[31m   |[0m          {
+[31m   |[0m            [33mval[0m [36mevidence$1$proxy3[0m: [32mscala.reflect.ClassTag[String][0m =
+[31m   |[0m              scala.reflect.ClassTag.apply²[[32mString[0m](classOf[String])
+[31m   |[0m            {
+[31m   |[0m              [33mval[0m [36marr$proxy6[0m: [32mArray[String][0m =
+[31m   |[0m                scala.runtime.Arrays.newGenericArray[[32mString[0m]([32m2[0m)(evidence$1$proxy3)
+[31m   |[0m              {
+[31m   |[0m                arr$proxy6.update([32m0[0m, [32m"A1"[0m)
+[31m   |[0m                {
+[31m   |[0m                  arr$proxy6.update([32m1[0m, [32m"B2"[0m)
+[31m   |[0m                  arr$proxy6:[32mArray[0m[[32mString[0m]
+[31m   |[0m                }:[32mArray[0m[[32mString[0m]
+[31m   |[0m              }:[32mArray[0m[[32mString[0m]
+[31m   |[0m            }:[32mArray[0m[[32mString[0m]
+[31m   |[0m          }
+[31m   |[0m        )
+[31m   |[0m      ):[32mshapeless3.deriving.Labelling[0m[[32mSpec.this.TestEnum[0m],
+[31m   |[0m      shapeless3.deriving.K0.mkProductInstances[[32mmedeia.decoder.BsonDecoder[0m,
+[31m   |[0m        [32mSpec.this.TestEnum[0m](
+[31m   |[0m        /* missing */summon[scala.deriving².Mirror.Product of Spec.this.TestEnum]),
+[31m   |[0m      ???)
+[31m   |[0m
+[31m   |[0mBut Failed to synthesize an instance of type scala.deriving².Mirror.Product of Spec.this.TestEnum: [33mclass[0m [32mTestEnum[0m is not a generic product because it is not a case class
+[31m   |[0m
+[31m   |[0mwhere:    apply     is a method in [33mobject[0m [32mLabelling[0m
+[31m   |[0m          apply²    is a method in [33mobject[0m [32mClassTag[0m
+[31m   |[0m          deriving  is a package in [33mpackage[0m [32mshapeless3[0m
+[31m   |[0m          deriving² is a package in [33mpackage[0m [32mscala[0m
+[31m   |[0m.
+[31m   |[0m
+[31m   |[0mOne of the following imports might make progress towards fixing the problem:
+[31m   |[0m
+[31m   |[0m  import medeia.generic.ProductDecoder.product
+[31m   |[0m  import shapeless3.deriving.K0.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K1.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K11.Generic.fromMirror
+[31m   |[0m  import shapeless3.deriving.K2.Generic.fromMirror
+[31m   |[0m
+[31m   |----------------------------------------------------------------------------[0m
+[31m   |[0mInline stack trace
+[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m
+[31m   |[0mThis location contains code that was inlined from GenericDecoderInstances.scala:16
+[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m
+[31m   |[0mThis location contains code that was inlined from GenericDecoderInstances.scala:16
+[31m    ----------------------------------------------------------------------------[0m
+2 errors found
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/maven-metadata.xml.sha1
+Downloading https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Failed to download https://repo.scala-lang.org/artifactory/maven-nightlies/de/megaera/medeia_3/
+Compilation failed
+Test result: 3.10.0-RC1-bin-20260616-4733954-NIGHTLY is a bad release
+
+Last good release: 3.10.0-RC1-bin-20260609-b34a019-NIGHTLY
+First bad release: 3.10.0-RC1-bin-20260616-4733954-NIGHTLY
+
+Finished bisecting releases
+
+Starting bisecting commits b34a019..4733954
+
+
+Starting bisecting commits between releases
+(cached commit bisect for 3.10.0-RC1-bin-20260609-b34a019-NIGHTLY...3.10.0-RC1-bin-20260616-4733954-NIGHTLY)
+commit 5321891783b8d432f0a25d9cdf0be01ed444194d
+Author:     Lukas Rytz <lukas.rytz@gmail.com>
+AuthorDate: Fri Jun 12 13:20:35 2026 +0200
+Commit:     GitHub <noreply@github.com>
+CommitDate: Fri Jun 12 13:20:35 2026 +0200
+
+    Don't infer implicits from non-accessible companion (#25367)
+    
+    Implicits found in the companion object of a type should not be inferred
+    if the companion object is not accessible.
+    
+    Fixes https://github.com/scala/scala3/issues/25347
+    
+    ## How much have your relied on LLM-based tools in this contribution?
+    
+    Asked it to forward-port https://github.com/scala/scala/pull/11215, but
+    its attempt to fix it was in the wrong spot. So the fix is manual, I
+    used the unit test file it created.
+    
+    ## How was the solution tested?
+    
+    The test passes, we now get a type mismatch error instead of the
+    non-accessible implicit being inferred.
+    
+    I tried separate compilation with two `scalac` calls in sbt, but that
+    did something strange, I ran into a different problem.
+    
+    I tried `scala3-bootstrapped/publishLocal` to test it but that failed
+    too with
+    
+    ```
+    [error] -- [E038] Declaration Error: /Users/luc/code/scala/scala3/library/src/scala/collection/mutable/AnyRefMap.scala:406:15
+    [error] 406 |  override def + [V1 >: V](elem1: (K, V1), elem2: (K, V1), elems: (K, V1)*): AnyRefMap[K, V1]^{} = {
+    [error]     |               ^
+    [error]     |    method + has a different signature than the overridden declaration
+    [error]     |
+    [error]     | longer explanation available when compiling with `-explain`
+    ```
+    
+    I feel a bit out of time to look further into this right now.
+
+commit 5321891783b8d432f0a25d9cdf0be01ed444194d
+Author: Lukas Rytz <lukas.rytz@gmail.com>
+Date:   Fri Jun 12 13:20:35 2026 +0200
+
+    Don't infer implicits from non-accessible companion (#25367)
+    
+    Implicits found in the companion object of a type should not be inferred
+    if the companion object is not accessible.
+    
+    Fixes https://github.com/scala/scala3/issues/25347
+    
+    ## How much have your relied on LLM-based tools in this contribution?
+    
+    Asked it to forward-port https://github.com/scala/scala/pull/11215, but
+    its attempt to fix it was in the wrong spot. So the fix is manual, I
+    used the unit test file it created.
+    
+    ## How was the solution tested?
+    
+    The test passes, we now get a type mismatch error instead of the
+    non-accessible implicit being inferred.
+    
+    I tried separate compilation with two `scalac` calls in sbt, but that
+    did something strange, I ran into a different problem.
+    
+    I tried `scala3-bootstrapped/publishLocal` to test it but that failed
+    too with
+    
+    ```
+    [error] -- [E038] Declaration Error: /Users/luc/code/scala/scala3/library/src/scala/collection/mutable/AnyRefMap.scala:406:15
+    [error] 406 |  override def + [V1 >: V](elem1: (K, V1), elem2: (K, V1), elems: (K, V1)*): AnyRefMap[K, V1]^{} = {
+    [error]     |               ^
+    [error]     |    method + has a different signature than the overridden declaration
+    [error]     |
+    [error]     | longer explanation available when compiling with `-explain`
+    ```
+    
+    I feel a bit out of time to look further into this right now.
+5321891783b8d432f0a25d9cdf0be01ed444194d is the first bad commit

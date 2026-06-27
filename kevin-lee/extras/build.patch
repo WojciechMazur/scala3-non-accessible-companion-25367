@@ -1,0 +1,26 @@
+diff --git a/build.sbt b/build.sbt
+index 5d40da2..bb3183e 100644
+--- a/build.sbt
++++ b/build.sbt
+@@ -961,3 +961,9 @@ lazy val nativeSettings: SettingsDefinition = List(
+   Test / fork := false,
+   coverageEnabled := false,
+ )
++
++commands ++= CommunityBuildPlugin.commands
++
++Global / resolvers += "The Scala Nightly Repository".at("https://repo.scala-lang.org/artifactory/maven-nightlies/")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn
+diff --git a/project/plugins.sbt b/project/plugins.sbt
+index 795f1a6..f92508a 100644
+--- a/project/plugins.sbt
++++ b/project/plugins.sbt
+@@ -27,3 +27,7 @@ addSbtPlugin("io.kevinlee" % "sbt-devoops-github"    % sbtDevOopsVersion)
+ addSbtPlugin("io.kevinlee" % "sbt-devoops-starter" % sbtDevOopsVersion)
+ 
+ addSbtPlugin("org.typelevel" % "sbt-tpolecat" % "0.5.2")
++
++addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.14.2")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn

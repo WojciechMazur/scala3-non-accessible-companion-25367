@@ -1,0 +1,786 @@
+##################################
+Clonning https://github.com/sksamuel/avro4s.git into /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s using revision v5.0.15
+##################################
+Note: switching to '781278b85dbaa2c0ed1ae1d04c6aff2f89b34fa4'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+----
+Preparing build for 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Scala binary version found: 3.10
+Implicitly using source version 3.10
+Scala binary version found: 3.10
+Implicitly using source version 3.10
+Would try to apply common scalacOption (best-effort, sbt/mill only):
+Append: ,REQUIRE:-source:3.10
+Remove: ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+----
+Starting build for 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Execute tests: true
+sbt project found at /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s
+No prepare script found for project sksamuel/avro4s
+##################################
+Scala version: 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Targets: com.sksamuel.avro4s%avro4s-cats com.sksamuel.avro4s%avro4s-core com.sksamuel.avro4s%avro4s-kafka
+Project projectConfig: {"projects":{"exclude":[],"overrides":{}},"java":{"version":"17"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[]}
+##################################
+Using extra scalacOptions: ,REQUIRE:-source:3.10
+Filtering out scalacOptions: ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[sbt_options] declare -a sbt_options='()'
+[process_args] java_version = '25'
+[copyRt] java9_rt = '/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25/rt.jar'
+# Executing command line:
+java
+-Dfile.encoding=UTF-8
+-Dcommunitybuild.scala=3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+-Dcommunitybuild.project.dependencies.add=
+-Xmx7G
+-Xms4G
+-Xss8M
+-Dsbt.script=/Users/wmazur/.sdkman/candidates/sbt/current/bin/sbt
+--sun-misc-unsafe-memory-access=allow
+--enable-native-access=ALL-UNNAMED
+-Dscala.ext.dirs=/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25
+-jar
+/Users/wmazur/.sdkman/candidates/sbt/1.11.7/bin/sbt-launch.jar
+"setCrossScalaVersions 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY"
+"++3.10.0-RC1-bin-20260626-20f6657-NIGHTLY -v"
+"mapScalacOptions ",REQUIRE:-source:3.10,-Wconf:msg=can be rewritten automatically under:s" ",-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e""
+clearCredentials
+"excludeLibraryDependency com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}"
+"removeScalacOptionsStartingWith -P:wartremover"
+moduleMappings
+"runBuild 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY """{"projects":{"exclude":[],"overrides":{}},"java":{"version":"17"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[]}""" com.sksamuel.avro4s%avro4s-cats com.sksamuel.avro4s%avro4s-core com.sksamuel.avro4s%avro4s-kafka"
+
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.12.0 (Eclipse Adoptium Java 25)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project avro4s-build from akka.sbt, plugins.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/project[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/project/target/scala-2.12/sbt-1.0/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project avro4s from build.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to avro4s (in build file:/Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/)[0m
+Execute setCrossScalaVersions: 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+OpenCB::Changing crossVersion 3.3.7 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in avro4s-cats/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in avro4s-cats/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.7 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in benchmarks/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in benchmarks/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.7 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in avro4s-kafka/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in avro4s-kafka/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.7 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in avro4s/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in avro4s/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.7 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in avro4s-core/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in avro4s-core/crossScalaVersions
+[0m[[0m[0minfo[0m] [0m[0mset current project to avro4s (in build file:/Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/)[0m
+[0m[[0m[0minfo[0m] [0m[0mSetting Scala version to 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY on 5 projects.[0m
+[0m[[0m[0minfo[0m] [0m[0mSwitching Scala version on:[0m
+[0m[[0m[0minfo[0m] [0m[0m    benchmarks (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    avro4s-kafka (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    avro4s-cats (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    avro4s-core (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m  * avro4s (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0mExcluding projects:[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to avro4s (in build file:/Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/)[0m
+Execute mapScalacOptions: ,REQUIRE:-source:3.10,-Wconf:msg=can be rewritten automatically under:s ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to avro4s (in build file:/Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/)[0m
+Execute clearCredentials: 
+[0m[[0m[0minfo[0m] [0m[0mset current project to avro4s (in build file:/Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/)[0m
+Execute excludeLibraryDependency: com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+OpenCB::Failed to reapply settings in excludeLibraryDependency: Reference to undefined setting: 
+
+  Global / allExcludeDependencies from Global / allExcludeDependencies (CommunityBuildPluginShared.scala:286)
+     Did you mean avro4s-kafka / allExcludeDependencies ?
+ , retry without global scopes
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to avro4s (in build file:/Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/)[0m
+Execute removeScalacOptionsStartingWith: -P:wartremover
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to avro4s (in build file:/Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jun 27, 2026, 7:32:57 PM[0m
+Build config: {"projects":{"exclude":[],"overrides":{}},"java":{"version":"17"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[]}
+Parsed config: Success(ProjectBuildConfig(ProjectsConfig(List(),Map()),Full,List()))
+Starting build...
+Projects: Set(avro4s-cats, avro4s-core, avro4s-kafka)
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/,avro4s-core) (avro4s-core)... [0/3]
+OpenCB::Exclude Scala3 specific scalacOption `REQUIRE:-source:3.10` in Scala 2.12.21 module Global
+Compile scalacOptions: -Wconf:msg=can be rewritten automatically under:s, -source:3.10
+[0m[[0m[0minfo[0m] [0m[0mcompiling 82 Scala sources and 4 Java sources to /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/avro4s-core/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E100] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/avro4s-core/src/main/scala/com/sksamuel/avro4s/FieldMapper.scala:35:9 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m35 |[0m    word.result.mkString[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m    ^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m    [33mmethod[0m [32mresult[0m must be called with () argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 10 deprecation warnings; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[33mwarn[0m] [0m[0msource value 8 is obsolete and will be removed in a future release[0m
+[0m[[0m[33mwarn[0m] [0m[0mtarget value 8 is obsolete and will be removed in a future release[0m
+[0m[[0m[33mwarn[0m] [0m[0mTo suppress warnings about obsolete options, use -Xlint:-options.[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 152 Scala sources and 4 Java sources to /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/avro4s-core/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 9 deprecation warnings; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[33mwarn[0m] [0m[0msource value 8 is obsolete and will be removed in a future release[0m
+[0m[[0m[33mwarn[0m] [0m[0mtarget value 8 is obsolete and will be removed in a future release[0m
+[0m[[0m[33mwarn[0m] [0m[0mTo suppress warnings about obsolete options, use -Xlint:-options.[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+[0m[[0m[0minfo[0m] [0m[0m[32mEitherSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate union:T,U for Either[T,U] of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate union:T,U for Either[T,U] of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate union:T,U for Either[T,U] of records using @AvroNamespace[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should flatten nested unions and move null to first position[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithubIssue281:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Avro Schema for a sealed trait in a subobject #281[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroFixedSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m@AvroFixed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generated fixed field schema when used on a field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithubIssue110:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- default value should be picked up[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDateDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode int to LocalTime[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode int to LocalDate[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode int to java.sql.Date[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode timestamp-millis to LocalDateTime[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode timestamp-micros to LocalDateTime[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode timestamp-nanos to LocalDateTime[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode long to Timestamp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode timestamp-millis to Timestamp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode timestamp-micros to Timestamp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode timestamp-nanos to Timestamp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode long to Instant[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode timestamp-millis to Instant[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode timestamp-micros to Instant[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode timestamp-nanos to Instant[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mUtfSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support utf8 fields as strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOptionSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate option of either Union[Null, A, B][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate option of sealed traits enums as Union[Null, {enum}][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate option of sealed traits as Union[Null, A, B, C][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate option as Union[Null, T][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support none[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- move default option values to first schema as per avro spec[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBasicEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should encode longs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should encode doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should encode booleans[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should encode floats[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should encode ints[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support uppercase packages[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mUUIDEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should encode uuids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should encode seq of uuids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should encode Option[UUID][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTransientDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decoder should populate transient fields with None[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDefaultValueSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support default values for strings in top level classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support default values for ints in top level classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support default values for booleans in top level classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support default values for doubles in top level classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support default values for longs in top level classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support default values for floats in top level classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support default values for instants in top level classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support default values for maps, sets and seqs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support default values set to None for optional sealed trait hierarchies[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support default values of optional Seq, Set and Map[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support default values that are case classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support default values that are case objects[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTypeGuardedDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTypeGuardedDecoding[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support booleans[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support ints[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support longs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support maps[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support seqs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support lists[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support byte arrays[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support bytebuffers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support uuids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMapDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDecoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Map[String, Double][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Map[String, Int][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Map[String, String][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Map[String, Seq[String]][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Map[String, Test][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithubIssue193:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Converting data with an optional fixed type field to GenericRecord fails #193[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mNamespaceSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- use package name for top level class[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- use package name without .package for classes defined in the package object[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- use namespace of object for classes defined inside an object[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- local classes should use the namespace of their parent object package[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- case classes should inherit namespace from parent sealed trait[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroNameEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encoder should take into account @AvroName on a field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBasicSchemasTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept booleans[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept bytes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept integer[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept longs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept double[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept float[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support types nested in uppercase packages[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept nested case classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept multiple nested case classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept deep nested structure[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithubIssue247:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Diverging implicit expansion error on case class #247[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mUUIDSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support UUID logical types[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support Option[UUID] as a union[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support UUID with default value[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support Seq[UUID] as an array of logical types[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mArrayEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array for a vector of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array for an vector of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array for a scala.collection.immutable.Seq of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array for an Array of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array for a List of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array for a scala.collection.immutable.Seq of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array for an Array of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array for a List of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array for a Set of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array for a Set of strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array for a Set of doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Seq[Double][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level List[Int][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Vector[String][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Set[Boolean][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mCollectionsInputStreamTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write Array of doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write Seq of doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write Seq of nested classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write Set of doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write list of doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write list of booleans[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write map of strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write map of doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write map of booleans[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write map of nested classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write Set of nested classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write Vector[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write Vector of nested classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write top level List[Int][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write top level List[ListBooleans][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write top level Vector[Double][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write top level Map[String, Int][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write top level Map[String, Double][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write top level Map[String, String][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write top level Map[String, MapWithNestedClasses][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithub411:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- schema generation with defaults in defaults[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mScala3EnumEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support non-parametrized, non-extending Scala 3 enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support non-parametrized, extending Scala 3 enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support parametrized Scala 3 enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support non-parametrized, non-extending Scala 3 annotated enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support non-parametrized, extending Scala 3 annotated enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support parametrized Scala 3 annotated enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support Scala 3 enums that are parametrized with a product[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mArrayDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDecoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support array for a vector of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support array for an vector of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support array for a scala.collection.immutable.Seq of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support array for an Array of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support array for a List of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support array for a List of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support array for a scala.collection.immutable.Seq of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support array for an Array of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support array for a Set of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support array for a Set of strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support array for a Set of doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support Seq[Tuple2] issue #156[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support Seq[Tuple3][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Seq[Double][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level List[Int][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Vector[String][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Set[Boolean][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFixedEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode fixed when used on a field in a case class[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTupleSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- tuple 2 schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- tuple 3 schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- tuple 4 schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- tuple 5 schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEitherEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate union:T,U for Either[T,U] of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate union:T,U for Either[T,U] of case classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSealedTraitSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support sealed traits of case classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support trait subtypes fields with same name[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support trait subtypes fields with same name and same type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support top level sealed traits[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support top level sealed trait enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- trait of case objects at a nested level should be encoded as enum[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- classes nested in objects should be encoded with consistent package name[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroDocSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m@AvroDoc[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support doc annotation on class[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support doc annotation on fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support doc annotation on nested class[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithubIssue205:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaFor[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for case classes with complete path and no default value[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for case classes with complete path and default value[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for case classes with import and no default value[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for case classes with import and default value[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroNoDefaultTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- a field annotated with @AvroNoDefault should ignore a scala default[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mByteArraySchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode byte arrays as BYTES type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode seq arrays as BYTES type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode list arrays as BYTES type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode vector arrays as BYTES type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support top level byte arrays[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode ByteBuffer as BYTES type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support top level ByteBuffers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mReorderFieldsEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mRecordEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should respect schema field order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEitherDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode union:T,U for Either[T,U] of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode union:T,U for Either[T,U] of case classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBasicDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDecoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should decode longs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should decode doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should decode booleans[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should decode floats[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should decode ints[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support uppercase packages[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroPropSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m@AvroProp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support prop annotation on class[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support prop annotation on field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support json prop annotation on field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDefaultValueRecordTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mConverting to and from Avro GenericRecord[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should use the default where appropriate[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mStringSchemasTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should encode strings as java strings when JavaStringSchemaFor is in scope[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBigDecimalEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- use byte array for decimal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- allow decimals to be encoded as strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support optional big decimals[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- allow bigdecimals to be encoded as generic fixed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEnumSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level java enums using the AvroJavaName, AvroJavaNamespace, AvroJavaProp, AvroJavaEnumDefault annotations[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level java enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support sealed trait enums with no default enum value[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support optional sealed trait enums with no default enum value[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mArraySchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array type for a vector of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array type for an vector of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array type for a scala.collection.immutable.Seq of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array type for an Array of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array type for a List of primitives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array type for a scala.collection.immutable.Seq of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array type for an Array of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array type for a List of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array type for a Set of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array type for a Set of strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate array type for a Set of doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support Seq[Tuple2] issue #156[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support Seq[Tuple3][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Seq[Double][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level List[Int][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Vector[String][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Set[Boolean][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support array of maps[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support lists of maps[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support seq of maps[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support vector of maps[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support case class of seq of case class with maps[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mByteArrayEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode byte arrays as BYTES type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode byte vectors as BYTES type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode byte seq as BYTES type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode byte list as BYTES type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode ByteBuffers as BYTES type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode byte arrays as FIXED[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode byte buffers as FIXED[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode byte buffers as FIXED (ReadOnlyBuffer)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode top level byte arrays[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode top level ByteBuffers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode top level ByteBuffer as FIXED[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithubIssue883:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOptionSchemas[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should not mutate original schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroNamespaceTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m@AvroNamespace[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support namespace annotations on records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support namespace annotations in nested records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support namespace annotations on field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should favour namespace annotations on field over record[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support namespace annotations on case classes at field level[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support namespace annotations on case classes at class level[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support namespace annotations on sealed trait enums at the trait level[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should empty namespace[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithubIssue890:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support nested default None[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithub254:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- NoClassDefFoundError for case class wrapping sealed trait (regression?) #254[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMapEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Map[String, Double][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Map[String, Int][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Map[String, String][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Map[String, CaseClass][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLocalDateTimeRoundTrip:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- local date time round trip[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- local date time round trip with timestamp-micros[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroUnionPositionSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- enums should be sorted by ascending union position[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unions should be sorted by ascending union position[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPrimitiveSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Booleans[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Longs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Integers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Floats[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support top level Doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFixedDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode bytes to String[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithubIssue12:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mavro schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should work for private vals[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFromRecordTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFromRecord[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should decode to class with a subset of fields used to encode[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mByteArrayDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode Array[Byte] to Array[Byte][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode ByteBuffer to Array[Byte][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode Array[Byte] to Vector[Byte][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode ByteBuffer to Vector[Byte][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode read-only ByteBuffer to Vector[Byte][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode Array[Byte] to List[Byte][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode ByteBuffer to List[Byte][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode Array[Byte] to Seq[Byte][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode ByteBuffer to Seq[Byte][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode top level byte arrays[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode Array[Byte] to ByteBuffer[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode bytebuffers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode ByteBuffer to top level ByteBuffer[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDateEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode LocalTime as TIME-MILLIS[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode LocalDate as DATE[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode java.sql.Date as DATE[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode LocalDateTime as timestamp-nanos[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode LocalDateTime as timestamp-micros[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode LocalDateTime as timestamp-millis[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode Timestamp as timestamp-millis[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode Timestamp as timestamp-micros[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode Timestamp as timestamp-nanos[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode Instant as timestamp-millis[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode Instant as timestamp-micros[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode Instant as timestamp-nanos[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithubIssue387:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLocalTime[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- must encode the value to a int represented as milliseconds since midnight[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- must encode the value and truncate any precision beyond milliseconds[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- must encode and decode back to an equivalent LocalTime object when Local has microsecond precision[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- must encode and decode back to a LocalTime object with an equivalent time to  microsecond precision[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithubIssue885:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support Option of sealed trait with 1 subtype[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDateSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate date logical type for LocalDate[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate date logical type for Date[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate time logical type for LocalTime[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate timestamp-nanos for LocalDateTime[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate timestamp-millis logical type for Instant[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate timestamp-millis logical type for Timestamp[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBigDecimalSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should encode big decimal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept big decimal as logical type on bytes with custom scale and precision[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should suport Option[BigDecimal] as a union[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Seq[BigDecimal] be represented as an array of logical types[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Seq[Option[BigDecimal]] be represented as an array of unions of nulls/bigdecimals[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should allow big decimals to be encoded as STRING when custom typeclasses are provided[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should allow big decimals to be encoded as FIXED when custom typeclasses are provided[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBigDecimalDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDecoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should convert byte array to decimal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should scale big decimals before decoding[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support optional big decimals[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be able to decode strings as bigdecimals based on the schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be able to decode generic fixed as bigdecimals[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGenericSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support same generic with different type parameters[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- throw error if different type parameters are disabled by @AvroErasedName[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support top level generic[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate only raw name if @AvroErasedName is present[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGithubIssue545:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTypeGuardedDecoding[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a map decoder instead of an array decoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSealedTraitDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support sealed trait enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support sealed traits of case classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support trait subtypes fields with same name[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support trait subtypes fields with same name and same type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support round-trip for sealed traits of case classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support round-trip for sealed traits with inheritable namespace[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroNameDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decoder should take into account @AvroName on fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroAliasSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support alias annotations on types[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support multiple alias annotations on types[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support alias annotations on field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOptionEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support String options[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support boolean options[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support options of case classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support options of either[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support options of sealed traits[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support options of enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mReadMeExamples:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroStream binary serialization[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should round trip the objects [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroStream json serialization[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should round trip the objects [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroSchemaMergeTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroSchemaMerge[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should merge schemas with union type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaEvolutionTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- when decoding, if the record and schema are missing a field and the target has a scala default, use that[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- when decoding, if the record is missing a field that is present in the schema with a default, use the default from the schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- when decoding, if the record is missing a field that is present in the schema and the type is option, then set to None[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTupleEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode tuple2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode tuple3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode tuple4[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode tuple5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTransientSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- @AvroTransient fields should be ignored[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroErrorSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- @AvroError should set schema type to Error when used on a case class[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- @AvroError should set schema type to Error when used on a field[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMapSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaEncoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate map type for a scala.collection.immutable.Map of strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate map type for a scala.collection.immutable.Map of ints[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate map type for a scala.collection.immutable.Map of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate map type for a scala.collection.immutable.Map of Option[Boolean][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate map type for a map of seqs of strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate map type for a map of seqs of records[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroNameSchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate field names using @AvroName[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- generate class names using @AvroName[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- @AvroName on sealed trait enum[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- @AvroName on sealed trait enum symbol[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mToRecordTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode to record[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mNestedStructEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode nested structs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFieldMapperFieldTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfieldMapper[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should defaultNoChange[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support pascal case[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support snake case[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mStringDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode from strings to strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode from CharSequence to CharSequence[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode from CharSequence to string[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode from UTF8s to strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode from byte buffers to strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode from byte arrays to strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroDataOutputStreamCodecTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroDataOutputStream[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should include schema[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should include deflate coded in metadata when serialized with deflate[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should include bzip2 coded in metadata when serialized with bzip2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mScala3EnumDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support non-parametrized, non-extending Scala 3 enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- supoort non-parametrized, extending Scala 3 enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- supoort parametrized Scala 3 enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBasicInputStreamTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write out booleans[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read and skip over corrupted data[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write out strings[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write out longs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write out ints[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write out doubles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- read write out floats[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTupleDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode tuple2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode tuple2 with seq[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode tuple3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode tuple3 with seq[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode tuple4[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode tuple4 with seq[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode tuple5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- decode tuple5 with seq[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAvroSortPrioritySchemaTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- enums should be sorted by descending priority[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- unions should be sorted by descending priority[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mUUIDDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDecoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should decode uuids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should decode UUIDSs encoded as Utf8[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should decode seq of uuids[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should decode Option[UUID][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOptionDecoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDecoder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support String options[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should support boolean options[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should option of seq of case class[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should option of either[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should option of sealed trait[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should option of enum[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Option with non-None default[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mStringEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode strings as UTF8[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode strings as java strings when avro.java.string is set[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- encode strings as GenericFixed and pad bytes when schema is fixed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSchemaForTypeclassOverrideTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- allow overriding built in SchemaFor implicit for a basic type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- allow overriding built in SchemaFor implicit for a complex type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- allow overriding built in SchemaFor implicit for a value type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- allow overriding built in SchemaFor implicit for a top level value type[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBigDecimalRoundTrip:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- BigDecimal round trip[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSealedTraitEncoderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support sealed traits of case classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support trait subtypes that have some common field names[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support trait subtypes that have some common field names and types[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support top level sealed traits[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support sealed trait enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support top level sealed trait enums[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support sealed traits that contain nested classes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- support sealed traits that contain nested classes that contain options[0m[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/,avro4s-cats) (avro4s-cats)... [1/3]
+Compile scalacOptions: -Wconf:msg=can be rewritten automatically under:s, -source:3.10
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/avro4s-cats/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/avro4s-cats/src/main/scala/com/sksamuel/avro4s/cats/package.scala:36:23 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m      { [36mvalue[0m => value.map(encode).toNonEmptyList.toList.asJava }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue map is not a member of cats.data.NonEmptyChainImpl.Type[T], but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import cats.data.NonEmptyChainImpl.catsNonEmptyChainOps[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(avro4s-cats / Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/avro4s-cats/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/avro4s-cats/src/main/scala/com/sksamuel/avro4s/cats/package.scala:36:23 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m      { [36mvalue[0m => value.map(encode).toNonEmptyList.toList.asJava }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue map is not a member of cats.data.NonEmptyChainImpl.Type[T], but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import cats.data.NonEmptyChainImpl.catsNonEmptyChainOps[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(avro4s-cats / Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/avro4s-cats/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/avro4s-cats/src/main/scala/com/sksamuel/avro4s/cats/package.scala:36:23 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m      { [36mvalue[0m => value.map(encode).toNonEmptyList.toList.asJava }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue map is not a member of cats.data.NonEmptyChainImpl.Type[T], but could be made available as an extension method.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import cats.data.NonEmptyChainImpl.catsNonEmptyChainOps[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(avro4s-cats / Compile / [31mcompileIncremental[0m) Compilation failed[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/,avro4s-kafka) (avro4s-kafka)... [2/3]
+Compile scalacOptions: -Wconf:msg=can be rewritten automatically under:s, -source:3.10
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/avro4s-kafka/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/sksamuel/avro4s/repo/sksamuel/avro4s/avro4s-kafka/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+[0m[[0m[0minfo[0m] [0m[0m[32mGenericSerdeTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mserialization with default binary avro format[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be identical to binary format[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mround trip with default (binary) avro format[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should yield back original data[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mround trip with binary avro format[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should yield back original data[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mround trip with json avro format[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should yield back original data[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mround trip with data avro format[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should yield back original data[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mround trip with tombstone[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should yield back tombstone[0m[0m
+
+************************
+Build summary:
+[{
+ "module": "avro4s-core",
+ "compile": {"status": "ok", "tookMs": 13445, "warnings": 1, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 60235, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "test": {"status": "ok", "tookMs": 2817, "passed": 414, "failed": 0, "ignored": 0, "skipped": 0, "total": 414, "byFramework": [{"framework": "unknown", "stats": {"passed": 414, "failed": 0, "ignored": 0, "skipped": 0, "total": 414}}]},
+ "publish": {"status": "ok", "tookMs": 10},
+ "metadata": {
+  "crossScalaVersions": ["2.12.21"]
+}
+},{
+ "module": "avro4s-cats",
+ "compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 1558, "warnings": 0, "errors": 1, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "skipped", "tookMs": 0, "warnings": 0, "errors": 0},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "skipped", "tookMs": 0},
+ "metadata": {
+  "crossScalaVersions": ["2.12.21"]
+}
+},{
+ "module": "avro4s-kafka",
+ "compile": {"status": "ok", "tookMs": 289, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 831, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "test": {"status": "ok", "tookMs": 348, "passed": 6, "failed": 0, "ignored": 0, "skipped": 0, "total": 6, "byFramework": [{"framework": "unknown", "stats": {"passed": 6, "failed": 0, "ignored": 0, "skipped": 0, "total": 6}}]},
+ "publish": {"status": "ok", "tookMs": 19},
+ "metadata": {
+  "crossScalaVersions": ["2.12.21"]
+}
+}]
+************************
+[0m[[0m[31merror[0m] [0m[0mScala3CommunityBuild$ProjectBuildFailureException: 1 module(s) finished with failures: avro4s-cats[0m
+[0m[[0m[31merror[0m] [0m[0m(Global / [31mrunBuild[0m) Scala3CommunityBuild$ProjectBuildFailureException: 1 module(s) finished with failures: avro4s-cats[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 88 s (0:01:28.0), completed Jun 27, 2026, 7:34:25 PM[0m
+[0JBuild failed, not retrying.

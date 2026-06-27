@@ -1,0 +1,21 @@
+[{
+ "module": "screening-core",
+ "compile": {"status": "ok", "tookMs": 9537, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 2083, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 794, "passed": 42, "failed": 0, "ignored": 0, "skipped": 0, "total": 42, "byFramework": [{"framework": "munit", "stats": {"passed": 42, "failed": 0, "ignored": 0, "skipped": 0, "total": 42}}]},
+ "publish": {"status": "ok", "tookMs": 6},
+ "metadata": {
+  "crossScalaVersions": ["2.13.8", "3.1.2"]
+}
+},{
+ "module": "screening",
+ "compile": {"status": "ok", "tookMs": 94, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 122, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 105, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 18},
+ "metadata": {
+  "crossScalaVersions": ["2.13.8", "3.1.2"]
+}
+}]

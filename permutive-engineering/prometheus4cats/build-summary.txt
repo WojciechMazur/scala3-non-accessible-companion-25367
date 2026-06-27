@@ -1,0 +1,31 @@
+[{
+ "module": "prometheus4cats",
+ "compile": {"status": "ok", "tookMs": 18675, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 6247, "warnings": 0, "errors": 11, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "skipped", "tookMs": 0},
+ "metadata": {
+  "crossScalaVersions": ["2.13.18", "3.3.7"]
+}
+},{
+ "module": "prometheus4cats-testkit",
+ "compile": {"status": "ok", "tookMs": 11750, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 175, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "test": {"status": "ok", "tookMs": 131, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "skipped", "tookMs": 0},
+ "metadata": {
+  "crossScalaVersions": ["2.13.18", "3.3.7"]
+}
+},{
+ "module": "prometheus4cats-java",
+ "compile": {"status": "ok", "tookMs": 4121, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 3180, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},
+ "test": {"status": "ok", "tookMs": 7670, "passed": 68, "failed": 0, "ignored": 0, "skipped": 0, "total": 68, "byFramework": [{"framework": "munit", "stats": {"passed": 68, "failed": 0, "ignored": 0, "skipped": 0, "total": 68}}]},
+ "publish": {"status": "skipped", "tookMs": 0},
+ "metadata": {
+  "crossScalaVersions": ["2.13.18", "3.3.7"]
+}
+}]

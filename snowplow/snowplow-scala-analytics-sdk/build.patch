@@ -1,0 +1,31 @@
+diff --git a/build.sbt b/build.sbt
+index e4a2742..f616fe2 100644
+--- a/build.sbt
++++ b/build.sbt
+@@ -55,3 +55,9 @@ lazy val benchmark = project
+   .in(file("benchmark"))
+   .dependsOn(root % "test->test")
+   .enablePlugins(JmhPlugin)
++
++commands ++= CommunityBuildPlugin.commands
++
++Global / resolvers += "The Scala Nightly Repository".at("https://repo.scala-lang.org/artifactory/maven-nightlies/")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn
+diff --git a/project/build.properties b/project/build.properties
+index 46e43a9..e480c67 100644
+--- a/project/build.properties
++++ b/project/build.properties
+@@ -1 +1 @@
+-sbt.version=1.8.2
++sbt.version=1.11.5
+diff --git a/project/plugins.sbt b/project/plugins.sbt
+index 28f37e9..8a5eb48 100644
+--- a/project/plugins.sbt
++++ b/project/plugins.sbt
+@@ -9,3 +9,5 @@ addSbtPlugin("com.dwijnand" % "sbt-dynver" % "4.1.1")
+ addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.10.0-RC1")
+ 
+ libraryDependencySchemes += "org.scala-lang.modules" %% "scala-xml" % VersionScheme.Always
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn

@@ -1,0 +1,26 @@
+diff --git a/build.sbt b/build.sbt
+index 415438e..f3d394e 100644
+--- a/build.sbt
++++ b/build.sbt
+@@ -266,3 +266,9 @@ Global / excludeLintKeys ++= Set(
+ 
+ addCommandAlias("prepare", "scalafixAll; scalafmtAll; smithyFmtAll")
+ addCommandAlias("check", "; scalafixAll --check ; scalafmtCheckAll; smithyFmtCheckAll")
++
++commands ++= CommunityBuildPlugin.commands
++
++Global / resolvers += "The Scala Nightly Repository".at("https://repo.scala-lang.org/artifactory/maven-nightlies/")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn
+diff --git a/project/plugins.sbt b/project/plugins.sbt
+index 6511cc2..ac379d1 100644
+--- a/project/plugins.sbt
++++ b/project/plugins.sbt
+@@ -22,3 +22,7 @@ addSbtPlugin("com.siriusxm" % "sbt-snapshot4s" % "0.2.10")
+ addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.6.1")
+ 
+ addSbtPlugin("org.typelevel" % "sbt-tpolecat" % "0.5.6")
++
++addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.14.2")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn

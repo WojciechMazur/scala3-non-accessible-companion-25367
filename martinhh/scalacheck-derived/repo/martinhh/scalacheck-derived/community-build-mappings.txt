@@ -1,0 +1,10 @@
+io.github.martinhh%scalacheck-derived-test-3-4-0_native0.5 test34Native
+io.github.martinhh%scalacheck-derived-extras_sjs1 extrasJS
+io.github.martinhh%scalacheck-derived-extras_native0.5 extrasNative
+io.github.martinhh%scalacheck-derived_native0.5 coreNative
+io.github.martinhh%scalacheck-derived_sjs1 coreJS
+io.github.martinhh%scalacheck-derived-test-3-4-0_sjs1 test34JS
+io.github.martinhh%scalacheck-derived-test-3-4-0 test34JVM
+io.github.martinhh%scalacheck-derived coreJVM
+io.github.martinhh%scalacheck-derived_2.12 scalacheck-derived
+io.github.martinhh%scalacheck-derived-extras extrasJVM

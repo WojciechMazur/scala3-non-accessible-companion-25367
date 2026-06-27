@@ -1,0 +1,43 @@
+diff --git a/build.sbt b/build.sbt
+index 45dbc9c..d3cec76 100644
+--- a/build.sbt
++++ b/build.sbt
+@@ -69,3 +69,9 @@ ThisBuild / libraryDependencies ++=
+ 
+ // ===========================================================================
+ 
++
++commands ++= CommunityBuildPlugin.commands
++
++Global / resolvers += "The Scala Nightly Repository".at("https://repo.scala-lang.org/artifactory/maven-nightlies/")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn
+diff --git a/project/GalliaCommonSettings.scala b/project/GalliaCommonSettings.scala
+index a39e427..28b797b 100644
+--- a/project/GalliaCommonSettings.scala
++++ b/project/GalliaCommonSettings.scala
+@@ -3,7 +3,7 @@ import sbt.Keys._
+ 
+ // ===========================================================================
+ object GalliaCommonSettings {
+-  val scala3   = "3.3.1"
++  val scala3 = "3.8.4"
+   val scala213 = "2.13.12"
+   val scala212 = "2.12.18"
+   
+diff --git a/project/build.properties b/project/build.properties
+index 40b3b8e..e480c67 100644
+--- a/project/build.properties
++++ b/project/build.properties
+@@ -1 +1 @@
+-sbt.version=1.9.0
++sbt.version=1.11.5
+diff --git a/project/plugins.sbt b/project/plugins.sbt
+index bf4f446..016af1d 100644
+--- a/project/plugins.sbt
++++ b/project/plugins.sbt
+@@ -1,2 +1,4 @@
+ addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "3.9.7")
+ addSbtPlugin("com.jsuereth"   % "sbt-pgp"      % "2.0.1") // required by sbt-sonatype above
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn

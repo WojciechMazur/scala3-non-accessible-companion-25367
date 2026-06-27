@@ -1,0 +1,121 @@
+[{
+ "module": "core",
+ "compile": {"status": "ok", "tookMs": 4430, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 1705, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 191, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 6},
+ "metadata": {
+  "crossScalaVersions": []
+}
+},{
+ "module": "lila-search-root",
+ "compile": {"status": "ok", "tookMs": 86, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 132, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 88, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 5},
+ "metadata": {
+  "crossScalaVersions": []
+}
+},{
+ "module": "api",
+ "compile": {"status": "ok", "tookMs": 2562, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 2691, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 756, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 9},
+ "metadata": {
+  "crossScalaVersions": []
+}
+},{
+ "module": "elastic",
+ "compile": {"status": "ok", "tookMs": 2997, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 4026, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 1028, "passed": 30, "failed": 0, "ignored": 0, "skipped": 0, "total": 30, "byFramework": [{"framework": "unknown", "stats": {"passed": 30, "failed": 0, "ignored": 0, "skipped": 0, "total": 30}}]},
+ "publish": {"status": "ok", "tookMs": 5},
+ "metadata": {
+  "crossScalaVersions": []
+}
+},{
+ "module": "lila-mongo",
+ "compile": {"status": "ok", "tookMs": 2696, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 288, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 155, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 4},
+ "metadata": {
+  "crossScalaVersions": []
+}
+},{
+ "module": "client",
+ "compile": {"status": "ok", "tookMs": 1023, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 286, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 244, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 4},
+ "metadata": {
+  "crossScalaVersions": []
+}
+},{
+ "module": "lila-search-app",
+ "compile": {"status": "ok", "tookMs": 2110, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 770, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 380, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 5},
+ "metadata": {
+  "crossScalaVersions": []
+}
+},{
+ "module": "ingestor-core",
+ "compile": {"status": "ok", "tookMs": 2735, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 1226, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 1115, "passed": 5, "failed": 0, "ignored": 0, "skipped": 0, "total": 5, "byFramework": [{"framework": "unknown", "stats": {"passed": 5, "failed": 0, "ignored": 0, "skipped": 0, "total": 5}}]},
+ "publish": {"status": "ok", "tookMs": 9},
+ "metadata": {
+  "crossScalaVersions": []
+}
+},{
+ "module": "lila-game-export",
+ "compile": {"status": "ok", "tookMs": 1094, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 622, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 510, "passed": 4, "failed": 0, "ignored": 0, "skipped": 0, "total": 4, "byFramework": [{"framework": "unknown", "stats": {"passed": 4, "failed": 0, "ignored": 0, "skipped": 0, "total": 4}}]},
+ "publish": {"status": "ok", "tookMs": 5},
+ "metadata": {
+  "crossScalaVersions": []
+}
+},{
+ "module": "e2e",
+ "compile": {"status": "ok", "tookMs": 791, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 1571, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "failed", "tookMs": 1418, "passed": 4, "failed": 1, "ignored": 0, "skipped": 0, "total": 5, "byFramework": [{"framework": "unknown", "stats": {"passed": 4, "failed": 1, "ignored": 0, "skipped": 0, "total": 5}}]},
+ "publish": {"status": "ok", "tookMs": 5},
+ "metadata": {
+  "crossScalaVersions": []
+}
+},{
+ "module": "lila-search-ingestor",
+ "compile": {"status": "ok", "tookMs": 800, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 629, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 427, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 3},
+ "metadata": {
+  "crossScalaVersions": []
+}
+},{
+ "module": "lila-search-cli",
+ "compile": {"status": "ok", "tookMs": 1052, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "ok", "tookMs": 1081, "warnings": 0, "errors": 0, "sourceVersion": "3.8"},
+ "test": {"status": "ok", "tookMs": 725, "passed": 2, "failed": 0, "ignored": 0, "skipped": 0, "total": 2, "byFramework": [{"framework": "unknown", "stats": {"passed": 2, "failed": 0, "ignored": 0, "skipped": 0, "total": 2}}]},
+ "publish": {"status": "ok", "tookMs": 8},
+ "metadata": {
+  "crossScalaVersions": []
+}
+}]

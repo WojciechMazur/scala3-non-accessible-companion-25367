@@ -1,0 +1,990 @@
+##################################
+Clonning https://github.com/martinhh/scalacheck-derived.git into /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived using revision main
+##################################
+----
+Preparing build for 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Scala binary version found: 3.10
+Implicitly using source version 3.10
+Scala binary version found: 3.10
+Implicitly using source version 3.10
+Would try to apply common scalacOption (best-effort, sbt/mill only):
+Append: ,REQUIRE:-source:3.10
+Remove: ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+----
+Starting build for 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Execute tests: true
+sbt project found at /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived
+No prepare script found for project martinhh/scalacheck-derived
+##################################
+Scala version: 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Targets: io.github.martinhh%scalacheck-derived io.github.martinhh%scalacheck-derived-extras
+Project projectConfig: {"projects":{"exclude":[],"overrides":{}},"java":{"version":"17"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[]}
+##################################
+Using extra scalacOptions: ,REQUIRE:-source:3.10
+Filtering out scalacOptions: ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[sbt_options] declare -a sbt_options='()'
+[process_args] java_version = '25'
+[copyRt] java9_rt = '/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25/rt.jar'
+# Executing command line:
+java
+-Dfile.encoding=UTF-8
+-Xss2m
+-Xms512M
+-Xmx6G
+-Dcommunitybuild.scala=3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+-Dcommunitybuild.project.dependencies.add=
+-Xmx7G
+-Xms4G
+-Xss8M
+-Dsbt.script=/Users/wmazur/.sdkman/candidates/sbt/current/bin/sbt
+--sun-misc-unsafe-memory-access=allow
+--enable-native-access=ALL-UNNAMED
+-Dscala.ext.dirs=/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25
+-jar
+/Users/wmazur/.sdkman/candidates/sbt/1.11.7/bin/sbt-launch.jar
+"setCrossScalaVersions 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY"
+"++3.10.0-RC1-bin-20260626-20f6657-NIGHTLY -v"
+"mapScalacOptions ",REQUIRE:-source:3.10,-Wconf:msg=can be rewritten automatically under:s" ",-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e""
+clearCredentials
+"excludeLibraryDependency com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}"
+"removeScalacOptionsStartingWith -P:wartremover"
+moduleMappings
+"runBuild 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY """{"projects":{"exclude":[],"overrides":{}},"java":{"version":"17"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[]}""" io.github.martinhh%scalacheck-derived io.github.martinhh%scalacheck-derived-extras"
+
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.12.12 (Eclipse Adoptium Java 25)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project scalacheck-derived-build from akka.sbt, plugins.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/project[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/project/target/scala-2.12/sbt-1.0/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project scalacheck-derived from build.sbt...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to scalacheck-derived (in build file:/Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/)[0m
+Execute setCrossScalaVersions: 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+OpenCB::Changing crossVersion 3.4.0 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in test34JVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.8 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in coreJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.8 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in coreJVM/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in coreJS/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in test34JVM/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in coreJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.8 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in extrasJS/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in extrasJS/crossScalaVersions
+OpenCB::Changing crossVersion 3.4.0 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in test34Native/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in test34Native/crossScalaVersions
+OpenCB::Changing crossVersion 3.4.0 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in test34JS/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in test34JS/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.8 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in extrasNative/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in extrasNative/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.8 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in extrasJVM/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in extrasJVM/crossScalaVersions
+OpenCB::Changing crossVersion 3.3.8 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in coreNative/crossScalaVersions
+OpenCB::Limitting incorrect crossVersions List(2.12.21) -> List(3.10.0-RC1-bin-20260626-20f6657-NIGHTLY) in coreNative/crossScalaVersions
+[0m[[0m[0minfo[0m] [0m[0mset current project to scalacheck-derived (in build file:/Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/)[0m
+[0m[[0m[0minfo[0m] [0m[0mSetting Scala version to 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY on 9 projects.[0m
+[0m[[0m[0minfo[0m] [0m[0mSwitching Scala version on:[0m
+[0m[[0m[0minfo[0m] [0m[0m    test34Native (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasJS (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasNative (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    coreNative (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    coreJS (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    test34JS (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    test34JVM (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    coreJVM (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0m    extrasJVM (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m
+[0m[[0m[0minfo[0m] [0m[0mExcluding projects:[0m
+[0m[[0m[0minfo[0m] [0m[0m  * scalacheck-derived (2.12.21)[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to scalacheck-derived (in build file:/Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/)[0m
+Execute mapScalacOptions: ,REQUIRE:-source:3.10,-Wconf:msg=can be rewritten automatically under:s ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to scalacheck-derived (in build file:/Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/)[0m
+Execute clearCredentials: 
+[0m[[0m[0minfo[0m] [0m[0mset current project to scalacheck-derived (in build file:/Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/)[0m
+Execute excludeLibraryDependency: com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+OpenCB::Failed to reapply settings in excludeLibraryDependency: Reference to undefined setting: 
+
+  Global / allExcludeDependencies from Global / allExcludeDependencies (CommunityBuildPluginShared.scala:286)
+     Did you mean test34JVM / allExcludeDependencies ?
+ , retry without global scopes
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to scalacheck-derived (in build file:/Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/)[0m
+Execute removeScalacOptionsStartingWith: -P:wartremover
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to scalacheck-derived (in build file:/Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jun 27, 2026, 7:32:14 PM[0m
+Build config: {"projects":{"exclude":[],"overrides":{}},"java":{"version":"17"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[]}
+Parsed config: Success(ProjectBuildConfig(ProjectsConfig(List(),Map()),Full,List()))
+Starting build...
+Projects: Set(coreJVM, extrasJVM)
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/,coreJVM) (scalacheck-derived)... [0/2]
+OpenCB::Exclude Scala3 specific scalacOption `REQUIRE:-source:3.10` in Scala 2.12.21 module Global
+OpenCB::Filter out '-Xfatal-warnings', matches setting pattern '^-?\Q-Xfatal-warnings\E'
+Compile scalacOptions: -Wunused:all, -Wconf:msg=can be rewritten automatically under:s, -source:3.10
+[0m[[0m[0minfo[0m] [0m[0mcompiling 8 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/.jvm/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E029] Pattern Match Exhaustivity Warning: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/main/scala/io/github/martinhh/derived/ArbitraryDeriving.scala:110:6 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m110 |[0m      [33mcase[0m (acc, s: [33mSingleGen[0m[T]) => acc :+ s[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m      ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m      [33mmatch[0m may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m      It would fail on pattern case: (_, _)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/.jvm/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ArbitraryDerivingSuite.scala:18:63 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 18 |[0m    equalArbitraryValues([33mRecursiveList[0m.expectedGen[[32mInt[0m])(using derived.arbitrary.deriveArbitrary)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Arbitrary[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.DefaultGensSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:106[0m
+[0m[[0m[31merror[0m] [0m[0m[31m106 |[0m    [33mval[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:106[0m
+[0m[[0m[31merror[0m] [0m[0m[31m248 |[0m        [33mgiven[0m [36ma[0m: [32mArbitrary[0m[[32mT[0m] = [33mArbitrary[0m(sumGen([33mGens[0m.sumInstance[[32mT[0m, [32mDefaultGensSummoner[0m](s).gens))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ArbitraryDerivingSuite.scala:22:64 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 22 |[0m    equalArbitraryValues([33mMaybeMaybeList[0m.expectedGen[[32mInt[0m])(using derived.arbitrary.deriveArbitrary)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type org.scalacheck.Arbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    ArbitraryDeriving_this.anyGivenArbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]][0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mBut [33mgiven instance[0m [32manyGivenArbitrary[0m in [33mtrait[0m [32mArbitraryDeriving[0m does not match type org.scalacheck.Arbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:94[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 94 |[0m    [33mval[0m [36marbs[0m = summonAll[[33mTuple[0m.[32mMap[0m[p.[32mMirroredElemTypes[0m, [32mArbitrary[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:94[0m
+[0m[[0m[31merror[0m] [0m[0m[31m251 |[0m        [33mArbitrary[0m([33mGens[0m.productGen(p))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                  ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:23:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 23 |[0m      deriveCogen[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Cogen[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mOne of the following imports might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.DefaultCogenSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.ExtraShallowCogenSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:65[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 65 |[0m    [33mdef[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:65[0m
+[0m[[0m[31merror[0m] [0m[0m[31m143 |[0m      [33mcase[0m s: [33mMirror[0m.[33mSumOf[0m[T]     => [33mCogenDeriving[0m.cogenSum[T, [33mDefaultCogenSummoner[0m](s)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:33:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 33 |[0m      deriveCogen[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type org.scalacheck.Cogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    CogenDeriving_this.anyGivenCogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]][0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mBut [33mgiven instance[0m [32manyGivenCogen[0m in [33mtrait[0m [32mCogenDeriving[0m does not match type org.scalacheck.Cogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:93[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 93 |[0m    [33mdef[0m [36mcogens[0m = summonAll[[33mTuple[0m.[32mMap[0m[p.[32mMirroredElemTypes[0m, [32mCogen[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:93[0m
+[0m[[0m[31merror[0m] [0m[0m[31m144 |[0m      [33mcase[0m p: [33mMirror[0m.[33mProductOf[0m[T] => [33mCogenDeriving[0m.cogenProduct(p)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:279:12 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m279 |[0m      summon[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m            ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mcannot reduce summonFrom with[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m patterns :  case [33mgiven [0ma @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    [32morg.scalacheck.Arbitrary[0m[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m             case [33mgiven [0ms @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    scala.deriving.Mirror.SumOf[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m             case [33mgiven [0mp @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    scala.deriving.Mirror.ProductOf[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:268[0m
+[0m[[0m[31merror[0m] [0m[0m[31m268 |[0m    summonFrom {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m    ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m269 |[0m      [33mcase[0m a: [32mArbitrary[0m[[32mT[0m] =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m270 |[0m...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m278 |[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ShrinkDerivingSuite.scala:19:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m      deriveShrink[[32mRecursiveList[0m[[32mInt[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Shrink[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import io.github.martinhh.derived.ShrinkSumInstanceSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |----------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThis location contains code that was inlined from ShrinkDeriving.scala:39[0m
+[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m    [33mdef[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThis location contains code that was inlined from ShrinkDeriving.scala:39[0m
+[0m[[0m[31merror[0m] [0m[0m[31m87 |[0m      [33mcase[0m s: [33mMirror[0m.[33mSumOf[0m[T]     => shrinkSum(s)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                     ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    ----------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(coreJVM / Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/.jvm/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ArbitraryDerivingSuite.scala:18:63 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 18 |[0m    equalArbitraryValues([33mRecursiveList[0m.expectedGen[[32mInt[0m])(using derived.arbitrary.deriveArbitrary)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Arbitrary[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.DefaultGensSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:106[0m
+[0m[[0m[31merror[0m] [0m[0m[31m106 |[0m    [33mval[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:106[0m
+[0m[[0m[31merror[0m] [0m[0m[31m248 |[0m        [33mgiven[0m [36ma[0m: [32mArbitrary[0m[[32mT[0m] = [33mArbitrary[0m(sumGen([33mGens[0m.sumInstance[[32mT[0m, [32mDefaultGensSummoner[0m](s).gens))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ArbitraryDerivingSuite.scala:22:64 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 22 |[0m    equalArbitraryValues([33mMaybeMaybeList[0m.expectedGen[[32mInt[0m])(using derived.arbitrary.deriveArbitrary)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type org.scalacheck.Arbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    ArbitraryDeriving_this.anyGivenArbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]][0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mBut [33mgiven instance[0m [32manyGivenArbitrary[0m in [33mtrait[0m [32mArbitraryDeriving[0m does not match type org.scalacheck.Arbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:94[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 94 |[0m    [33mval[0m [36marbs[0m = summonAll[[33mTuple[0m.[32mMap[0m[p.[32mMirroredElemTypes[0m, [32mArbitrary[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:94[0m
+[0m[[0m[31merror[0m] [0m[0m[31m251 |[0m        [33mArbitrary[0m([33mGens[0m.productGen(p))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                  ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:23:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 23 |[0m      deriveCogen[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Cogen[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mOne of the following imports might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.DefaultCogenSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.ExtraShallowCogenSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:65[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 65 |[0m    [33mdef[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:65[0m
+[0m[[0m[31merror[0m] [0m[0m[31m143 |[0m      [33mcase[0m s: [33mMirror[0m.[33mSumOf[0m[T]     => [33mCogenDeriving[0m.cogenSum[T, [33mDefaultCogenSummoner[0m](s)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:33:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 33 |[0m      deriveCogen[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type org.scalacheck.Cogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    CogenDeriving_this.anyGivenCogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]][0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mBut [33mgiven instance[0m [32manyGivenCogen[0m in [33mtrait[0m [32mCogenDeriving[0m does not match type org.scalacheck.Cogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:93[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 93 |[0m    [33mdef[0m [36mcogens[0m = summonAll[[33mTuple[0m.[32mMap[0m[p.[32mMirroredElemTypes[0m, [32mCogen[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:93[0m
+[0m[[0m[31merror[0m] [0m[0m[31m144 |[0m      [33mcase[0m p: [33mMirror[0m.[33mProductOf[0m[T] => [33mCogenDeriving[0m.cogenProduct(p)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:279:12 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m279 |[0m      summon[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m            ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mcannot reduce summonFrom with[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m patterns :  case [33mgiven [0ma @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    [32morg.scalacheck.Arbitrary[0m[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m             case [33mgiven [0ms @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    scala.deriving.Mirror.SumOf[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m             case [33mgiven [0mp @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    scala.deriving.Mirror.ProductOf[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:268[0m
+[0m[[0m[31merror[0m] [0m[0m[31m268 |[0m    summonFrom {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m    ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m269 |[0m      [33mcase[0m a: [32mArbitrary[0m[[32mT[0m] =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m270 |[0m...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m278 |[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ShrinkDerivingSuite.scala:19:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m      deriveShrink[[32mRecursiveList[0m[[32mInt[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Shrink[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import io.github.martinhh.derived.ShrinkSumInstanceSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |----------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThis location contains code that was inlined from ShrinkDeriving.scala:39[0m
+[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m    [33mdef[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThis location contains code that was inlined from ShrinkDeriving.scala:39[0m
+[0m[[0m[31merror[0m] [0m[0m[31m87 |[0m      [33mcase[0m s: [33mMirror[0m.[33mSumOf[0m[T]     => shrinkSum(s)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                     ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    ----------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(coreJVM / Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/.jvm/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ArbitraryDerivingSuite.scala:18:63 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 18 |[0m    equalArbitraryValues([33mRecursiveList[0m.expectedGen[[32mInt[0m])(using derived.arbitrary.deriveArbitrary)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Arbitrary[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.DefaultGensSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:106[0m
+[0m[[0m[31merror[0m] [0m[0m[31m106 |[0m    [33mval[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:106[0m
+[0m[[0m[31merror[0m] [0m[0m[31m248 |[0m        [33mgiven[0m [36ma[0m: [32mArbitrary[0m[[32mT[0m] = [33mArbitrary[0m(sumGen([33mGens[0m.sumInstance[[32mT[0m, [32mDefaultGensSummoner[0m](s).gens))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ArbitraryDerivingSuite.scala:22:64 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 22 |[0m    equalArbitraryValues([33mMaybeMaybeList[0m.expectedGen[[32mInt[0m])(using derived.arbitrary.deriveArbitrary)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type org.scalacheck.Arbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    ArbitraryDeriving_this.anyGivenArbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]][0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mBut [33mgiven instance[0m [32manyGivenArbitrary[0m in [33mtrait[0m [32mArbitraryDeriving[0m does not match type org.scalacheck.Arbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:94[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 94 |[0m    [33mval[0m [36marbs[0m = summonAll[[33mTuple[0m.[32mMap[0m[p.[32mMirroredElemTypes[0m, [32mArbitrary[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:94[0m
+[0m[[0m[31merror[0m] [0m[0m[31m251 |[0m        [33mArbitrary[0m([33mGens[0m.productGen(p))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                  ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:23:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 23 |[0m      deriveCogen[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Cogen[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mOne of the following imports might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.DefaultCogenSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.ExtraShallowCogenSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:65[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 65 |[0m    [33mdef[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:65[0m
+[0m[[0m[31merror[0m] [0m[0m[31m143 |[0m      [33mcase[0m s: [33mMirror[0m.[33mSumOf[0m[T]     => [33mCogenDeriving[0m.cogenSum[T, [33mDefaultCogenSummoner[0m](s)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:33:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 33 |[0m      deriveCogen[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type org.scalacheck.Cogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    CogenDeriving_this.anyGivenCogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]][0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mBut [33mgiven instance[0m [32manyGivenCogen[0m in [33mtrait[0m [32mCogenDeriving[0m does not match type org.scalacheck.Cogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:93[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 93 |[0m    [33mdef[0m [36mcogens[0m = summonAll[[33mTuple[0m.[32mMap[0m[p.[32mMirroredElemTypes[0m, [32mCogen[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:93[0m
+[0m[[0m[31merror[0m] [0m[0m[31m144 |[0m      [33mcase[0m p: [33mMirror[0m.[33mProductOf[0m[T] => [33mCogenDeriving[0m.cogenProduct(p)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:279:12 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m279 |[0m      summon[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m            ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mcannot reduce summonFrom with[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m patterns :  case [33mgiven [0ma @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    [32morg.scalacheck.Arbitrary[0m[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m             case [33mgiven [0ms @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    scala.deriving.Mirror.SumOf[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m             case [33mgiven [0mp @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    scala.deriving.Mirror.ProductOf[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:268[0m
+[0m[[0m[31merror[0m] [0m[0m[31m268 |[0m    summonFrom {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m    ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m269 |[0m      [33mcase[0m a: [32mArbitrary[0m[[32mT[0m] =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m270 |[0m...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m278 |[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ShrinkDerivingSuite.scala:19:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m      deriveShrink[[32mRecursiveList[0m[[32mInt[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Shrink[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import io.github.martinhh.derived.ShrinkSumInstanceSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |----------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThis location contains code that was inlined from ShrinkDeriving.scala:39[0m
+[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m    [33mdef[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThis location contains code that was inlined from ShrinkDeriving.scala:39[0m
+[0m[[0m[31merror[0m] [0m[0m[31m87 |[0m      [33mcase[0m s: [33mMirror[0m.[33mSumOf[0m[T]     => shrinkSum(s)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                     ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    ----------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(coreJVM / Test / [31mcompileIncremental[0m) Compilation failed[0m
+Starting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/,extrasJVM) (scalacheck-derived-extras)... [1/2]
+Compile scalacOptions: -Wunused:all, -Wconf:msg=can be rewritten automatically under:s, -source:3.10
+[0m[[0m[0minfo[0m] [0m[0mcompiling 10 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/extras/.jvm/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E029] Pattern Match Exhaustivity Warning: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/extras/src/main/scala/io/github/martinhh/derived/extras/union/macros.scala:19:6 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m19 |[0m      (l.asType, r.asType) [33mmatch[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m      ^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m      [33mmatch[0m may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m      It would fail on pattern case: (_, _)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/.jvm/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ArbitraryDerivingSuite.scala:18:63 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 18 |[0m    equalArbitraryValues([33mRecursiveList[0m.expectedGen[[32mInt[0m])(using derived.arbitrary.deriveArbitrary)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Arbitrary[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.DefaultGensSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:106[0m
+[0m[[0m[31merror[0m] [0m[0m[31m106 |[0m    [33mval[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:106[0m
+[0m[[0m[31merror[0m] [0m[0m[31m248 |[0m        [33mgiven[0m [36ma[0m: [32mArbitrary[0m[[32mT[0m] = [33mArbitrary[0m(sumGen([33mGens[0m.sumInstance[[32mT[0m, [32mDefaultGensSummoner[0m](s).gens))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ArbitraryDerivingSuite.scala:22:64 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 22 |[0m    equalArbitraryValues([33mMaybeMaybeList[0m.expectedGen[[32mInt[0m])(using derived.arbitrary.deriveArbitrary)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type org.scalacheck.Arbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    ArbitraryDeriving_this.anyGivenArbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]][0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mBut [33mgiven instance[0m [32manyGivenArbitrary[0m in [33mtrait[0m [32mArbitraryDeriving[0m does not match type org.scalacheck.Arbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:94[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 94 |[0m    [33mval[0m [36marbs[0m = summonAll[[33mTuple[0m.[32mMap[0m[p.[32mMirroredElemTypes[0m, [32mArbitrary[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:94[0m
+[0m[[0m[31merror[0m] [0m[0m[31m251 |[0m        [33mArbitrary[0m([33mGens[0m.productGen(p))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                  ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:23:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 23 |[0m      deriveCogen[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Cogen[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mOne of the following imports might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.DefaultCogenSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.ExtraShallowCogenSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:65[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 65 |[0m    [33mdef[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:65[0m
+[0m[[0m[31merror[0m] [0m[0m[31m143 |[0m      [33mcase[0m s: [33mMirror[0m.[33mSumOf[0m[T]     => [33mCogenDeriving[0m.cogenSum[T, [33mDefaultCogenSummoner[0m](s)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:33:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 33 |[0m      deriveCogen[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type org.scalacheck.Cogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    CogenDeriving_this.anyGivenCogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]][0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mBut [33mgiven instance[0m [32manyGivenCogen[0m in [33mtrait[0m [32mCogenDeriving[0m does not match type org.scalacheck.Cogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:93[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 93 |[0m    [33mdef[0m [36mcogens[0m = summonAll[[33mTuple[0m.[32mMap[0m[p.[32mMirroredElemTypes[0m, [32mCogen[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:93[0m
+[0m[[0m[31merror[0m] [0m[0m[31m144 |[0m      [33mcase[0m p: [33mMirror[0m.[33mProductOf[0m[T] => [33mCogenDeriving[0m.cogenProduct(p)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:279:12 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m279 |[0m      summon[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m            ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mcannot reduce summonFrom with[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m patterns :  case [33mgiven [0ma @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    [32morg.scalacheck.Arbitrary[0m[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m             case [33mgiven [0ms @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    scala.deriving.Mirror.SumOf[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m             case [33mgiven [0mp @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    scala.deriving.Mirror.ProductOf[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:268[0m
+[0m[[0m[31merror[0m] [0m[0m[31m268 |[0m    summonFrom {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m    ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m269 |[0m      [33mcase[0m a: [32mArbitrary[0m[[32mT[0m] =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m270 |[0m...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m278 |[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ShrinkDerivingSuite.scala:19:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m      deriveShrink[[32mRecursiveList[0m[[32mInt[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Shrink[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import io.github.martinhh.derived.ShrinkSumInstanceSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |----------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThis location contains code that was inlined from ShrinkDeriving.scala:39[0m
+[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m    [33mdef[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThis location contains code that was inlined from ShrinkDeriving.scala:39[0m
+[0m[[0m[31merror[0m] [0m[0m[31m87 |[0m      [33mcase[0m s: [33mMirror[0m.[33mSumOf[0m[T]     => shrinkSum(s)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                     ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    ----------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(coreJVM / Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/.jvm/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ArbitraryDerivingSuite.scala:18:63 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 18 |[0m    equalArbitraryValues([33mRecursiveList[0m.expectedGen[[32mInt[0m])(using derived.arbitrary.deriveArbitrary)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Arbitrary[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.DefaultGensSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:106[0m
+[0m[[0m[31merror[0m] [0m[0m[31m106 |[0m    [33mval[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:106[0m
+[0m[[0m[31merror[0m] [0m[0m[31m248 |[0m        [33mgiven[0m [36ma[0m: [32mArbitrary[0m[[32mT[0m] = [33mArbitrary[0m(sumGen([33mGens[0m.sumInstance[[32mT[0m, [32mDefaultGensSummoner[0m](s).gens))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ArbitraryDerivingSuite.scala:22:64 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 22 |[0m    equalArbitraryValues([33mMaybeMaybeList[0m.expectedGen[[32mInt[0m])(using derived.arbitrary.deriveArbitrary)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type org.scalacheck.Arbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    ArbitraryDeriving_this.anyGivenArbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]][0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mBut [33mgiven instance[0m [32manyGivenArbitrary[0m in [33mtrait[0m [32mArbitraryDeriving[0m does not match type org.scalacheck.Arbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:94[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 94 |[0m    [33mval[0m [36marbs[0m = summonAll[[33mTuple[0m.[32mMap[0m[p.[32mMirroredElemTypes[0m, [32mArbitrary[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:94[0m
+[0m[[0m[31merror[0m] [0m[0m[31m251 |[0m        [33mArbitrary[0m([33mGens[0m.productGen(p))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                  ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:23:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 23 |[0m      deriveCogen[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Cogen[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mOne of the following imports might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.DefaultCogenSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.ExtraShallowCogenSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:65[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 65 |[0m    [33mdef[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:65[0m
+[0m[[0m[31merror[0m] [0m[0m[31m143 |[0m      [33mcase[0m s: [33mMirror[0m.[33mSumOf[0m[T]     => [33mCogenDeriving[0m.cogenSum[T, [33mDefaultCogenSummoner[0m](s)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:33:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 33 |[0m      deriveCogen[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type org.scalacheck.Cogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    CogenDeriving_this.anyGivenCogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]][0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mBut [33mgiven instance[0m [32manyGivenCogen[0m in [33mtrait[0m [32mCogenDeriving[0m does not match type org.scalacheck.Cogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:93[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 93 |[0m    [33mdef[0m [36mcogens[0m = summonAll[[33mTuple[0m.[32mMap[0m[p.[32mMirroredElemTypes[0m, [32mCogen[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:93[0m
+[0m[[0m[31merror[0m] [0m[0m[31m144 |[0m      [33mcase[0m p: [33mMirror[0m.[33mProductOf[0m[T] => [33mCogenDeriving[0m.cogenProduct(p)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:279:12 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m279 |[0m      summon[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m            ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mcannot reduce summonFrom with[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m patterns :  case [33mgiven [0ma @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    [32morg.scalacheck.Arbitrary[0m[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m             case [33mgiven [0ms @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    scala.deriving.Mirror.SumOf[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m             case [33mgiven [0mp @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    scala.deriving.Mirror.ProductOf[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:268[0m
+[0m[[0m[31merror[0m] [0m[0m[31m268 |[0m    summonFrom {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m    ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m269 |[0m      [33mcase[0m a: [32mArbitrary[0m[[32mT[0m] =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m270 |[0m...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m278 |[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ShrinkDerivingSuite.scala:19:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m      deriveShrink[[32mRecursiveList[0m[[32mInt[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Shrink[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import io.github.martinhh.derived.ShrinkSumInstanceSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |----------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThis location contains code that was inlined from ShrinkDeriving.scala:39[0m
+[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m    [33mdef[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThis location contains code that was inlined from ShrinkDeriving.scala:39[0m
+[0m[[0m[31merror[0m] [0m[0m[31m87 |[0m      [33mcase[0m s: [33mMirror[0m.[33mSumOf[0m[T]     => shrinkSum(s)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                     ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    ----------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(coreJVM / Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/.jvm/target/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ArbitraryDerivingSuite.scala:18:63 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 18 |[0m    equalArbitraryValues([33mRecursiveList[0m.expectedGen[[32mInt[0m])(using derived.arbitrary.deriveArbitrary)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Arbitrary[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.DefaultGensSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:106[0m
+[0m[[0m[31merror[0m] [0m[0m[31m106 |[0m    [33mval[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:106[0m
+[0m[[0m[31merror[0m] [0m[0m[31m248 |[0m        [33mgiven[0m [36ma[0m: [32mArbitrary[0m[[32mT[0m] = [33mArbitrary[0m(sumGen([33mGens[0m.sumInstance[[32mT[0m, [32mDefaultGensSummoner[0m](s).gens))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ArbitraryDerivingSuite.scala:22:64 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 22 |[0m    equalArbitraryValues([33mMaybeMaybeList[0m.expectedGen[[32mInt[0m])(using derived.arbitrary.deriveArbitrary)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type org.scalacheck.Arbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    ArbitraryDeriving_this.anyGivenArbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]][0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mBut [33mgiven instance[0m [32manyGivenArbitrary[0m in [33mtrait[0m [32mArbitraryDeriving[0m does not match type org.scalacheck.Arbitrary[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:94[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 94 |[0m    [33mval[0m [36marbs[0m = summonAll[[33mTuple[0m.[32mMap[0m[p.[32mMirroredElemTypes[0m, [32mArbitrary[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:94[0m
+[0m[[0m[31merror[0m] [0m[0m[31m251 |[0m        [33mArbitrary[0m([33mGens[0m.productGen(p))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                  ^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:23:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 23 |[0m      deriveCogen[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Cogen[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mOne of the following imports might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.DefaultCogenSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  import io.github.martinhh.derived.ExtraShallowCogenSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:65[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 65 |[0m    [33mdef[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:65[0m
+[0m[[0m[31merror[0m] [0m[0m[31m143 |[0m      [33mcase[0m s: [33mMirror[0m.[33mSumOf[0m[T]     => [33mCogenDeriving[0m.cogenSum[T, [33mDefaultCogenSummoner[0m](s)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:33:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 33 |[0m      deriveCogen[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mNo given instance of type org.scalacheck.Cogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]] was found.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    CogenDeriving_this.anyGivenCogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]][0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mBut [33mgiven instance[0m [32manyGivenCogen[0m in [33mtrait[0m [32mCogenDeriving[0m does not match type org.scalacheck.Cogen[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  io.github.martinhh.MaybeMaybe[io.github.martinhh.MaybeMaybeList[Int]]].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:93[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 93 |[0m    [33mdef[0m [36mcogens[0m = summonAll[[33mTuple[0m.[32mMap[0m[p.[32mMirroredElemTypes[0m, [32mCogen[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from CogenDeriving.scala:93[0m
+[0m[[0m[31merror[0m] [0m[0m[31m144 |[0m      [33mcase[0m p: [33mMirror[0m.[33mProductOf[0m[T] => [33mCogenDeriving[0m.cogenProduct(p)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/CogenDerivingSuite.scala:279:12 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m279 |[0m      summon[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m            ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mcannot reduce summonFrom with[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m patterns :  case [33mgiven [0ma @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    [32morg.scalacheck.Arbitrary[0m[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m             case [33mgiven [0ms @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    scala.deriving.Mirror.SumOf[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m             case [33mgiven [0mp @[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  _:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m    scala.deriving.Mirror.ProductOf[[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m      [32mio.github.martinhh.ComplexADTWithNestedMembers => io.github.martinhh.ABC[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0mThis location contains code that was inlined from ArbitraryDeriving.scala:268[0m
+[0m[[0m[31merror[0m] [0m[0m[31m268 |[0m    summonFrom {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m    ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m269 |[0m      [33mcase[0m a: [32mArbitrary[0m[[32mT[0m] =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m270 |[0m...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m278 |[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m     ---------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/martinhh/scalacheck-derived/repo/martinhh/scalacheck-derived/core/src/test/scala/io/github/martinhh/ShrinkDerivingSuite.scala:19:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m      deriveShrink[[32mRecursiveList[0m[[32mInt[0m]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mDerivation failed. No given instance of type Summoner[io.github.martinhh.RecursiveList.Cns[Int]] was found. This is most likely due to no Shrink[io.github.martinhh.RecursiveList.Cns[Int]] being available[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import io.github.martinhh.derived.ShrinkSumInstanceSummoner.sumInstanceSummoner[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |----------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mInline stack trace[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThis location contains code that was inlined from ShrinkDeriving.scala:39[0m
+[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m    [33mdef[0m [36melems[0m = summonAll[[33mTuple[0m.[32mMap[0m[s.[32mMirroredElemTypes[0m, [32mSummoner[0m]].toList[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThis location contains code that was inlined from ShrinkDeriving.scala:39[0m
+[0m[[0m[31merror[0m] [0m[0m[31m87 |[0m      [33mcase[0m s: [33mMirror[0m.[33mSumOf[0m[T]     => shrinkSum(s)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                     ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    ----------------------------------------------------------------------------[0m[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(coreJVM / Test / [31mcompileIncremental[0m) Compilation failed[0m
+
+************************
+Build summary:
+[{
+ "module": "scalacheck-derived",
+ "compile": {"status": "ok", "tookMs": 10506, "warnings": 1, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 8750, "warnings": 0, "errors": 6, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 7},
+ "metadata": {
+  "crossScalaVersions": ["2.12.21"]
+}
+},{
+ "module": "scalacheck-derived-extras",
+ "compile": {"status": "ok", "tookMs": 1857, "warnings": 1, "errors": 0, "sourceVersion": "3.10"},
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},
+ "test-compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Compilation failed"]}, "tookMs": 4343, "warnings": 0, "errors": 6, "sourceVersion": "3.10"},
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},
+ "publish": {"status": "ok", "tookMs": 13},
+ "metadata": {
+  "crossScalaVersions": ["2.12.21"]
+}
+}]
+************************
+[0m[[0m[31merror[0m] [0m[0mScala3CommunityBuild$ProjectBuildFailureException: 2 module(s) finished with failures: scalacheck-derived, scalacheck-derived-extras[0m
+[0m[[0m[31merror[0m] [0m[0m(Global / [31mrunBuild[0m) Scala3CommunityBuild$ProjectBuildFailureException: 2 module(s) finished with failures: scalacheck-derived, scalacheck-derived-extras[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 92 s (0:01:32.0), completed Jun 27, 2026, 7:33:46 PM[0m
+[0JBuild failed, not retrying.

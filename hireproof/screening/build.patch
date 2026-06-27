@@ -1,0 +1,42 @@
+diff --git a/build.sbt b/build.sbt
+index f4722a0..f64fbb5 100755
+--- a/build.sbt
++++ b/build.sbt
+@@ -6,7 +6,7 @@ val Version = new {
+   val Java = "11"
+   val Munit = "0.7.29"
+   val Scala213 = "2.13.8"
+-  val Scala3 = "3.1.2"
++  val Scala3 = "3.8.4"
+   val ScalaJavaTime = "2.3.0"
+ }
+ 
+@@ -61,3 +61,9 @@ lazy val core = module(identifier = Some("core"))
+       "io.github.cquiroz" %%% "scala-java-time" % Version.ScalaJavaTime % "test" ::
+         Nil
+   )
++
++commands ++= CommunityBuildPlugin.commands
++
++Global / resolvers += "The Scala Nightly Repository".at("https://repo.scala-lang.org/artifactory/maven-nightlies/")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn
+diff --git a/project/build.properties b/project/build.properties
+old mode 100755
+new mode 100644
+index c8fcab5..e480c67
+--- a/project/build.properties
++++ b/project/build.properties
+@@ -1 +1 @@
+-sbt.version=1.6.2
++sbt.version=1.11.5
+diff --git a/project/plugins.sbt b/project/plugins.sbt
+index baf80b2..e9fc58f 100755
+--- a/project/plugins.sbt
++++ b/project/plugins.sbt
+@@ -7,3 +7,5 @@ addSbtPlugin("io.taig" % "sbt-houserules" % "0.3.22")
+ addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.10.0")
+ 
+ addSbtPlugin("org.portable-scala" % "sbt-scalajs-crossproject" % "1.2.0")
++
++ThisBuild / evictionErrorLevel := sbt.util.Level.Warn

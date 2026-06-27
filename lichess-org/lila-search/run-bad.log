@@ -1,0 +1,1001 @@
+projectName: lichess-org/lila-search
+scalaVersion: 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+##################################
+Clonning https://github.com/lichess-org/lila-search.git into /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search using revision
+##################################
+----
+Preparing build for 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Scala binary version found: 3.10
+Implicitly using source version 3.10
+Scala binary version found: 3.10
+Implicitly using source version 3.10
+Would try to apply common scalacOption (best-effort, sbt/mill only):
+Append: ,REQUIRE:-source:3.10
+Remove: ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+----
+Starting build for 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Execute tests: true
+sbt project found at /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search
+Using sbt 2.x project adapter for sbt version 2.0.0
+No prepare script found for project lichess-org/lila-search
+##################################
+Scala version: 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+Targets: *%*
+Project projectConfig: {"projects":{"exclude":[],"overrides":{}},"java":{"version":"25"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[]}
+##################################
+Using extra scalacOptions: ,REQUIRE:-source:3.10
+Filtering out scalacOptions: ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e
+[sbt_options] declare -a sbt_options='()'
+[debug] running native client
+# Executing command line:
+/Users/wmazur/.cache/sbt/boot/sbtn/1.11.6/sbtn
+--sbt-script=/Users/wmazur/.sdkman/candidates/sbt/current/bin/sbt
+--batch
+--verbose
+-Dcommunitybuild.scala=3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+-Dcommunitybuild.project.dependencies.add=
+-J-Xmx7G
+-J-Xms4G
+-J-Xss8M
+"setCrossScalaVersions 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY;++3.10.0-RC1-bin-20260626-20f6657-NIGHTLY -v;mapScalacOptions ",REQUIRE:-source:3.10,-Wconf:msg=can be rewritten automatically under:s" ",-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e";clearCredentials;excludeLibraryDependency com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion};removeScalacOptionsStartingWith -P:wartremover;moduleMappings;runBuild 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY """{"projects":{"exclude":[],"overrides":{}},"java":{"version":"25"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[]}""" *%*"
+
+[[0minfo[0m] server was not detected. starting an instance
+[sbt_options] declare -a sbt_options='()'
+[process_args] java_version = '25'
+# Executing command line:
+[copyRt] java9_rt = '/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25/rt.jar'
+java
+-Dfile.encoding=UTF-8
+-Dcommunitybuild.scala=3.10.0-RC1-bin-20260626-20f6657-NIGHTLY
+-Dcommunitybuild.project.dependencies.add=
+-Xmx7G
+-Xms4G
+-Xss8M
+-Dsbt.io.virtual=true
+-Dsbt.script=/Users/wmazur/.sdkman/candidates/sbt/current/bin/sbt
+--sun-misc-unsafe-memory-access=allow
+--enable-native-access=ALL-UNNAMED
+-Dscala.ext.dirs=/Users/wmazur/.sbt/1.0/java9-rt-ext-eclipse_adoptium_25
+-jar
+/Users/wmazur/.sdkman/candidates/sbt/1.11.7/bin/sbt-launch.jar
+--detach-stdio
+
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 2.0.0 (Eclipse Adoptium Java 25)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.8.4/lila-search-build/classes ...[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project/CommunityBuildCore.scala:348:68 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m348 |[0m    [33mdef[0m [36mevalWhen[0m[[36mT[0m]([36mpredicate[0m: => [32mBoolean[0m, [36mdependencies[0m: [32mEvalResult[0m[_]*)([0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                                                                    ^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m`_` is deprecated for wildcard arguments of types: use `?` instead[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThis construct can be rewritten automatically under -rewrite -source 3.4-migration.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project/CommunityBuildCore.scala:351:54 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m351 |[0m      [33mif[0m (predicate) evalAsDependencyOf(dependencies: [32m_*[0m)(task)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                                                      ^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe syntax `x: _*` is no longer supported for vararg splices; use `x*` instead[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThis construct can be rewritten automatically under -rewrite -source 3.4-migration.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project/CommunityBuildCore.scala:356:33 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m356 |[0m        dependencies: [32mEvalResult[0m[_][32m*[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                                 ^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m`_` is deprecated for wildcard arguments of types: use `?` instead[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThis construct can be rewritten automatically under -rewrite -source 3.4-migration.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project/CommunityBuildCore.scala:358:76 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m358 |[0m      [33mval[0m [36mshouldSkip[0m = dependencies.exists(!_.isInstanceOf[[33mEvalResult[0m.[32mValue[0m[_]])[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                                                                            ^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m`_` is deprecated for wildcard arguments of types: use `?` instead[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThis construct can be rewritten automatically under -rewrite -source 3.4-migration.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project/CommunityBuildPluginShared.scala:690:67 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m690 |[0m      nodes.toSeq.filter([36mn[0m => inDegree(n) == [32m0[0m).sortBy(_.project): [32m_*[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                                                                   ^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe syntax `x: _*` is no longer supported for vararg splices; use `x*` instead[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThis construct can be rewritten automatically under -rewrite -source 3.4-migration.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project/CommunityBuildPluginShared.scala:350:39 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m350 |[0m        spaceDelimited([32m"<arg>"[0m).parsed.toList[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mpattern's type ::[String] is more specialized than the right hand side expression's type List[String][0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mIf the narrowing is intentional, this can be communicated by adding `.runtimeChecked` after the expression,[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mwhich may result in a MatchError at runtime.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThis patch can be rewritten automatically under -rewrite -source 3.8-migration.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project/CommunityBuildPluginShared.scala:356:82 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m356 |[0m            [33mConverter[0m.fromJson[[32mProjectBuildConfig[0m](_)([33mCommunityBuildConfigFormats[0m.[33mProjectBuildConfigFormat[0m)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mImplicit parameters should be provided with a `using` clause.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThis code can be rewritten automatically under -rewrite -source 3.7-migration.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mTo disable the warning, please use the following option:[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m  "-Wconf:msg=Implicit parameters should be provided with a `using` clause:s"[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Deprecation Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project/CommunityBuildCore.scala:1:24 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m1 |[0m[33mimport[0m scala.collection.[33mJavaConverters[0m._[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m  |[0m       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m  |[0m[33mobject[0m [32mJavaConverters[0m in [33mpackage[0m [32mscala.collection[0m is deprecated since 2.13.0: Use `scala.jdk.CollectionConverters` instead[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Deprecation Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project/CommunityBuildPluginShared.scala:9:24 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m9 |[0m[33mimport[0m scala.collection.[33mJavaConverters[0m._[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m  |[0m       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m  |[0m[33mobject[0m [32mJavaConverters[0m in [33mpackage[0m [32mscala.collection[0m is deprecated since 2.13.0: Use `scala.jdk.CollectionConverters` instead[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Deprecation Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project/CommunityBuildPluginShared.scala:417:9 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m412 |[0m      [33mval[0m [36moriginalModuleIds[0m: [32mMap[0m[[32mString[0m, [32mProjectRef[0m] = IO[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m413 |[0m        .readLines(file([32m"community-build-mappings.txt"[0m))[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m414 |[0m        .map(_.split([32m' '[0m))[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m415 |[0m        .map([36md[0m => d([32m0[0m) -> refsByName(d([32m1[0m)))[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m416 |[0m        .groupBy(_._1)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m417 |[0m        .mapValues(selectProject)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                                                       ^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[33mmethod[0m [32mmapValues[0m in [33mtrait[0m [32mMapOps[0m is deprecated since 2.13.0: Use .view.mapValues(f). A future version will include a strict version of this method (for now, .view.mapValues(f).toMap).[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Deprecation Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project/CommunityBuildPluginShared.scala:421:9 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m419 |[0m      [33mval[0m [36mmoduleIds[0m: [32mMap[0m[[32mString[0m, [32mProjectRef[0m] = mkMappings.value[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m420 |[0m        .groupBy(_._1)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m421 |[0m        .mapValues(selectProject)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                                               ^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[33mmethod[0m [32mmapValues[0m in [33mtrait[0m [32mMapOps[0m is deprecated since 2.13.0: Use .view.mapValues(f). A future version will include a strict version of this method (for now, .view.mapValues(f).toMap).[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Deprecation Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/project/CommunityBuildPluginShared.scala:457:20 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m457 |[0m              [33myield[0m [33mStream[0m([0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                    ^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[33mvalue[0m [32mStream[0m in [33mpackage[0m [32mscala[0m is deprecated since 2.13.0: Use LazyList instead of Stream[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m12 warnings found[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mresolving key references (21590 settings) ...[0m[0J
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[0J[0m[[0m[0minfo[0m] [0m[0mset current project to lila-search-root (in build file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0mthere are 9 keys that are not used by any other settings/tasks:[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m [0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m* api / Universal / target[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m  +- /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/build.sbt:29[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m* client / Universal / target[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m  +- /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/build.sbt:29[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m* core / Universal / target[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m  +- /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/build.sbt:29[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m* e2e / Universal / target[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m  +- /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/build.sbt:29[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m* elastic / Universal / target[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m  +- /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/build.sbt:29[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m* ingestorCore / Universal / target[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m  +- /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/build.sbt:29[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m* lila-search-root / Universal / target[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m  +- /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/build.sbt:29[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m* lilaGameExport / Universal / target[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m  +- /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/build.sbt:29[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m* lilaMongo / Universal / target[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m  +- /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/build.sbt:29[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m [0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0mnote: a setting might still be used by a command; to exclude a key from this `lintUnused` check[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0meither append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mHere are some highlights of sbt 2.0.0:[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m  - Scala 3 in metabuild[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m  - Common settings[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m  - test changed to incremental test[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m  - Cache system[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mSee https://www.scala-sbt.org/2.x/docs/en/changes/sbt-2.0-change-summary.html[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mHide the banner for this release by running `skipBanner`.[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0msbt server started at local:///Users/wmazur/.config/sbt/2/server/3e27a0aae42f7afa3310/sock[0m[0J
+[0JExecute setCrossScalaVersions: 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY[0J
+[0JOpenCB::Changing crossVersion 3.8.4 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in lila-search-root/crossScalaVersions[0J
+[0JOpenCB::Changing crossVersion 3.8.4 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in ingestorCli/crossScalaVersions[0J
+[0JOpenCB::Changing crossVersion 3.8.4 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in lilaMongo/crossScalaVersions[0J
+[0JOpenCB::Changing crossVersion 3.8.4 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in api/crossScalaVersions[0J
+[0JOpenCB::Changing crossVersion 3.8.4 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in elastic/crossScalaVersions[0J
+[0JOpenCB::Changing crossVersion 3.8.4 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in lilaGameExport/crossScalaVersions[0J
+[0JOpenCB::Changing crossVersion 3.8.4 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in ingestorApp/crossScalaVersions[0J
+[0JOpenCB::Changing crossVersion 3.8.4 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in client/crossScalaVersions[0J
+[0JOpenCB::Changing crossVersion 3.8.4 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in app/crossScalaVersions[0J
+[0JOpenCB::Changing crossVersion 3.8.4 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in e2e/crossScalaVersions[0J
+[0JOpenCB::Changing crossVersion 3.8.4 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in ingestorCore/crossScalaVersions[0J
+[0JOpenCB::Changing crossVersion 3.8.4 -> 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY in core/crossScalaVersions[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mset current project to lila-search-root (in build file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mSetting Scala version to 3.10.0-RC1-bin-20260626-20f6657-NIGHTLY on 12 projects.[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mSwitching Scala version on:[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m    elastic (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m    lilaGameExport (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m    lilaMongo (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m    client (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m    app (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m  * lila-search-root (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m    core (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m    e2e (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m    ingestorApp (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m    ingestorCli (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m    ingestorCore (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m    api (3.10.0-RC1-bin-20260626-20f6657-NIGHTLY)[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mExcluding projects:[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mset current project to lila-search-root (in build file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/)[0m[0J
+[0JExecute mapScalacOptions: ,REQUIRE:-source:3.10,-Wconf:msg=can be rewritten automatically under:s ,-deprecation,-feature,-Xfatal-warnings,-Werror,MATCH:.*-Wconf.*any:e[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mset current project to lila-search-root (in build file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/)[0m[0J
+[0JExecute clearCredentials: [0J
+[0J[0m[[0m[0minfo[0m] [0m[0mset current project to lila-search-root (in build file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/)[0m[0J
+[0JExecute excludeLibraryDependency: com.github.ghik:zerowaste_{scalaVersion} com.olegpy:better-monadic-for_3 org.polyvariant:better-tostring_{scalaVersion} org.wartremover:wartremover_{scalaVersion}[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m[0J
+[0JOpenCB::Failed to reapply settings in excludeLibraryDependency: Reference to undefined setting: [0J
+[0J
+  Global / allExcludeDependencies from Global / allExcludeDependencies (CommunityBuildPluginShared.scala:285)[0J
+     Did you mean e2e / allExcludeDependencies ?[0J
+ , retry without global scopes[0J[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mset current project to lila-search-root (in build file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/)[0m[0J
+[0JExecute removeScalacOptionsStartingWith: -P:wartremover[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mset current project to lila-search-root (in build file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/)[0m[0J
+[0JBuild config: {"projects":{"exclude":[],"overrides":{}},"java":{"version":"25"},"sbt":{"commands":[],"options":[]},"mill":{"options":[]},"tests":"full","migrationVersions":[],"sourcePatches":[]}[0J
+[0JParsed config: Success(ProjectBuildConfig(ProjectsConfig(List(),Map()),Full,List()))[0J
+[0JStarting build...[0J
+[0JProjects: HashSet(elastic, lilaGameExport, lilaMongo, client, app, lila-search-root, core, e2e, ingestorApp, ingestorCli, ingestorCore, api)[0J
+[0JStarting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,core) (core)... [0/12][0J
+[0JOpenCB::Filter out '-deprecation', matches setting pattern '^-?\Q-deprecation\E'[0J
+[0JOpenCB::Filter out '-feature', matches setting pattern '^-?\Q-feature\E'[0J
+[0JOpenCB::Filter out '-Werror', matches setting pattern '^-?\Q-Werror\E'[0J
+[0JCompile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:implicitConversions, -Xkind-projector, -Ycheck-all-patmat, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:patvars, -Wunused:privates, -rewrite, -explain, -Wall, -release, 21, -indent, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 16 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/DateTime.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/Ids.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/FromFormat.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/PlayerIds.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/Strings.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/IdFormat.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/SizeFormat.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/IndexFormat.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/FromInt.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/IndexString.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/DateTimeFormat.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/IdString.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/src_managed/main/smithy4s/lila/search/core/SizeInt.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 16 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/core/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0JStarting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,lila-search-root) (lila-search-root)... [1/12][0J
+[0JCompile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:implicitConversions, -Xkind-projector, -Ycheck-all-patmat, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:patvars, -Wunused:privates, -rewrite, -explain, -Wall, -release, 21, -indent, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-root/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10[0J
+[0JStarting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,api) (api)... [2/12][0J
+[0JCompile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:implicitConversions, -Xkind-projector, -Ycheck-all-patmat, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:patvars, -Wunused:privates, -rewrite, -explain, -Wall, -release, 21, -indent, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10[0J
+[0JJun 27, 2026 7:33:25 PM software.amazon.smithy.openapi.fromsmithy.mappers.RemoveUnusedComponents removalRound
+INFO: Removing unused OpenAPI components: [#/components/schemas/SearchOutput, #/components/schemas/SearchInput, #/components/schemas/CountInput, #/components/schemas/InternalServerError, #/components/schemas/CountOutput]
+Jun 27, 2026 7:33:25 PM software.amazon.smithy.openapi.fromsmithy.mappers.RemoveUnusedComponents removalRound
+INFO: Removing unused OpenAPI components: [#/components/schemas/HealthCheckOutput]
+[0m[[0m[0minfo[0m] [0m[0mcompiling 21 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/classes ...[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/ChapterMode.scala:12:6 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m12 |[0m  [33mdef[0m [36m$ordinal[0m: [32mInt[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m      ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/ChapterMode.scala:34:14 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m34 |[0m    [33mfinal[0m [33mdef[0m $ordinal: [33mInt[0m = [32m0[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m              ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/ChapterMode.scala:38:83 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m38 |[0m  [33mfinal[0m [33mcase class[0m [36mFiltersCase[0m([36mfilters[0m: [32mTagFilter[0m) [33mextends[0m [32mChapterMode[0m { [33mfinal[0m [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m1[0m }[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                                                                   ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala:15:6 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m15 |[0m  [33mdef[0m [36m$ordinal[0m: [32mInt[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m      ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala:46:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m46 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m0[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala:65:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m65 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m1[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala:86:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m86 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m2[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala:124:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m124 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m3[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m     ---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala:145:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m145 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m4[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m     ---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/SearchService.scala:115:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m115 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m     ---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/SearchService.scala:180:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m180 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m     ---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/SearchService.scala:133:119 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m133 |[0m    [33mfinal[0m [33mcase class[0m [36mInternalServerErrorCase[0m([36minternalServerError[0m: [32mInternalServerError[0m) [33mextends[0m [32mSearchError[0m { [33mfinal[0m [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m0[0m }[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                                                                                                                       ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m     ---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/SearchService.scala:198:118 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m198 |[0m    [33mfinal[0m [33mcase class[0m [36mInternalServerErrorCase[0m([36minternalServerError[0m: [32mInternalServerError[0m) [33mextends[0m [32mCountError[0m { [33mfinal[0m [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m0[0m }[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                                                                                                                      ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m     ---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/SortBlogsBy.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/HealthCheckOutput.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/TagFilter.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Perfs.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/ElasticStatus.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/StudySortField.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/ChapterMode.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/SearchService.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/SearchInput.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/GameSorting.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/CountOutput.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/IntRange.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/HealthService.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Order.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/CountInput.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/StudySorting.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/InternalServerError.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/SearchOutput.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/DateRange.scala][0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m13 warnings found[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 21 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/classes ...[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/ChapterMode.scala:12:6 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m12 |[0m  [33mdef[0m [36m$ordinal[0m: [32mInt[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m      ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/ChapterMode.scala:32:14 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m32 |[0m    [33mfinal[0m [33mdef[0m $ordinal: [33mInt[0m = [32m0[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m              ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/ChapterMode.scala:35:83 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m35 |[0m  [33mfinal[0m [33mcase class[0m [36mFiltersCase[0m([36mfilters[0m: [32mTagFilter[0m) [33mextends[0m [32mChapterMode[0m { [33mfinal[0m [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m1[0m }[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                                                                   ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala:15:6 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m15 |[0m  [33mdef[0m [36m$ordinal[0m: [32mInt[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m      ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala:44:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m44 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m0[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala:61:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m61 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m1[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala:80:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m80 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m2[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    ----------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala:116:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m116 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m3[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m     ---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/Query.scala:135:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m135 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m4[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m     ---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/SearchService.scala:103:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m103 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m     ---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/SearchService.scala:156:8 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m156 |[0m    [33mdef[0m [36m$ordinal[0m: [32mInt[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m     ---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/SearchService.scala:119:119 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m119 |[0m    [33mfinal[0m [33mcase class[0m [36mInternalServerErrorCase[0m([36minternalServerError[0m: [32mInternalServerError[0m) [33mextends[0m [32mSearchError[0m { [33mfinal[0m [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m0[0m }[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                                                                                                                       ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m     ---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E230] Syntax Warning: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/api/src_managed/main/smithy4s/lila/search/spec/SearchService.scala:172:118 [0m[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m172 |[0m    [33mfinal[0m [33mcase class[0m [36mInternalServerErrorCase[0m([36minternalServerError[0m: [32mInternalServerError[0m) [33mextends[0m [32mCountError[0m { [33mfinal[0m [33mdef[0m [36m$ordinal[0m: [32mInt[0m = [32m0[0m }[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m                                                                                                                      ^^^^^^^^[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mThe identifier `$ordinal` should not contain `$`, which is reserved for internal compiler use.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m Explanation (enabled by `-explain`)[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m User identifiers may be encoded with embedded `$`, and other compiler artifacts[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m may rely on using `$` with specific meanings.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m The prohibition against explicit `$` may be ignored by enclosing the identifier in backquotes[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0m at the definition site.[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m[33m     ---------------------------------------------------------------------------[0m[0m[0J
+[0J[0m[[0m[33mwarn[0m] [0m[0m13 warnings found[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0JStarting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,elastic) (elastic)... [3/12][0J
+[0JCompile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:implicitConversions, -Xkind-projector, -Ycheck-all-patmat, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:patvars, -Wunused:privates, -rewrite, -explain, -Wall, -release, 21, -indent, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 28 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/TeamSource.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/ForumSource.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/ShortField.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/IntField.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/StudySource.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/GameSource.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/KeywordField.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/NestedField.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/KeywordSubfield.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/DateField.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/ByteField.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/Chapter.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/ChapterTags.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/TextField.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/BooleanField.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/Chapters.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/main/smithy4s/lila/search/es/UblogSource.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 28 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/test-classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/elastic/src_managed/test/Snapshot4sBuildInfo.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0JSLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+[0m[[0m[0minfo[0m] [0m[0m[36mlila.search.GameQueryTest[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mDraw result also matches stalemates and insufficient material claims [37m[1m57ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[36mlila.search.StudyQueryTest[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mmode 2 (SearchText) runs nested chapter query [37m[1m63ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mECO filter generates double nested query with term [37m[1m5ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mvariant filter generates term query for keyword field [37m[1m1ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mplayer1 filter matches either color [37m[1m3ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0ma non-Draw result matches its status exactly [37m[1m0ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mplayer2 filter matches either color [37m[1m1ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mplayer1 + player2 filters match symmetrically [37m[1m1ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mopening filter generates match query [37m[1m1ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mevent filter generates match query [37m[1m0ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mfideId1 filter matches either color [37m[1m0ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mfideId1 + fideId2 filters match symmetrically [37m[1m1ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mcombined text and tag filters work together [37m[1m1ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mmultiple tag filters are combined correctly [37m[1m0ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mFilters with all-None fields adds only chapter name/description should clause [37m[1m1ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mcount query includes all filters [37m[1m4ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[36mlila.search.MappingGeneratorSuite[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mStudy index [37m[1m16ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mGame index [37m[1m16ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mForum index [37m[1m14ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mUblog index [37m[1m13ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mTeam index [37m[1m12ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[36mlila.search.StudyQuerySnapshotTest[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mlegacy query shape: public text query [37m[1m16ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mlegacy query shape: owner-prefixed query [37m[1m13ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mlegacy query shape: member-prefixed query with userId [37m[1m14ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mfilter shape: multiple tag filters combined [37m[1m11ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mfilter shape: text plus tag filter (public branch) [37m[1m11ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mfilter shape: owner-prefixed text plus tag filter [37m[1m9ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mfilter shape: tag filter with userId set [37m[1m10ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mmode 2: SearchText runs full chapter query [37m[1m2ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mmode 2: SearchText with owner prefix [37m[1m1ms[0m[0m[0J
+[0JStarting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,lilaMongo) (lila-mongo)... [4/12][0J
+[0JCompile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:implicitConversions, -Xkind-projector, -Ycheck-all-patmat, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:patvars, -Wunused:privates, -rewrite, -explain, -Wall, -release, 21, -indent, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-mongo/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 12 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-mongo/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0JStarting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,client) (client)... [5/12][0J
+[0JCompile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:implicitConversions, -Xkind-projector, -Ycheck-all-patmat, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:patvars, -Wunused:privates, -rewrite, -explain, -Wall, -release, 21, -indent, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/client/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/client/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0JStarting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,app) (lila-search-app)... [6/12][0J
+[0JCompile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:implicitConversions, -Xkind-projector, -Ycheck-all-patmat, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:patvars, -Wunused:privates, -rewrite, -explain, -Wall, -release, 21, -indent, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-app/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 11 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-app/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-app/src_managed/main/sbt-buildinfo/BuildInfo.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-app/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0JStarting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,ingestorCore) (ingestor-core)... [7/12][0J
+[0JCompile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:implicitConversions, -Xkind-projector, -Ycheck-all-patmat, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:patvars, -Wunused:privates, -rewrite, -explain, -Wall, -release, 21, -indent, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/ingestor-core/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/ingestor-core/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/ingestor-core/test-classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[36mlila.search.ingestor.HasDocIdTest[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mdistincByDocId is empty when input is empty [37m[1m7ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mdistincByDocId is empty when all docIds are none [37m[1m140ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mdistincByDocId contains only item with defined docId [37m[1m140ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mdistincByDocId is idempotent [37m[1m141ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mdistincByDocId == reverse.distincBy.reverse [37m[1m139ms[0m[0m[0J
+[0JStarting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,lilaGameExport) (lila-game-export)... [8/12][0J
+[0JCompile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:implicitConversions, -Xkind-projector, -Ycheck-all-patmat, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:patvars, -Wunused:privates, -rewrite, -explain, -Wall, -release, 21, -indent, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-game-export/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-game-export/classes ...[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/modules/lila-game-export/src/main/scala/GameCsv.scala:34:60 [0m[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m  [33mgiven[0m [32mCsvRowEncoder[0m[[32mGameCsv[0m, [32mString[0m] = deriveCsvRowEncoder[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                            ^[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type fs2.data.csv.generic.internal.Names[lila.search.game.csv².GameCsv] was found for parameter naming of [33mmethod[0m [32mderiveCsvRowEncoder[0m in [33mobject[0m [32msemiauto[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    csv  is a package in [33mpackage[0m [32mfs2.data[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m          csv² is a package in [33mpackage[0m [32mlila.search.game[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import fs2.data.csv.generic.internal.Names.given_Names_T[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0mone error found[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m(lilaGameExport / Compile / [31mcompileIncremental[0m) Compilation failed[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/modules/lila-game-export/src/main/scala/GameCsv.scala:34:60 [0m[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m  [33mgiven[0m [32mCsvRowEncoder[0m[[32mGameCsv[0m, [32mString[0m] = deriveCsvRowEncoder[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                            ^[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type fs2.data.csv.generic.internal.Names[lila.search.game.csv².GameCsv] was found for parameter naming of [33mmethod[0m [32mderiveCsvRowEncoder[0m in [33mobject[0m [32msemiauto[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    csv  is a package in [33mpackage[0m [32mfs2.data[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m          csv² is a package in [33mpackage[0m [32mlila.search.game[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import fs2.data.csv.generic.internal.Names.given_Names_T[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0msbt.util.CachedCompileFailure$$anon$1: Compilation failed[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.util.CachedCompileFailure.toException(CachedCompileFailure.scala:23)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.util.ActionCache$.cache(ActionCache.scala:181)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$init$$$anonfun$1(Defaults.scala:2310)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:79)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:79)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$3.work(Transform.scala:79)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$3.work(Transform.scala:79)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.submit$$anonfun$1$$anonfun$1(Execute.scala:283)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:294)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.submit$$anonfun$1(Execute.scala:283)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$2(ConcurrentRestrictions.scala:269)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:75)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:73)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:1474)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m(lilaGameExport / Compile / [31mcompileIncremental[0m) sbt.util.CachedCompileFailure$$anon$1: Compilation failed[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/modules/lila-game-export/src/main/scala/GameCsv.scala:34:60 [0m[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m  [33mgiven[0m [32mCsvRowEncoder[0m[[32mGameCsv[0m, [32mString[0m] = deriveCsvRowEncoder[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                            ^[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type fs2.data.csv.generic.internal.Names[lila.search.game.csv².GameCsv] was found for parameter naming of [33mmethod[0m [32mderiveCsvRowEncoder[0m in [33mobject[0m [32msemiauto[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0mwhere:    csv  is a package in [33mpackage[0m [32mfs2.data[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m          csv² is a package in [33mpackage[0m [32mlila.search.game[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0mThe following import might fix the problem:[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import fs2.data.csv.generic.internal.Names.given_Names_T[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0msbt.util.CachedCompileFailure$$anon$1: Compilation failed[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.util.CachedCompileFailure.toException(CachedCompileFailure.scala:23)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.util.ActionCache$.cache(ActionCache.scala:181)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$init$$$anonfun$1(Defaults.scala:2310)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:79)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:79)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$3.work(Transform.scala:79)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$3.work(Transform.scala:79)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.submit$$anonfun$1$$anonfun$1(Execute.scala:283)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:294)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.submit$$anonfun$1(Execute.scala:283)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$2(ConcurrentRestrictions.scala:269)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:75)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:73)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:1474)[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m(lilaGameExport / Compile / [31mcompileIncremental[0m) sbt.util.CachedCompileFailure$$anon$1: Compilation failed[0m[0J
+[0JStarting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,e2e) (e2e)... [9/12][0J
+[0JCompile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:implicitConversions, -Xkind-projector, -Ycheck-all-patmat, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:patvars, -Wunused:privates, -rewrite, -explain, -Wall, -release, 21, -indent, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/e2e/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/e2e/test-classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J2026-06-27 19:34:45,221 [io-compute-11] INFO  o.t.i.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()[0J
+[0J2026-06-27 19:34:45,223 [io-compute-11] INFO  o.t.u.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')[0J
+[0J2026-06-27 19:34:45,241 [io-compute-11] INFO  o.t.DockerClientFactory - Testcontainers version: 2.0.3[0J
+[0J2026-06-27 19:34:45,536 [io-compute-11] INFO  o.t.d.DockerMachineClientProviderStrategy - docker-machine executable was not found on PATH ([/Users/wmazur/.rbenv/shims, /Users/wmazur/.local/bin, /Users/wmazur/.local/bin, /opt/homebrew/opt/llvm/bin, /opt/homebrew/bin, /opt/homebrew/sbin, /usr/local/bin, /System/Cryptexes/App/usr/bin, /usr/bin, /bin, /usr/sbin, /sbin, /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin, /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin, /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin, /pkg/env/global/bin, /Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin, /Users/wmazur/.rbenv/shims, /Users/wmazur/.local/bin, /opt/homebrew/opt/llvm/bin, /Users/wmazur/.cursor/extensions/vadimcn.vscode-lldb-1.12.1/bin, /Users/wmazur/.sdkman/candidates/visualvm/current/bin, /Users/wmazur/.sdkman/candidates/scalacli/current/bin, /Users/wmazur/.sdkman/candidates/scala/current/bin, /Users/wmazur/.sdkman/candidates/sbt/current/bin, /Users/wmazur/.sdkman/candidates/java/current/bin, /Users/wmazur/Library/Application Support/Coursier/bin, /Users/wmazur/projects/tools/git-filter-repo, /Users/wmazur/.cursor/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts, /Users/wmazur/Library/Application Support/Coursier/bin, /Users/wmazur/projects/tools/git-filter-repo])[0J
+[0J2026-06-27 19:34:45,537 [io-compute-11] ERROR o.t.d.DockerClientProviderStrategy - Could not find a valid Docker environment. Please check configuration. Attempted configurations were:[0J
+	UnixSocketClientProviderStrategy: failed with exception InvalidConfigurationException (Could not find unix domain socket). Root cause NoSuchFileException (/var/run/docker.sock)[0J
+	DockerDesktopClientProviderStrategy: failed with exception NullPointerException (Cannot invoke "java.nio.file.Path.toString()" because the return value of "org.testcontainers.dockerclient.DockerDesktopClientProviderStrategy.getSocketPath()" is null)As no valid configuration was found, execution cannot continue.[0J
+See https://java.testcontainers.org/on_failure.html for more details.[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[36mlila.search.app.test.IntegrationSuite[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[31m- [0mUnexpected failure [37m[1m0ms[0m[0m[0J
+[0J2026-06-27 19:34:45,582 [io-compute-0] INFO  o.h.e.s.EmberServerBuilderCompanionPlatform - Ember-Server service bound to address: [::]:9999[0J
+[0J2026-06-27 19:34:45,583 [io-compute-5] INFO  lila.search.app.App - lila-search started at /[0:0:0:0:0:0:0:0]:9999[0J
+[0J2026-06-27 19:34:45,583 [io-compute-11] INFO  lila.search.app.App - BuildInfo: version: 3.5.1-SNAPSHOT, gitHeadCommit: fc912c0[0J
+[0J[INFO] [06/27/2026 19:34:46.162] [io-compute-0] [CoordinatedShutdown(akka://default)] Running CoordinatedShutdown with reason [ActorSystemTerminateReason][0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[36mlila.search.test.CompatSuite[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0msearch endpoint [37m[1m189ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mbad search study endpoint [37m[1m16ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mcount endpoint [37m[1m189ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mstudy chapter and tag filters [37m[1m288ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[31m*************[0mFAILURES[31m**************[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[36mlila.search.app.test.IntegrationSuite[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m- [0mUnexpected failure [37m[1m0ms[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  DockerClientProviderStrategy.java:274    org.testcontainers.dockerclient.DockerClientProviderStrategy#lambda$getFirstValidStrategy$7[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  Optional.java:403                        java.util.Optional#orElseThrow[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  DockerClientProviderStrategy.java:265    org.testcontainers.dockerclient.DockerClientProviderStrategy#getFirstValidStrategy[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  DockerClientFactory.java:154             org.testcontainers.DockerClientFactory#getOrInitializeStrategy[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  DockerClientFactory.java:196             org.testcontainers.DockerClientFactory#client[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  DockerClientFactory.java:108             org.testcontainers.DockerClientFactory$1#getDockerClient[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  DockerClientDelegate.java:109            com.github.dockerjava.api.DockerClientDelegate#authConfig[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  GenericContainer.java:316                org.testcontainers.containers.GenericContainer#start[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  Container.scala:35                       com.dimafeng.testcontainers.SingleContainer#start[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  ElasticSearchContainer.scala:30          lila.search.app.test.ElasticSearchContainer$#$anonfun$2$$anonfun$1[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  ElasticSearchContainer.scala:30          lila.search.app.test.ElasticSearchContainer$#$anonfun$2$$anonfun$adapted$1[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  ElasticSearchContainer.scala:30          apply @ lila.search.app.test.ElasticSearchContainer$#$anonfun$2[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  ElasticSearchContainer.scala:29          apply @ lila.search.app.test.ElasticSearchContainer$#<clinit>[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  RunnerCompat.scala:170                   make @ weaver.framework.RunnerCompat#run[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  RunnerCompat.scala:170                   make @ weaver.framework.RunnerCompat#run[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  Pull.scala:422                           uncancelable @ fs2.Pull$#acquireCancelable[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  Compiler.scala:163                       flatMap @ fs2.Compiler$Target#flatMap[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  Compiler.scala:161                       handleErrorWith @ fs2.Compiler$Target#handleErrorWith[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  Compiler.scala:163                       flatMap @ fs2.Compiler$Target#flatMap[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  Compiler.scala:165                       uncancelable @ fs2.Compiler$Target#uncancelable[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  Compiler.scala:194                       unique @ fs2.Compiler$Target$ConcurrentTarget#unique[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  Compiler.scala:163                       flatMap @ fs2.Compiler$Target#flatMap[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  GlobalResourceF.scala:124                of$extension @ weaver.GlobalResourceF$#createMap[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  Compiler.scala:163                       flatMap @ fs2.Compiler$Target#flatMap[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[31m  Compiler.scala:163                       flatMap @ fs2.Compiler$Target#flatMap[0m[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m[0m[0J
+[0JStarting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,ingestorApp) (lila-search-ingestor)... [10/12][0J
+[0JCompile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:implicitConversions, -Xkind-projector, -Ycheck-all-patmat, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:patvars, -Wunused:privates, -rewrite, -explain, -Wall, -release, 21, -indent, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-ingestor/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-ingestor/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-ingestor/src_managed/main/sbt-buildinfo/BuildInfo.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-ingestor/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0JStarting build for ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,ingestorCli) (lila-search-cli)... [11/12][0J
+[0JCompile scalacOptions: -encoding, utf8, -unchecked, -language:experimental.macros, -language:implicitConversions, -Xkind-projector, -Ycheck-all-patmat, -Wvalue-discard, -Wnonunit-statement, -Wunused:implicits, -Wunused:explicits, -Wunused:imports, -Wunused:locals, -Wunused:params, -Wunused:patvars, -Wunused:privates, -rewrite, -explain, -Wall, -release, 21, -indent, -Xsemanticdb, -semanticdb-target, /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-cli/meta, -Wconf:msg=can be rewritten automatically under:s, -source:3.10[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-cli/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[patched file /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-cli/src_managed/main/sbt-buildinfo/BuildInfo.scala][0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-cli/classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/target/out/jvm/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/lila-search-cli/test-classes ...[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[36mlila.search.ingestor.CLITest[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mindex command [37m[1m35ms[0m[0m[0J
+[0J[0m[[0m[0minfo[0m] [0m[0m[32m+ [0mindex command with watch flag [37m[1m1ms[0m[0m[0J
+[0J[0J
+************************[0J
+Build summary:[0J
+[{[0J
+ "module": "core",[0J
+ "compile": {"status": "ok", "tookMs": 14141, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},[0J
+ "test-compile": {"status": "ok", "tookMs": 3631, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "test": {"status": "ok", "tookMs": 410, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},[0J
+ "publish": {"status": "ok", "tookMs": 19},[0J
+ "metadata": {[0J
+  "crossScalaVersions": ["3.8.4"][0J
+}[0J
+},{[0J
+ "module": "lila-search-root",[0J
+ "compile": {"status": "ok", "tookMs": 122, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},[0J
+ "test-compile": {"status": "ok", "tookMs": 358, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "test": {"status": "ok", "tookMs": 274, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},[0J
+ "publish": {"status": "ok", "tookMs": 10},[0J
+ "metadata": {[0J
+  "crossScalaVersions": ["3.8.4"][0J
+}[0J
+},{[0J
+ "module": "api",[0J
+ "compile": {"status": "ok", "tookMs": 8130, "warnings": 13, "errors": 0, "sourceVersion": "3.10"},[0J
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},[0J
+ "test-compile": {"status": "ok", "tookMs": 5899, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "test": {"status": "ok", "tookMs": 722, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},[0J
+ "publish": {"status": "ok", "tookMs": 17},[0J
+ "metadata": {[0J
+  "crossScalaVersions": ["3.8.4"][0J
+}[0J
+},{[0J
+ "module": "elastic",[0J
+ "compile": {"status": "ok", "tookMs": 5940, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},[0J
+ "test-compile": {"status": "ok", "tookMs": 6245, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "test": {"status": "ok", "tookMs": 1652, "passed": 30, "failed": 0, "ignored": 0, "skipped": 0, "total": 30, "byFramework": [{"framework": "unknown", "stats": {"passed": 30, "failed": 0, "ignored": 0, "skipped": 0, "total": 30}}]},[0J
+ "publish": {"status": "ok", "tookMs": 14},[0J
+ "metadata": {[0J
+  "crossScalaVersions": ["3.8.4"][0J
+}[0J
+},{[0J
+ "module": "lila-mongo",[0J
+ "compile": {"status": "ok", "tookMs": 3946, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},[0J
+ "test-compile": {"status": "ok", "tookMs": 461, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "test": {"status": "ok", "tookMs": 282, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},[0J
+ "publish": {"status": "ok", "tookMs": 12},[0J
+ "metadata": {[0J
+  "crossScalaVersions": ["3.8.4"][0J
+}[0J
+},{[0J
+ "module": "client",[0J
+ "compile": {"status": "ok", "tookMs": 1935, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},[0J
+ "test-compile": {"status": "ok", "tookMs": 408, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "test": {"status": "ok", "tookMs": 361, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},[0J
+ "publish": {"status": "ok", "tookMs": 8},[0J
+ "metadata": {[0J
+  "crossScalaVersions": ["3.8.4"][0J
+}[0J
+},{[0J
+ "module": "lila-search-app",[0J
+ "compile": {"status": "ok", "tookMs": 3730, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},[0J
+ "test-compile": {"status": "ok", "tookMs": 900, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "test": {"status": "ok", "tookMs": 503, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},[0J
+ "publish": {"status": "ok", "tookMs": 5},[0J
+ "metadata": {[0J
+  "crossScalaVersions": ["3.8.4"][0J
+}[0J
+},{[0J
+ "module": "ingestor-core",[0J
+ "compile": {"status": "ok", "tookMs": 2218, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},[0J
+ "test-compile": {"status": "ok", "tookMs": 1332, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "test": {"status": "ok", "tookMs": 1060, "passed": 5, "failed": 0, "ignored": 0, "skipped": 0, "total": 5, "byFramework": [{"framework": "unknown", "stats": {"passed": 5, "failed": 0, "ignored": 0, "skipped": 0, "total": 5}}]},[0J
+ "publish": {"status": "ok", "tookMs": 6},[0J
+ "metadata": {[0J
+  "crossScalaVersions": ["3.8.4"][0J
+}[0J
+},{[0J
+ "module": "lila-game-export",[0J
+ "compile": {"status": "failed", "failureContext": {"type": "buildError", "reasons": ["Incomplete(node=Some(ScopedKey(Scope(Select(ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,lilaGameExport)), Select(ConfigKey(compile)), Zero, Zero),compile)), tpe=Error, msg=None, causes=List(Incomplete(node=None, tpe=Error, msg=None, causes=List(Incomplete(node=Some(ScopedKey(Scope(Select(ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,lilaGameExport)), Select(ConfigKey(compile)), Zero, Zero),compile)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(ScopedKey(Scope(Select(ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,lilaGameExport)), Select(ConfigKey(compile)), Zero, Zero),compileSplit)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(ScopedKey(Scope(Select(ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,lilaGameExport)), Select(ConfigKey(compile)), Zero, Zero),compileScalaBackend)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(ScopedKey(Scope(Select(ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,lilaGameExport)), Select(ConfigKey(compile)), Zero, Zero),compileIncremental)), tpe=Error, msg=None, causes=List(Incomplete(node=None, tpe=Error, msg=None, causes=List(Incomplete(node=None, tpe=Error, msg=None, causes=List(Incomplete(node=Some(ScopedKey(Scope(Select(ProjectRef(file:/Users/wmazur/projects/scala/community-build3/repro/lichess-org/lila-search/repo/lichess-org/lila-search/,lilaGameExport)), Select(ConfigKey(compile)), Zero, Zero),compileIncremental)), tpe=Error, msg=None, causes=List(), directCause=Some(Compilation failed))), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None)), directCause=None)"]}, "tookMs": 1693, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},[0J
+ "test-compile": {"status": "skipped", "tookMs": 0, "warnings": 0, "errors": 0},[0J
+ "test": {"status": "skipped", "tookMs": 0, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},[0J
+ "publish": {"status": "skipped", "tookMs": 0},[0J
+ "metadata": {[0J
+  "crossScalaVersions": ["3.8.4"][0J
+}[0J
+},{[0J
+ "module": "e2e",[0J
+ "compile": {"status": "ok", "tookMs": 689, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},[0J
+ "test-compile": {"status": "ok", "tookMs": 2902, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "test": {"status": "failed", "tookMs": 2328, "passed": 4, "failed": 1, "ignored": 0, "skipped": 0, "total": 5, "byFramework": [{"framework": "unknown", "stats": {"passed": 4, "failed": 1, "ignored": 0, "skipped": 0, "total": 5}}]},[0J
+ "publish": {"status": "ok", "tookMs": 5},[0J
+ "metadata": {[0J
+  "crossScalaVersions": ["3.8.4"][0J
+}[0J
+},{[0J
+ "module": "lila-search-ingestor",[0J
+ "compile": {"status": "ok", "tookMs": 1235, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},[0J
+ "test-compile": {"status": "ok", "tookMs": 963, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "test": {"status": "ok", "tookMs": 519, "passed": 0, "failed": 0, "ignored": 0, "skipped": 0, "total": 0, "byFramework": []},[0J
+ "publish": {"status": "ok", "tookMs": 7},[0J
+ "metadata": {[0J
+  "crossScalaV[0J[0Jersions": ["3.8.4"][0J
+}[0J
+},{[0J
+ "module": "lila-search-cli",[0J
+ "compile": {"status": "ok", "tookMs": 1214, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "doc": {"status": "skipped", "tookMs": 0, "files": 0, "totalSizeKb": 0},[0J
+ "test-compile": {"status": "ok", "tookMs": 1321, "warnings": 0, "errors": 0, "sourceVersion": "3.10"},[0J
+ "test": {"status": "ok", "tookMs": 1040, "passed": 2, "failed": 0, "ignored": 0, "skipped": 0, "total": 2, "byFramework": [{"framework": "unknown", "stats": {"passed": 2, "failed": 0, "ignored": 0, "skipped": 0, "total": 2}}]},[0J
+ "publish": {"status": "ok", "tookMs": 7},[0J
+ "metadata": {[0J
+  "crossScalaVersions": ["3.8.4"][0J
+}[0J
+}][0J
+************************[0J[0J
+[0J[0m[[0m[31merror[0m] [0m[0mScala3CommunityBuild$ProjectBuildFailureException: 2 module(s) finished with failures: lila-game-export, e2e[0m[0J
+[0J[0m[[0m[31merror[0m] [0m[0m(Global / [31mrunBuild[0m) Scala3CommunityBuild$ProjectBuildFailureException: 2 module(s) finished with failures: lila-game-export, e2e[0m[0J
+[0J[[31merror[0m] elapsed: 197 s (0:03:17.0)
+[0JBuild failed, not retrying.
+------
+lichess-org/lila-search status=failure
+-------
+See build-logs.txt for details.

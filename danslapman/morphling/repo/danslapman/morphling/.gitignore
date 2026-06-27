@@ -1,0 +1,11 @@
+*.class
+*.log
+**/target
+.DS_Store
+.bsp
+.idea
+.metals
+.theia
+.bloop
+.vscode
+**/metals.sbt
