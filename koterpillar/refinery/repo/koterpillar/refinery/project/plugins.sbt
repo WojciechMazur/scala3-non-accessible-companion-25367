@@ -1,5 +1,0 @@
-addSbtPlugin("com.codecommit" % "sbt-github-actions" % "0.10.1")
-addSbtPlugin("com.geirsson" % "sbt-ci-release" % "1.5.7")
-addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.4.3")
-
-ThisBuild / evictionErrorLevel := sbt.util.Level.Warn

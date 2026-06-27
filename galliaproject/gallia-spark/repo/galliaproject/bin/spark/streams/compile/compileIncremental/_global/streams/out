@@ -1,6 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 55 products, 14 sources, 7 libraries[0m
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/gallia/spark/SparkRddUtils.scala, ${BASE}/src/main/scala/gallia/spark/SparkRddIn.scala, ${BASE}/src/main/scala/aptus/spark/SparkLogging.scala, ${BASE}/src/main/scala/gallia/streamer/RddStreamerHashJoin.scala, ${BASE}/src/main/scala/aptus/spark/AptusSparkPackage.scala, ${BASE}/src/main/scala/gallia/streamer/RddStreamer.scala, ${BASE}/src/main/scala/aptus/spark/SparkContextCache.scala, ${BASE}/src/main/scala/gallia/spark/SparkPackage.scala, ${BASE}/src/main/scala/gallia/heads/HeadZRdd.scala, ${BASE}/src/main/scala/aptus/spark/SparkDriver.scala, ${BASE}/src/main/scala/gallia/spark/SparkRddOut.scala, ${BASE}/src/main/scala/gallia/streamer/RddStreamerUtils.scala, ${BASE}/src/main/scala/gallia/streamer/RddStreamerPackage.scala, ${BASE}/src/main/scala/gallia/spark/WithZConfigStartRDD.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
-[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m

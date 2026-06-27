@@ -1,8 +1,0 @@
-/.idea
-/project/project/
-target/
-.bsp/
-.metals/
-.vscode/
-.bloop/
-project/metals.sbt

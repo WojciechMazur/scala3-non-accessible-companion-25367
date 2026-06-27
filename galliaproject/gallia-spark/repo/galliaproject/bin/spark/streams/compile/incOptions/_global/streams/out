@@ -1,2 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/bin/spark/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes.bak[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/wmazur/projects/scala/community-build3/repro/galliaproject/gallia-spark/repo/galliaproject/bin/spark/scala-3.10.0-RC1-bin-20260626-20f6657-NIGHTLY/classes.bak[0m

@@ -1,3 +1,0 @@
-dependencies: [ 'update/**', 'dependabot/**' ]
-pr: '**'
-release: 'prepare-to-release'

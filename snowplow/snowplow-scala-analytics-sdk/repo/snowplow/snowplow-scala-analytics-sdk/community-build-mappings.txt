@@ -1,2 +1,0 @@
-com.snowplowanalytics%snowplow-scala-analytics-sdk root
-benchmark%benchmark_2.12 benchmark

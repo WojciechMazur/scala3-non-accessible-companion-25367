@@ -17,3 +17,6 @@ run-*.log
 
 # compiler bisect output (regenerate locally)
 bisect-logs/
+
+# community-build sandbox clones (not part of repro)
+repo/

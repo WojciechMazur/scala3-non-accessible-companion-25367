@@ -1,5 +1,0 @@
-com.sksamuel.avro4s%benchmarks benchmarks
-com.sksamuel.avro4s%avro4s-kafka avro4s-kafka
-com.sksamuel.avro4s%avro4s-cats avro4s-cats
-com.sksamuel.avro4s%avro4s-core avro4s-core
-com.sksamuel.avro4s%avro4s avro4s

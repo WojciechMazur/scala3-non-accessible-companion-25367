@@ -76,5 +76,6 @@ See per-project `notes.md` for stubs, jar steps, and error excerpts.
 
 - [BISECT.md](BISECT.md) — release boundaries and first bad commit
 - [TRIAGE.md](TRIAGE.md) — error-signature clusters C2–C11 and per-project notes
+- [LIBRARY-MITIGATION.md](LIBRARY-MITIGATION.md) — OSS libraries and implicits that need library-side fixes
 
 Bisect logs (`bisect-logs/`) are excluded from this repo; regenerate locally with the command in [BISECT.md](BISECT.md).

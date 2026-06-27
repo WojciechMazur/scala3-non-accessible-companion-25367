@@ -1,7 +1,0 @@
-com.permutive%website website
-com.permutive%documentation documentation
-com.permutive%prometheus4cats-testkit prometheus4cats-testkit
-com.permutive%prometheus4cats prometheus4cats
-com.permutive%sandbox sandbox
-com.permutive%default-c3c78f default-c3c78f
-com.permutive%prometheus4cats-java prometheus4cats-java

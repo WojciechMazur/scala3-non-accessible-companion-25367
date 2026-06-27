@@ -1,7 +1,0 @@
-de.megaera%medeia-refined refined
-de.megaera%root_2.13 root
-de.megaera%rootjs rootJS
-de.megaera%medeia-enumeratum enumeratum
-de.megaera%rootjvm rootJVM
-de.megaera%rootnative rootNative
-de.megaera%medeia core

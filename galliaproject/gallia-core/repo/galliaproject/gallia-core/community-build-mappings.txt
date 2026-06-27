@@ -1,3 +1,0 @@
-io.github.galliaproject%gallia-core-root root
-io.github.galliaproject%gallia-reflect reflect
-io.github.galliaproject%gallia-core core
