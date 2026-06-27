@@ -14,3 +14,6 @@ build-tool.txt
 build.patch
 logs-excerpt.txt
 run-*.log
+
+# compiler bisect output (regenerate locally)
+bisect-logs/

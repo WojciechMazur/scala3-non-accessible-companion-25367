@@ -36,25 +36,25 @@ Date:   Fri Jun 12 13:20:35 2026 +0200
 
 ## Projects (20)
 
-| Project | Bisect log |
-|---------|------------|
-| lichess-org/lila-search | [lichess-org-lila-search.log](bisect-logs/lichess-org-lila-search.log) |
-| http4s/http4s-fs2-data | [http4s-http4s-fs2-data.log](bisect-logs/http4s-http4s-fs2-data.log) |
-| martinhh/scalacheck-derived | [martinhh-scalacheck-derived.log](bisect-logs/martinhh-scalacheck-derived.log) |
-| theiterators/kebs | [theiterators-kebs.log](bisect-logs/theiterators-kebs.log) |
-| sksamuel/avro4s | [sksamuel-avro4s.log](bisect-logs/sksamuel-avro4s.log) |
-| koterpillar/refinery | [koterpillar-refinery.log](bisect-logs/koterpillar-refinery.log) |
-| noelwelsh/mads | [noelwelsh-mads.log](bisect-logs/noelwelsh-mads.log) |
-| sky-uk/kafka-topic-loader | [sky-uk-kafka-topic-loader.log](bisect-logs/sky-uk-kafka-topic-loader.log) |
-| hireproof/screening | [hireproof-screening.log](bisect-logs/hireproof-screening.log) |
-| sbt/io | [sbt-io.log](bisect-logs/sbt-io.log) |
-| ranyitz/brush | [ranyitz-brush.log](bisect-logs/ranyitz-brush.log) |
-| snowplow/snowplow-scala-analytics-sdk | [snowplow-snowplow-scala-analytics-sdk.log](bisect-logs/snowplow-snowplow-scala-analytics-sdk.log) |
-| galliaproject/gallia-core | [galliaproject-gallia-core.log](bisect-logs/galliaproject-gallia-core.log) |
-| galliaproject/gallia-spark | [galliaproject-gallia-spark.log](bisect-logs/galliaproject-gallia-spark.log) |
-| danslapman/morphling | [danslapman-morphling.log](bisect-logs/danslapman-morphling.log) |
-| kevin-lee/extras | [kevin-lee-extras.log](bisect-logs/kevin-lee-extras.log) |
-| kevin-lee/logger-f | [kevin-lee-logger-f.log](bisect-logs/kevin-lee-logger-f.log) |
-| medeia/medeia | [medeia-medeia.log](bisect-logs/medeia-medeia.log) |
-| permutive-engineering/prometheus4cats | [permutive-engineering-prometheus4cats.log](bisect-logs/permutive-engineering-prometheus4cats.log) |
-| polyvariant/smithy4s-caliban | [polyvariant-smithy4s-caliban.log](bisect-logs/polyvariant-smithy4s-caliban.log) |
+| Project | Cluster | Canonical repro |
+|---------|---------|-----------------|
+| lichess-org/lila-search | C2 | `test-nodep.scala` |
+| http4s/http4s-fs2-data | C2 | `test-nodep.scala` |
+| martinhh/scalacheck-derived | C3 | `test-nodep.scala` |
+| theiterators/kebs | C3 | `test-nodep.scala` |
+| sksamuel/avro4s | C4 | `test-nodep.scala` |
+| koterpillar/refinery | C4 | `test-nodep.scala` |
+| noelwelsh/mads | C4 | `test-nodep.scala` |
+| sky-uk/kafka-topic-loader | C4 | `test-nodep.scala` |
+| hireproof/screening | C4 | `test-nodep.scala` |
+| sbt/io | C5 | `test-nodep.scala` |
+| ranyitz/brush | C5 | `test-nodep.scala` |
+| snowplow/snowplow-scala-analytics-sdk | C5 | `test-nodep.scala` |
+| galliaproject/gallia-core | C6 | `test.scala` |
+| galliaproject/gallia-spark | C6 | `test.scala` |
+| danslapman/morphling | C7 | `test-nodep.scala` |
+| kevin-lee/extras | C8 | `test-nodep.scala` |
+| kevin-lee/logger-f | C8 | `test-nodep.scala` |
+| medeia/medeia | C9 | `test.scala` |
+| permutive-engineering/prometheus4cats | C10 | `test.scala` |
+| polyvariant/smithy4s-caliban | C11 | `test-nodep.scala` |

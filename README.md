@@ -74,9 +74,7 @@ See per-project `notes.md` for stubs, jar steps, and error excerpts.
 
 ## Docs
 
-- [BISECT.md](BISECT.md) — release boundaries, commit message, bisect logs
+- [BISECT.md](BISECT.md) — release boundaries and first bad commit
 - [TRIAGE.md](TRIAGE.md) — error-signature clusters C2–C11 and per-project notes
 
-## Bisect logs
-
-Full bootstrapped bisect output per project: `bisect-logs/*.log`
+Bisect logs (`bisect-logs/`) are excluded from this repo; regenerate locally with the command in [BISECT.md](BISECT.md).
