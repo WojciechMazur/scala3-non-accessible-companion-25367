@@ -5,3 +5,12 @@
 initlast-lib.jar
 .scala-build/
 .bsp/
+
+# community-build sandbox artifacts (not part of repro)
+build-logs.txt
+build-status.txt
+build-summary.txt
+build-tool.txt
+build.patch
+logs-excerpt.txt
+run-*.log
